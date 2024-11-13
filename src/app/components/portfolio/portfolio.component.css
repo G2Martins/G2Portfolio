@@ -1,0 +1,4 @@
+.portfolio-item img:hover {
+    @apply scale-105 transition-transform duration-300;
+  }
+  
