@@ -1,4 +1,33 @@
-.skill-badge {
-    @apply bg-blue-500 text-white py-2 px-4 rounded-full;
-  }
-  
+/* Estilização dos cards de habilidade */
+.skill-card {
+  @apply flex flex-col items-center justify-center border border-indigo-700 rounded-lg; /* Borda e bordas arredondadas */
+  width: 150px; 
+  height: 150px;
+  background-color: rgba(29, 78, 216, 0.2); /* Fundo azul transparente para combinar com o gradiente */
+  transition: transform 0.3s, background-color 0.3s, border-color 0.3s;
+  overflow: hidden;
+  gap: 1px; 
+}
+
+/* Ajuste do tamanho da imagem dentro do card */
+.skill-card img {
+  width: 90px; 
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 0px; /* Alinha imagem e texto o mais próximo possível */
+}
+
+/* Estilização do texto de habilidade */
+.skill-card p {
+  font-size: 1.1rem; /* Aumenta um pouco mais o tamanho da fonte */
+  font-weight: 600; /* Deixa o texto mais destacado */
+  text-align: center;
+  color: #ffffff;
+  margin-top: -8px; 
+}
+
+/* Efeito hover */
+.skill-card:hover {
+  @apply border-violet-500 bg-indigo-700; 
+  transform: scale(1.1);
+}
