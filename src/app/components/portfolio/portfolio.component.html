@@ -1,14 +1,26 @@
 <section class="py-16 bg-white text-gray-800">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">My Works</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Exemplo de item de portfólio -->
-        <div class="portfolio-item bg-gray-200 p-4 rounded-lg shadow-lg">
-          <img src="caminho/para/imagem.jpg" alt="Projeto 1" class="w-full h-48 object-cover rounded-lg mb-4">
-          <h3 class="text-xl font-semibold">Projeto 1</h3>
-          <p class="text-sm text-gray-600">Descrição breve do projeto.</p>
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-0">My Works</h2>
+    <p class="text-center mb-8">A collection of project I've worked on</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+      <div *ngFor="let project of projects" class="portfolio-item bg-gray-200 p-4 rounded-lg shadow-lg">
+        <img [src]="project.workCover" [alt]="project.workTitle" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold">{{ project.workTitle }}</h3>
+        <p class="text-sm text-gray-600">{{ project.workDescription }}</p>
+        
+        <!-- Botões condicionais para os links -->
+        <div class="flex space-x-2 mt-4">
+          <!-- Botão do Site -->
+          <a *ngIf="project.linkSite" [href]="project.linkSite" target="_blank" class="inline-block p-2 bg-blue-500 rounded-full hover:bg-blue-600 transition">
+            <i class="fas fa-globe w-6 h-6 text-white"></i>
+          </a>
+          
+          <!-- Botão do GitHub -->
+          <a *ngIf="project.linkGithub" [href]="project.linkGithub" target="_blank" class="inline-block p-2 bg-gray-800 rounded-full hover:bg-gray-900 transition">
+            <i class="fab fa-github w-6 h-6 text-white"></i>
+          </a>
         </div>
       </div>
     </div>
-  </section>
-  
+  </div>
+</section>

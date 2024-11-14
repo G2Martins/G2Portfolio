@@ -11,6 +11,7 @@ import { AboutComponent } from './components/about/about.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ContactComponent } from './components/contact/contact.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
