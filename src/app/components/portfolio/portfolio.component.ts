@@ -7,7 +7,7 @@ import { projectDB } from 'src/data/projectDB';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
-  projects = projectDB; // Assigns the imported project data to a component variable
+  projects = projectDB; 
 
   constructor() { }
 
