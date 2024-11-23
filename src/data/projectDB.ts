@@ -44,5 +44,13 @@ export const projectDB = [
         "workDescription": "Repository for storing the project developed in the AI course, which uses Logistic Regression to predict team victory in the game League of Legends based on champion composition and match duration.",
         "linkGithub": "https://github.com/G2Martins/PredictWin-LOL-IA"
     },
+    {
+        "id": "6",
+        "workCover": "assets/WorksLogos/G2BuzzFeed.png",
+        "workTitle": "G2BuzzFeed",
+        "workDescription": "Repository for storing the project developed for the BuzzFeed-inspired quiz platform. This Angular-based project allows users to explore and interact with a variety of quizzes, leveraging Tailwind CSS for modern styling and responsive design. The platform includes creative features like a dynamic menu bar, a visually appealing home page, and components designed to enhance user engagement.",
+        "linkSite": "https://g2martins.github.io/G2BuzzFeed/",
+        "linkGithub": "https://github.com/G2Martins/G2BuzzFeed"
+    },
     
 ];
