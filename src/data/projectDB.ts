@@ -17,11 +17,10 @@ export const projectDB = [
     },
     {
         "id": "2",
-        "workCover": "assets/WorksLogos/G2HubBlog.png",
-        "workTitle": "G2HubBlog",
-        "workDescription": "Angular Blog Project",
-        "linkSite": "https://g2martins.github.io/G2HubBlog/",
-        "linkGithub": "https://github.com/G2Martins/G2HubBlog"
+        "workCover": "assets/WorksLogos/CalendarioWEB.png",
+        "workTitle": "Calendário Web",
+        "workDescription": "This repository contains a Web Calendar System project built with Java 17, Spring Boot, MongoDB, Angular 14, and Tailwind CSS. It features user authentication, multi-day event creation, invitation management, and a REST API for seamless integration. The backend ensures scalability and security, while the frontend delivers a modern, responsive experience for efficient event scheduling and collaboration.",
+        "linkGithub": "https://github.com/G2Martins/CalendarioWeb"
     },
     {
         "id": "3",
@@ -51,6 +50,14 @@ export const projectDB = [
         "workDescription": "Repository for storing the project developed for the BuzzFeed-inspired quiz platform. This Angular-based project allows users to explore and interact with a variety of quizzes, leveraging Tailwind CSS for modern styling and responsive design. The platform includes creative features like a dynamic menu bar, a visually appealing home page, and components designed to enhance user engagement.",
         "linkSite": "https://g2martins.github.io/G2BuzzFeed/",
         "linkGithub": "https://github.com/G2Martins/G2BuzzFeed"
+    },
+    {
+        "id": "7",
+        "workCover": "assets/WorksLogos/G2HubBlog.png",
+        "workTitle": "G2HubBlog",
+        "workDescription": "Angular Blog Project",
+        "linkSite": "https://g2martins.github.io/G2HubBlog/",
+        "linkGithub": "https://github.com/G2Martins/G2HubBlog"
     },
     
 ];
