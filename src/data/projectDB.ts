@@ -9,6 +9,20 @@ export const projectDB = [
     },
     {
         "id": "1",
+        "workCover": "assets/WorksLogos/DashTempoReal.png",
+        "workTitle": "Dashboard de Análise de Tráfego em Tempo Real",
+        "workDescription": "his repository contains a Real-Time Traffic Analysis Dashboard project built with Python, FastAPI, Scapy, Angular, and Tailwind CSS. It features server traffic capture, dynamic data visualization, inbound and outbound traffic monitoring, and detailed protocol analysis. The backend ensures efficient real-time data processing via a REST API, while the frontend delivers a modern, responsive dashboard for clear and effective network insight",
+        "linkGithub": "https://github.com/AlphaCompLabs/Dash_TempoReal"
+    },
+    {
+        "id": "2",
+        "workCover": "assets/WorksLogos/RRNexus.png",
+        "workTitle": "RR - Nexus",
+        "workDescription": "This repository contains a Distributed 3-Tier Application project focused on high availability and scalability. It utilizes Round Robin DNS to distribute traffic across multiple server instances efficiently. A key feature is the implementation of a centralized session management system, which ensures persistent user logins and data consistency regardless of which server handles the request, successfully overcoming the stateless limitations of DNS balancing. The architecture demonstrates robust backend engineering for fault-tolerant and seamless user experiences.",
+        "linkGithub": "https://github.com/AlphaCompLabs/Projeto-RR-Nexus/tree/dev"
+    },
+    {
+        "id": "3",
         "workCover": "assets/WorksLogos/G2Store.png",
         "workTitle": "G2Store",
         "workDescription": "Angular E-commerce Project",
@@ -16,35 +30,35 @@ export const projectDB = [
         "linkGithub": "https://github.com/G2Martins/G2Store"
     },
     {
-        "id": "2",
+        "id": "4",
         "workCover": "assets/WorksLogos/CalendarioWEB.png",
         "workTitle": "Calendário Web",
         "workDescription": "This repository contains a Web Calendar System project built with Java 17, Spring Boot, MongoDB, Angular 14, and Tailwind CSS. It features user authentication, multi-day event creation, invitation management, and a REST API for seamless integration. The backend ensures scalability and security, while the frontend delivers a modern, responsive experience for efficient event scheduling and collaboration.",
         "linkGithub": "https://github.com/G2Martins/CalendarioWeb"
     },
     {
-        "id": "3",
+        "id": "5",
         "workCover": "assets/WorksLogos/AWS-TerraForm.png",
         "workTitle": "AWS - TerraForm",
         "workDescription": "This repository contains an automated AWS infrastructure project using Terraform. It includes the creation of a VPC, Subnet, Security Group, and EC2 with enhanced security rules and automated Nginx installation.",
         "linkGithub": "https://github.com/G2Martins/Starplex/tree/main"
     },
     {
-        "id": "4",
+        "id": "6",
         "workCover": "assets/WorksLogos/EleicoesSPIA.png",
         "workTitle": "2024 Mayoral Election Forecast for São Paulo",
         "workDescription": "Repository created to store the 2024 election forecasting project, using multinomial logistic regression. The model is designed to predict voter intentions based on characteristics like age, income, education, region, and gender. Using fictional data, the project compares candidates across different political spectrums.",
         "linkGithub": "https://github.com/G2Martins/EleicoesSP-2024-IA"
     },
     {
-        "id": "5",
+        "id": "7",
         "workCover": "assets/WorksLogos/PredictWinLOLIA.png",
         "workTitle": "PredictWin LOL IA",
         "workDescription": "Repository for storing the project developed in the AI course, which uses Logistic Regression to predict team victory in the game League of Legends based on champion composition and match duration.",
         "linkGithub": "https://github.com/G2Martins/PredictWin-LOL-IA"
     },
     {
-        "id": "6",
+        "id": "8",
         "workCover": "assets/WorksLogos/G2BuzzFeed.png",
         "workTitle": "G2BuzzFeed",
         "workDescription": "Repository for storing the project developed for the BuzzFeed-inspired quiz platform. This Angular-based project allows users to explore and interact with a variety of quizzes, leveraging Tailwind CSS for modern styling and responsive design. The platform includes creative features like a dynamic menu bar, a visually appealing home page, and components designed to enhance user engagement.",
@@ -52,12 +66,11 @@ export const projectDB = [
         "linkGithub": "https://github.com/G2Martins/G2BuzzFeed"
     },
     {
-        "id": "7",
+        "id": "9",
         "workCover": "assets/WorksLogos/G2HubBlog.png",
         "workTitle": "G2HubBlog",
         "workDescription": "Angular Blog Project",
         "linkSite": "https://g2martins.github.io/G2HubBlog/",
         "linkGithub": "https://github.com/G2Martins/G2HubBlog"
-    },
-    
+    }
 ];

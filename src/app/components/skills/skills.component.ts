@@ -8,9 +8,15 @@ import { Component, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angula
 export class SkillsComponent implements OnInit, AfterViewInit {
     skills = [
         { name: 'Git', icon: 'assets/SkillsLogos/GIT.png' },
+        { name: 'Power BI', icon: 'assets/SkillsLogos/Power BI.png' },
+        { name: 'Microsoft 365', icon: 'assets/SkillsLogos/Microsoft-365.png' },
+        { name: 'Microsoft Fabric', icon: 'assets/SkillsLogos/Fabric.png' },
+        { name: 'Azure', icon: 'assets/SkillsLogos/Azure.png' },
+        { name: 'Azure Synapse', icon: 'assets/SkillsLogos/AzureSynapse.png' },
+        { name: 'SQL Server', icon: 'assets/SkillsLogos/SQLServer.png' },
+        { name: 'Spring Boot', icon: 'assets/SkillsLogos/SpringBoot.png' },
         { name: 'PostgreSQL', icon: 'assets/SkillsLogos/Postgresql.png' },
         { name: 'MongoDB', icon: 'assets/SkillsLogos/MongoDB.png' },
-        { name: 'C', icon: 'assets/SkillsLogos/C.png' },
         { name: 'C++', icon: 'assets/SkillsLogos/C++.png' },
         { name: 'C#', icon: 'assets/SkillsLogos/Csharp.png' },
         { name: 'Python', icon: 'assets/SkillsLogos/Python.png' },
@@ -21,9 +27,6 @@ export class SkillsComponent implements OnInit, AfterViewInit {
         { name: 'TypeScript', icon: 'assets/SkillsLogos/TypeScript.png' },
         { name: 'JavaScript', icon: 'assets/SkillsLogos/JavaScript.png' },
         { name: 'Tailwind CSS', icon: 'assets/SkillsLogos/Tailwind CSS.png' },
-        { name: 'Microsoft 365', icon: 'assets/SkillsLogos/Microsoft-365.png' },
-        { name: 'Docker', icon: 'assets/SkillsLogos/Docker.png' },
-        { name: 'Power BI', icon: 'assets/SkillsLogos/Power BI.png' },
         { name: 'Linux', icon: 'assets/SkillsLogos/Linux.png' },
         { name: 'Git', icon: 'assets/SkillsLogos/GIT.png' }
     ];

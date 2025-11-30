@@ -16,7 +16,7 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void { }
 
   getWhatsAppLink(): string {
-    const baseURL = 'https://wa.me/5583991088411';
+    const baseURL = 'https://wa.me/5561995008118';
     const text = `Oi Gustavo, tudo bem? Vi o seu portfólio. Nome: ${this.name}, Email: ${this.email}, Telefone: ${this.phone}, Mensagem: ${this.message}`;
     return `${baseURL}?text=${encodeURIComponent(text)}`;
   }

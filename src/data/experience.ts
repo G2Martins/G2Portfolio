@@ -11,6 +11,13 @@ export const experiences = [
       experiencetitle: 'Estagiário em Ciência de Dados',
       experiencecompanyName: "Brasal Refrigerantes",
       experiencecompanyLogo: "assets/companyLogos/Brasal.png",
-      experienceduration: "(Abril 2025 - Present)"
+      experienceduration: "(Abril 2025 - Setembro 2025)"
+    },
+    {
+      id: 2,
+      experiencetitle: 'Assistente de Bussiness Intelligence',
+      experiencecompanyName: "Brasal Participações",
+      experiencecompanyLogo: "assets/companyLogos/Brasal.png",
+      experienceduration: "(Setembro 2025 - Present)"
     }
 ];
