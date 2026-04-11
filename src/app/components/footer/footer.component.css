@@ -1,0 +1,18 @@
+.footer-social-link {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1f223c;
+  border-radius: 50%;
+  color: #9ca3af;
+  font-size: 0.9rem;
+  transition: color 0.3s, border-color 0.3s, transform 0.2s;
+}
+
+.footer-social-link:hover {
+  color: #16f2b3;
+  border-color: #16f2b3;
+  transform: translateY(-2px);
+}

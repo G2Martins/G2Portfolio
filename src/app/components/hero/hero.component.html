@@ -1,35 +1,64 @@
-<section
-  class="flex flex-col items-center justify-center h-screen bg-[#0d1224] text-white text-center"
->
-  <h1 class="text-5xl font-bold mb-4">Gustavo Martins Gripaldi</h1>
-  <p class="text-xl mb-6">Business Intelligence Assistant</p>
+<section class="relative flex flex-col items-center justify-center min-h-screen bg-[#0d1224] text-white text-center overflow-hidden px-4 pt-16">
+  <!-- Background glow orbs -->
+  <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-violet-700 rounded-full filter blur-[140px] opacity-10 pointer-events-none"></div>
+  <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#16f2b3] rounded-full filter blur-[140px] opacity-10 pointer-events-none"></div>
 
-  <div class="my-6 flex items-center gap-4">
-    <a
-      href="https://github.com/G2Martins"
-      target="_blank"
-      class="text-white text-3xl transition-transform duration-300 hover:scale-125"
-    >
-      <i class="fab fa-github"></i>
-    </a>
-    <a
-      href="https://www.linkedin.com/in/g2martins/"
-      target="_blank"
-      class="text-white text-3xl transition-transform duration-300 hover:scale-125"
-    >
-      <i class="fab fa-linkedin"></i>
-    </a>
+  <div class="relative z-10 max-w-4xl mx-auto w-full">
+    <!-- "Always Working" badge -->
+    <div class="inline-flex items-center gap-2 bg-[#1a1443]/60 border border-[#16f2b3]/20 rounded-full px-4 py-2 mb-6">
+      <span class="w-2 h-2 bg-[#16f2b3] rounded-full animate-ping"></span>
+      <span class="text-[#16f2b3] text-xs sm:text-sm tracking-widest uppercase font-medium">Always Working</span>
+    </div>
+
+    <!-- Name -->
+    <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight mb-4">
+      Gustavo Martins<br>
+      <span class="hero-gradient-text">Gripaldi</span>
+    </h1>
+
+    <!-- Animated Role -->
+    <div class="h-8 sm:h-10 mb-6 flex items-center justify-center overflow-hidden">
+      <p class="text-base sm:text-xl text-gray-300 font-medium">
+        {{ currentRole }}<span class="text-[#16f2b3] ml-1 animate-pulse font-light">|</span>
+      </p>
+    </div>
+
+    <!-- Bio -->
+    <p class="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto mb-10 leading-relaxed">
+      Estudante de Engenharia da Computação especializado em
+      <strong class="text-white"> Data Engineering</strong> &amp;
+      <strong class="text-white"> Full Stack Development</strong>.
+      Construindo pipelines ETL, dashboards BI e aplicações web escaláveis em Brasília, Brasil.
+    </p>
+
+    <!-- Social Links -->
+    <div class="flex items-center justify-center gap-6 mb-10">
+      <a href="https://github.com/G2Martins" target="_blank" rel="noopener" class="social-icon">
+        <i class="fab fa-github text-2xl"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/g2martins/" target="_blank" rel="noopener" class="social-icon">
+        <i class="fab fa-linkedin text-2xl"></i>
+      </a>
+    </div>
+
+    <!-- CTA Buttons -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <button (click)="scrollToPortfolio()" class="btn-filled w-full sm:w-auto">
+        Ver Projetos
+      </button>
+      <a href="assets/CV/CV Dados Gustavo.pdf" download class="btn-outline w-full sm:w-auto">
+        Download CV
+      </a>
+      <button (click)="scrollToContact()" class="btn-ghost w-full sm:w-auto">
+        Fale Comigo
+      </button>
+    </div>
   </div>
 
-  <div class="flex gap-4">
-    <a (click)="scrollToPortfolio()" class="btn-primary">My Works</a>
-    <a
-      href="assets/CV/Cv Dev Com foto Gustavo Martins Mar2025.pdf"
-      download
-      class="btn-primary"
-    >
-      Get Resume
-    </a>
-    <button (click)="scrollToContact()" class="btn-primary">Contact Me</button>
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-50 animate-bounce">
+    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+    </svg>
   </div>
 </section>

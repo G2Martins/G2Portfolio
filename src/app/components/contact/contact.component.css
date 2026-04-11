@@ -1,4 +1,35 @@
-.input-field {
-    @apply w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500;
-  }
-  
+.contact-info-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background-color: #11152c;
+  border: 1px solid #1f223c;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: border-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.contact-info-card:hover {
+  border-color: rgba(22, 242, 179, 0.3);
+  transform: translateX(4px);
+}
+
+.contact-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  transition: background-color 0.3s;
+}
+
+.contact-input {
+  @apply w-full bg-[#0d1224] border border-[#1f223c] text-white text-sm rounded-lg px-4 py-3;
+  @apply placeholder-gray-600 outline-none transition-all duration-200;
+  @apply focus:border-[#16f2b3] focus:ring-1 focus:ring-[#16f2b3]/30;
+}

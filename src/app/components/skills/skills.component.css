@@ -1,33 +1,49 @@
-/* Estilização dos cards de habilidade */
-.skill-card {
-  @apply flex flex-col items-center justify-center border border-indigo-700 rounded-lg; /* Borda e bordas arredondadas */
-  width: 150px; 
-  height: 150px;
-  background-color: rgba(29, 78, 216, 0.2); /* Fundo azul transparente para combinar com o gradiente */
-  transition: transform 0.3s, background-color 0.3s, border-color 0.3s;
-  overflow: hidden;
-  gap: 1px; 
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 
-/* Ajuste do tamanho da imagem dentro do card */
-.skill-card img {
-  width: 90px; 
-  height: 90px;
-  object-fit: contain;
-  margin-bottom: 0px; /* Alinha imagem e texto o mais próximo possível */
+@keyframes scroll-right {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
 }
 
-/* Estilização do texto de habilidade */
-.skill-card p {
-  font-size: 1.1rem; /* Aumenta um pouco mais o tamanho da fonte */
-  font-weight: 600; /* Deixa o texto mais destacado */
-  text-align: center;
-  color: #ffffff;
-  margin-top: -8px; 
+.marquee-left {
+  animation: scroll-left 35s linear infinite;
 }
 
-/* Efeito hover */
-.skill-card:hover {
-  @apply border-violet-500 bg-indigo-700; 
-  transform: scale(1.1);
+.marquee-right {
+  animation: scroll-right 35s linear infinite;
+}
+
+.marquee-left:hover,
+.marquee-right:hover {
+  animation-play-state: paused;
+}
+
+.skill-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: #11152c;
+  border: 1px solid #1f223c;
+  border-radius: 9999px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: border-color 0.3s, transform 0.3s;
+  cursor: default;
+  user-select: none;
+}
+
+.skill-chip-green:hover {
+  border-color: #16f2b3;
+  transform: scale(1.06);
+}
+
+.skill-chip-violet:hover {
+  border-color: #a78bfa;
+  transform: scale(1.06);
 }

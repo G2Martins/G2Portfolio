@@ -1,76 +1,92 @@
 export const projectDB = [
     {
         "id": "0",
-        "workCover": "assets/WorksLogos/Starplex.png",
-        "workTitle": "Starplex",
-        "workDescription": "Angular Cinema Website",
-        "linkSite": "https://g2martins.github.io/Starplex/",
-        "linkGithub": "https://github.com/G2Martins/Starplex/tree/main"
+        "workCover": "assets/WorksLogos/ProntuSmart.png",
+        "workTitle": "ProntuSmart",
+        "workDescription": "Sistema de prontuário eletrônico para clínica de fisioterapia da UCB. Gerencia fluxos clínicos com RBAC (Admin, Professor, Estagiário), rastreamento de evolução, metas SMART e dashboards analíticos.",
+        "workTags": ["FastAPI", "MongoDB", "Angular", "Tailwind CSS", "Python"],
+        "linkSite": null,
+        "linkGithub": "https://github.com/G2Martins/ProntuSmart"
     },
     {
         "id": "1",
-        "workCover": "assets/WorksLogos/DashTempoReal.png",
-        "workTitle": "Dashboard de Análise de Tráfego em Tempo Real",
-        "workDescription": "his repository contains a Real-Time Traffic Analysis Dashboard project built with Python, FastAPI, Scapy, Angular, and Tailwind CSS. It features server traffic capture, dynamic data visualization, inbound and outbound traffic monitoring, and detailed protocol analysis. The backend ensures efficient real-time data processing via a REST API, while the frontend delivers a modern, responsive dashboard for clear and effective network insight",
-        "linkGithub": "https://github.com/AlphaCompLabs/Dash_TempoReal"
+        "workCover": "assets/WorksLogos/Routify.png",
+        "workTitle": "Routify",
+        "workDescription": "Sistema inteligente de otimização de rotas logísticas em tempo real. Backend Python integra TomTom + OpenStreetMap com app mobile React Native. Usa ML para análise preditiva de tráfego em smart cities.",
+        "workTags": ["Python", "React Native", "Machine Learning", "TomTom API", "Supabase"],
+        "linkSite": null,
+        "linkGithub": "https://github.com/G2Martins/Routify"
     },
     {
         "id": "2",
-        "workCover": "assets/WorksLogos/RRNexus.png",
-        "workTitle": "RR - Nexus",
-        "workDescription": "This repository contains a Distributed 3-Tier Application project focused on high availability and scalability. It utilizes Round Robin DNS to distribute traffic across multiple server instances efficiently. A key feature is the implementation of a centralized session management system, which ensures persistent user logins and data consistency regardless of which server handles the request, successfully overcoming the stateless limitations of DNS balancing. The architecture demonstrates robust backend engineering for fault-tolerant and seamless user experiences.",
-        "linkGithub": "https://github.com/AlphaCompLabs/Projeto-RR-Nexus/tree/dev"
+        "workCover": "assets/WorksLogos/SafeDoc.png",
+        "workTitle": "SafeDoc-DF",
+        "workDescription": "Automação de detecção de PII em documentos públicos para o desafio cívico 'Participa DF'. Garante conformidade com a LGPD via identificação e anonimização de dados pessoais.",
+        "workTags": ["FastAPI", "Angular", "Python", "LGPD", "Tailwind CSS"],
+        "linkSite": null,
+        "linkGithub": "https://github.com/G2Martins/SafeDoc-DF"
     },
     {
         "id": "3",
-        "workCover": "assets/WorksLogos/G2Store.png",
-        "workTitle": "G2Store",
-        "workDescription": "Angular E-commerce Project",
-        "linkSite": "https://g2martins.github.io/G2Store/",
-        "linkGithub": "https://github.com/G2Martins/G2Store"
+        "workCover": "assets/WorksLogos/DashTempoReal.png",
+        "workTitle": "Dashboard de Tráfego em Tempo Real",
+        "workDescription": "Dashboard de análise de tráfego de rede em tempo real com captura de pacotes via Scapy, visualização dinâmica e monitoramento de protocolos. Backend FastAPI + frontend Angular.",
+        "workTags": ["Python", "FastAPI", "Angular", "Scapy", "Tailwind CSS"],
+        "linkSite": null,
+        "linkGithub": "https://github.com/AlphaCompLabs/Dash_TempoReal"
     },
     {
         "id": "4",
         "workCover": "assets/WorksLogos/CalendarioWEB.png",
         "workTitle": "Calendário Web",
-        "workDescription": "This repository contains a Web Calendar System project built with Java 17, Spring Boot, MongoDB, Angular 14, and Tailwind CSS. It features user authentication, multi-day event creation, invitation management, and a REST API for seamless integration. The backend ensures scalability and security, while the frontend delivers a modern, responsive experience for efficient event scheduling and collaboration.",
+        "workDescription": "Sistema de calendário web com autenticação de usuários, criação de eventos multi-dia e gerenciamento de convites. Backend Java 17 + Spring Boot, frontend Angular 14.",
+        "workTags": ["Java", "Spring Boot", "MongoDB", "Angular", "Tailwind CSS"],
+        "linkSite": null,
         "linkGithub": "https://github.com/G2Martins/CalendarioWeb"
     },
     {
         "id": "5",
-        "workCover": "assets/WorksLogos/AWS-TerraForm.png",
-        "workTitle": "AWS - TerraForm",
-        "workDescription": "This repository contains an automated AWS infrastructure project using Terraform. It includes the creation of a VPC, Subnet, Security Group, and EC2 with enhanced security rules and automated Nginx installation.",
-        "linkGithub": "https://github.com/G2Martins/Starplex/tree/main"
+        "workCover": "assets/WorksLogos/RRNexus.png",
+        "workTitle": "RR - Nexus",
+        "workDescription": "Aplicação distribuída de 3 camadas com Round Robin DNS para alta disponibilidade. Destaque: gerenciamento centralizado de sessões garantindo login persistente independente do servidor.",
+        "workTags": ["Node.js", "DNS", "Load Balancing", "Session Management"],
+        "linkSite": null,
+        "linkGithub": "https://github.com/AlphaCompLabs/Projeto-RR-Nexus/tree/dev"
     },
     {
         "id": "6",
-        "workCover": "assets/WorksLogos/EleicoesSPIA.png",
-        "workTitle": "2024 Mayoral Election Forecast for São Paulo",
-        "workDescription": "Repository created to store the 2024 election forecasting project, using multinomial logistic regression. The model is designed to predict voter intentions based on characteristics like age, income, education, region, and gender. Using fictional data, the project compares candidates across different political spectrums.",
-        "linkGithub": "https://github.com/G2Martins/EleicoesSP-2024-IA"
+        "workCover": "assets/WorksLogos/AWS-TerraForm.png",
+        "workTitle": "AWS - TerraForm",
+        "workDescription": "Infraestrutura AWS automatizada com Terraform: criação de VPC, Subnet, Security Group e EC2 com regras de segurança aprimoradas e instalação automatizada de Nginx.",
+        "workTags": ["Terraform", "AWS", "EC2", "DevOps", "IaC"],
+        "linkSite": null,
+        "linkGithub": "https://github.com/G2Martins/AWS-Desafio-Terraform"
     },
     {
         "id": "7",
-        "workCover": "assets/WorksLogos/PredictWinLOLIA.png",
-        "workTitle": "PredictWin LOL IA",
-        "workDescription": "Repository for storing the project developed in the AI course, which uses Logistic Regression to predict team victory in the game League of Legends based on champion composition and match duration.",
-        "linkGithub": "https://github.com/G2Martins/PredictWin-LOL-IA"
+        "workCover": "assets/WorksLogos/EleicoesSPIA.png",
+        "workTitle": "Previsão Eleições SP 2024",
+        "workDescription": "Modelo de previsão eleitoral usando regressão logística multinomial. Prediz intenções de voto com base em idade, renda, escolaridade, região e gênero.",
+        "workTags": ["Python", "Machine Learning", "Scikit-learn", "Data Science"],
+        "linkSite": null,
+        "linkGithub": "https://github.com/G2Martins/EleicoesSP-2024-IA"
     },
     {
         "id": "8",
-        "workCover": "assets/WorksLogos/G2BuzzFeed.png",
-        "workTitle": "G2BuzzFeed",
-        "workDescription": "Repository for storing the project developed for the BuzzFeed-inspired quiz platform. This Angular-based project allows users to explore and interact with a variety of quizzes, leveraging Tailwind CSS for modern styling and responsive design. The platform includes creative features like a dynamic menu bar, a visually appealing home page, and components designed to enhance user engagement.",
-        "linkSite": "https://g2martins.github.io/G2BuzzFeed/",
-        "linkGithub": "https://github.com/G2Martins/G2BuzzFeed"
+        "workCover": "assets/WorksLogos/Starplex.png",
+        "workTitle": "Starplex",
+        "workDescription": "Website de cinema desenvolvido em Angular com listagem de filmes, sessões e compra de ingressos. Interface responsiva e moderna.",
+        "workTags": ["Angular", "TypeScript", "CSS", "HTML"],
+        "linkSite": "https://g2martins.github.io/Starplex/",
+        "linkGithub": "https://github.com/G2Martins/Starplex/tree/main"
     },
     {
         "id": "9",
-        "workCover": "assets/WorksLogos/G2HubBlog.png",
-        "workTitle": "G2HubBlog",
-        "workDescription": "Angular Blog Project",
-        "linkSite": "https://g2martins.github.io/G2HubBlog/",
-        "linkGithub": "https://github.com/G2Martins/G2HubBlog"
+        "workCover": "assets/WorksLogos/G2Store.png",
+        "workTitle": "G2Store",
+        "workDescription": "E-commerce desenvolvido em Angular com catálogo de produtos, carrinho de compras e interface responsiva.",
+        "workTags": ["Angular", "TypeScript", "Tailwind CSS"],
+        "linkSite": "https://g2martins.github.io/G2Store/",
+        "linkGithub": "https://github.com/G2Martins/G2Store"
     }
 ];

@@ -1,3 +1,73 @@
-.btn-primary {
-  @apply bg-white text-blue-500 font-semibold py-2 px-4 rounded-full hover:bg-gray-200;
+.hero-gradient-text {
+  background: linear-gradient(135deg, #16f2b3 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.social-icon {
+  color: #9ca3af;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+  color: #16f2b3;
+  transform: scale(1.25);
+}
+
+.btn-filled {
+  background-color: #16f2b3;
+  color: #0d1224;
+  font-weight: 600;
+  padding: 12px 32px;
+  border-radius: 9999px;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-filled:hover {
+  background-color: #0fd4a0;
+  transform: scale(1.05);
+  box-shadow: 0 0 24px rgba(22, 242, 179, 0.4);
+}
+
+.btn-outline {
+  border: 2px solid #16f2b3;
+  color: #16f2b3;
+  font-weight: 600;
+  padding: 12px 32px;
+  border-radius: 9999px;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background-color: #16f2b3;
+  color: #0d1224;
+  transform: scale(1.05);
+}
+
+.btn-ghost {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #d1d5db;
+  font-weight: 600;
+  padding: 12px 32px;
+  border-radius: 9999px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: transparent;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-ghost:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  color: white;
+  transform: scale(1.05);
 }

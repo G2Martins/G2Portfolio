@@ -6,37 +6,27 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./menu-bar.component.css']
 })
 export class MenuBarComponent implements OnInit {
-	scrollToAbout() {
-		const aboutSection = document.querySelector('#About');
-		if (aboutSection) {
-			aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-		}
+	isMenuOpen = false;
+
+	toggleMenu() {
+		this.isMenuOpen = !this.isMenuOpen;
 	}
-	
-	scrollToSkills() {
-		const skillsSection = document.querySelector('#skills');
-		if (skillsSection) {
-			skillsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-		}
+
+	closeMenu() {
+		this.isMenuOpen = false;
 	}
-	
-	scrollToExperience() {
-		const experienceSection = document.querySelector('#experience');
-		if (experienceSection) {
-			experienceSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-		}
+
+	private scrollTo(selector: string) {
+		const el = document.querySelector(selector);
+		if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 	}
-	
-	scrollToContact() {
-		const contactSection = document.querySelector('#contact');
-		if (contactSection) {
-			contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-		}
-	}
+
+	scrollToAbout()      { this.scrollTo('#About'); }
+	scrollToSkills()     { this.scrollTo('#skills'); }
+	scrollToExperience() { this.scrollTo('#experience'); }
+	scrollToPortfolio()  { this.scrollTo('#portfolio'); }
+	scrollToContact()    { this.scrollTo('#contact'); }
 
 	constructor() { }
-
-	ngOnInit(): void {
-	}
-
+	ngOnInit(): void { }
 }
