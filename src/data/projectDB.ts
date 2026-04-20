@@ -1,6 +1,24 @@
 export const projectDB = [
     {
         "id": "0",
+        "workCover": "assets/WorksLogos/ITransferMusic.png",
+        "workTitle": "ITransferMusic",
+        "workDescription": "Plataforma web para transferir, gerar e sincronizar playlists entre serviços de streaming (Spotify, YouTube Music). Matching automático, geração por mood/gênero e sincronização periódica multi-provedor.",
+        "workTags": ["Angular", "FastAPI", "MongoDB", "OAuth2", "Tailwind CSS"],
+        "linkSite": null,
+        "linkGithub": "https://github.com/G2Martins/ITransferMusic"
+    },
+    {
+        "id": "1",
+        "workCover": "assets/WorksLogos/H_Drop.png",
+        "workTitle": "H-Drop",
+        "workDescription": "Veículo de Superfície Autônomo (ASV) catamarã para logística humanitária em áreas alagadas. Mission Control com telemetria GPS em tempo real, waypoints via mapa e comunicação MQTT sobre 4G LTE.",
+        "workTags": ["Angular", "FastAPI", "ESP32", "MQTT", "Leaflet"],
+        "linkSite": null,
+        "linkGithub": "https://github.com/G2Martins/H-Drop"
+    },
+    {
+        "id": "2",
         "workCover": "assets/WorksLogos/ProntuSmart.png",
         "workTitle": "ProntuSmart",
         "workDescription": "Sistema de prontuário eletrônico para clínica de fisioterapia da UCB. Gerencia fluxos clínicos com RBAC (Admin, Professor, Estagiário), rastreamento de evolução, metas SMART e dashboards analíticos.",
@@ -9,7 +27,7 @@ export const projectDB = [
         "linkGithub": "https://github.com/G2Martins/ProntuSmart"
     },
     {
-        "id": "1",
+        "id": "3",
         "workCover": "assets/WorksLogos/Routify.png",
         "workTitle": "Routify",
         "workDescription": "Sistema inteligente de otimização de rotas logísticas em tempo real. Backend Python integra TomTom + OpenStreetMap com app mobile React Native. Usa ML para análise preditiva de tráfego em smart cities.",
@@ -18,7 +36,7 @@ export const projectDB = [
         "linkGithub": "https://github.com/G2Martins/Routify"
     },
     {
-        "id": "2",
+        "id": "4",
         "workCover": "assets/WorksLogos/SafeDoc.png",
         "workTitle": "SafeDoc-DF",
         "workDescription": "Automação de detecção de PII em documentos públicos para o desafio cívico 'Participa DF'. Garante conformidade com a LGPD via identificação e anonimização de dados pessoais.",
@@ -27,7 +45,7 @@ export const projectDB = [
         "linkGithub": "https://github.com/G2Martins/SafeDoc-DF"
     },
     {
-        "id": "3",
+        "id": "5",
         "workCover": "assets/WorksLogos/DashTempoReal.png",
         "workTitle": "Dashboard de Tráfego em Tempo Real",
         "workDescription": "Dashboard de análise de tráfego de rede em tempo real com captura de pacotes via Scapy, visualização dinâmica e monitoramento de protocolos. Backend FastAPI + frontend Angular.",
@@ -36,16 +54,7 @@ export const projectDB = [
         "linkGithub": "https://github.com/AlphaCompLabs/Dash_TempoReal"
     },
     {
-        "id": "4",
-        "workCover": "assets/WorksLogos/CalendarioWEB.png",
-        "workTitle": "Calendário Web",
-        "workDescription": "Sistema de calendário web com autenticação de usuários, criação de eventos multi-dia e gerenciamento de convites. Backend Java 17 + Spring Boot, frontend Angular 14.",
-        "workTags": ["Java", "Spring Boot", "MongoDB", "Angular", "Tailwind CSS"],
-        "linkSite": null,
-        "linkGithub": "https://github.com/G2Martins/CalendarioWeb"
-    },
-    {
-        "id": "5",
+        "id": "6",
         "workCover": "assets/WorksLogos/RRNexus.png",
         "workTitle": "RR - Nexus",
         "workDescription": "Aplicação distribuída de 3 camadas com Round Robin DNS para alta disponibilidade. Destaque: gerenciamento centralizado de sessões garantindo login persistente independente do servidor.",
@@ -54,7 +63,16 @@ export const projectDB = [
         "linkGithub": "https://github.com/AlphaCompLabs/Projeto-RR-Nexus/tree/dev"
     },
     {
-        "id": "6",
+        "id": "7",
+        "workCover": "assets/WorksLogos/CalendarioWEB.png",
+        "workTitle": "Calendário Web",
+        "workDescription": "Sistema de calendário web com autenticação de usuários, criação de eventos multi-dia e gerenciamento de convites. Backend Java 17 + Spring Boot, frontend Angular 14.",
+        "workTags": ["Java", "Spring Boot", "MongoDB", "Angular", "Tailwind CSS"],
+        "linkSite": null,
+        "linkGithub": "https://github.com/G2Martins/CalendarioWeb"
+    },
+    {
+        "id": "8",
         "workCover": "assets/WorksLogos/AWS-TerraForm.png",
         "workTitle": "AWS - TerraForm",
         "workDescription": "Infraestrutura AWS automatizada com Terraform: criação de VPC, Subnet, Security Group e EC2 com regras de segurança aprimoradas e instalação automatizada de Nginx.",
@@ -63,7 +81,7 @@ export const projectDB = [
         "linkGithub": "https://github.com/G2Martins/AWS-Desafio-Terraform"
     },
     {
-        "id": "7",
+        "id": "9",
         "workCover": "assets/WorksLogos/EleicoesSPIA.png",
         "workTitle": "Previsão Eleições SP 2024",
         "workDescription": "Modelo de previsão eleitoral usando regressão logística multinomial. Prediz intenções de voto com base em idade, renda, escolaridade, região e gênero.",
@@ -72,7 +90,7 @@ export const projectDB = [
         "linkGithub": "https://github.com/G2Martins/EleicoesSP-2024-IA"
     },
     {
-        "id": "8",
+        "id": "10",
         "workCover": "assets/WorksLogos/Starplex.png",
         "workTitle": "Starplex",
         "workDescription": "Website de cinema desenvolvido em Angular com listagem de filmes, sessões e compra de ingressos. Interface responsiva e moderna.",
@@ -81,7 +99,7 @@ export const projectDB = [
         "linkGithub": "https://github.com/G2Martins/Starplex/tree/main"
     },
     {
-        "id": "9",
+        "id": "11",
         "workCover": "assets/WorksLogos/G2Store.png",
         "workTitle": "G2Store",
         "workDescription": "E-commerce desenvolvido em Angular com catálogo de produtos, carrinho de compras e interface responsiva.",

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { projectDB } from 'src/data/projectDB';
+import { projectDB } from '../../../data/projectDB';
 
 @Component({
   selector: 'app-portfolio',
