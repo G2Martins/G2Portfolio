@@ -23,7 +23,7 @@ export const projectDB = [
         "workTitle": "ProntuSmart",
         "workDescription": "Sistema de prontuário eletrônico para clínica de fisioterapia da UCB. Gerencia fluxos clínicos com RBAC (Admin, Professor, Estagiário), rastreamento de evolução, metas SMART e dashboards analíticos.",
         "workTags": ["FastAPI", "MongoDB", "Angular", "Tailwind CSS", "Python"],
-        "linkSite": null,
+        "linkSite": "https://prontusmart.grovicdata.com/login",
         "linkGithub": "https://github.com/G2Martins/ProntuSmart"
     },
     {
