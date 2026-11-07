@@ -1,0 +1,52 @@
+# Gustavo Martins Gripaldi
+
+> Gustavo Martins Gripaldi é engenheiro de dados & desenvolvedor full stack em Brasília (DF, Brasil). Atua como Assistente de Business Intelligence na Brasal Participações (Microsoft Fabric, PySpark, Power BI), é cofundador da Grovic Data e criador do G2 Boost. Estuda Engenharia da Computação no IESB (2023–2026).
+
+Gustavo Martins Gripaldi is a data engineer & full stack developer based in Brasília, Brazil. He works as a Business Intelligence Assistant at Brasal Participações (Microsoft Fabric, PySpark, Power BI), co-founded Grovic Data and created G2 Boost. Computer Engineering student at IESB (2023–2026).
+
+Também conhecido como / also known as: Gustavo Gripaldi, Gustavo Martins, G2Martins. Contato: gustavogripaldi@outlook.com · LinkedIn: https://www.linkedin.com/in/g2martins/ · GitHub: https://github.com/G2Martins
+
+## Perfil / Profile
+
+- [Portfólio (PT-BR)](https://g2portfolio.grovicdata.com/): Gustavo Martins Gripaldi — engenheiro de dados e dev full stack em Brasília. Microsoft Fabric, Power BI, Python e Angular. Cofundador da Grovic Data e criador do G2 Boost.
+- [Portfolio (English)](https://g2portfolio.grovicdata.com/en/): Gustavo Martins Gripaldi — data engineer and full stack developer from Brasília, Brazil. Microsoft Fabric, Power BI, Python and Angular. Co-founder of Grovic Data, creator of G2 Boost.
+- [Currículo / Résumé (PDF)](https://g2portfolio.grovicdata.com/cv/gustavo-martins-gripaldi-cv.pdf): CV completo com experiência, projetos e certificações
+- [LinkedIn](https://www.linkedin.com/in/g2martins/): perfil profissional
+- [GitHub](https://github.com/G2Martins): código-fonte público
+
+## Grovic Data (cofundador / co-founder)
+
+- [Grovic Data](https://grovicdata.com): Inteligência Operacional Corporativa — Empresa brasileira de inteligência operacional: produtos de dados, IA e automação para nichos como saúde, serviços, restaurantes e imobiliárias, com conformidade à LGPD.
+- [Valerium](https://g2portfolio.grovicdata.com/projetos/valerium/): Plataforma white-label multi-tenant de gestão empresarial: finanças, CRM, agendamento, contratos e IA. Site: https://valerium.grovicdata.com
+- [ProntuSMART](https://g2portfolio.grovicdata.com/projetos/prontusmart/): Prontuário eletrônico em produção para a Clínica Escola de Fisioterapia da UCB, com metas SMART e RBAC. Site: https://prontusmart.grovicdata.com
+- [grovicdata.com](https://g2portfolio.grovicdata.com/projetos/grovic-data/): Site institucional bilíngue da Grovic Data: rápido, sem build, com páginas de produto e i18n PT/EN. Site: https://grovicdata.com
+
+## G2 Boost (app desktop / desktop app)
+
+- [G2 Boost](https://g2portfolio.grovicdata.com/projetos/g2-boost/): Otimizador de desempenho para jogos no Windows: diagnóstico, debloat, rede e 62 ajustes reversíveis num só app. Versão 0.9.3 (2026-10-28), Windows 10/11 x64.
+- [Download v0.9.3](https://github.com/G2Martins/G2-Boost/releases/download/v0.9.3/G2-Boost_0.9.3_x64-setup.exe): instalador oficial; releases em https://github.com/G2Martins/G2-Boost/releases
+
+## Projetos / Projects
+
+- [Routify](https://g2portfolio.grovicdata.com/projetos/routify/): TCC: otimização preditiva de rotas logísticas em Brasília com XGBoost, TomTom e app React Native. (Python, FastAPI, XGBoost, React Native)
+- [SafeDoc-DF](https://g2portfolio.grovicdata.com/projetos/safedoc-df/): Detecção e anonimização de dados pessoais em pedidos de acesso à informação (LAI/LGPD) — desafio Participa DF. (Python, FastAPI, Angular, Tailwind CSS)
+- [ITransferMusic](https://g2portfolio.grovicdata.com/projetos/itransfermusic/): Transfere, gera e sincroniza playlists entre Spotify e YouTube Music com matching automático. (Angular, FastAPI, MongoDB, OAuth2)
+- [H-Drop](https://g2portfolio.grovicdata.com/projetos/h-drop/): Barco autônomo (ASV) para logística humanitária em áreas alagadas, com Mission Control em tempo real. (ESP32, MQTT, FastAPI, Angular)
+- [G2Cord](https://g2portfolio.grovicdata.com/projetos/g2cord/): App próprio de comunicação estilo Discord: voz, vídeo, tela 1080p60, chat, cargos e fóruns — web + desktop. (Go, SQLite, LiveKit, WebRTC)
+- [Dashboard de Tráfego em Tempo Real](https://g2portfolio.grovicdata.com/projetos/dash-tempo-real/): Captura pacotes de rede com Scapy e mostra protocolos e tráfego ao vivo num dashboard Angular. (Python, Scapy, FastAPI, Angular)
+- [Previsão Eleições SP 2024](https://g2portfolio.grovicdata.com/projetos/eleicoes-sp-2024-ia/): Regressão logística multinomial que prevê intenção de voto por idade, renda, escolaridade, região e gênero. (Python, scikit-learn, Pandas, NumPy)
+- [PredictWin LoL IA](https://g2portfolio.grovicdata.com/projetos/predictwin-lol-ia/): Modelo de regressão logística que prevê o vencedor de partidas de League of Legends a partir das estatísticas. (Python, scikit-learn, Pandas, Matplotlib)
+- [Calendário Web](https://g2portfolio.grovicdata.com/projetos/calendario-web/): Gestão de eventos com autenticação, eventos multi-dia e convites — Java 17 + Spring Boot e Angular. (Java 17, Spring Boot, MongoDB, Angular)
+- [RR-Nexus](https://g2portfolio.grovicdata.com/projetos/rr-nexus/): Aplicação distribuída em 3 camadas com Round Robin DNS e sessão centralizada para alta disponibilidade. (Node.js, DNS, Load Balancing, Sessions)
+- [AWS + Terraform](https://g2portfolio.grovicdata.com/projetos/aws-terraform/): Infraestrutura como código na AWS: VPC, subnet, security group e EC2 com Nginx provisionados por Terraform. (Terraform, AWS, EC2, VPC)
+- [Cãonecta — Projeto Integrador](https://g2portfolio.grovicdata.com/projetos/projeto-integrador/): Porta inteligente para cachorro com Arduino: horários de travamento configurados num painel web. (Arduino, C++, Python, HTML)
+- [G2Store](https://g2portfolio.grovicdata.com/projetos/g2store/): E-commerce de jogos em Angular com catálogo, página de produto e carrinho responsivos. (Angular, TypeScript, Tailwind CSS)
+- [Starplex](https://g2portfolio.grovicdata.com/projetos/starplex/): Site de cinema em Angular com filmes em cartaz, sessões e compra de ingressos. (Angular, TypeScript, CSS)
+- [G2BuzzFeed](https://g2portfolio.grovicdata.com/projetos/g2buzzfeed/): Quiz interativo estilo BuzzFeed em Angular, com resultado calculado pelas respostas. (Angular, TypeScript, Tailwind CSS)
+- [G2HubBlog](https://g2portfolio.grovicdata.com/projetos/g2hubblog/): Blog em Angular com layout inspirado no Dribbble, rotas por post e componentes reutilizáveis. (Angular, TypeScript, CSS)
+- [Formações DIO](https://g2portfolio.grovicdata.com/projetos/formacoes-dio/): Desafios das formações DIO: Spring Security + JWT, Power BI, Python, Java, Linux e IaC. (Java, Spring Boot, Power BI, Python)
+
+## Optional
+
+- [llms-full.txt](https://g2portfolio.grovicdata.com/llms-full.txt): conteúdo completo do portfólio em PT-BR e EN (experiência, projetos, competências, certificações)
+- [English project pages](https://g2portfolio.grovicdata.com/en/projects/g2-boost/): every project also has an English page under /en/projects/

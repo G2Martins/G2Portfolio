@@ -1,0 +1,157 @@
+@let l = lang();
+@if (p(); as p) {
+  <article>
+    <header class="relative overflow-hidden border-b border-line">
+      <div aria-hidden="true" class="dotgrid pointer-events-none absolute inset-0 [mask-image:linear-gradient(to_bottom,black,transparent_85%)]"></div>
+      <div class="wrap relative pb-12 pt-10 sm:pb-16 sm:pt-14">
+        <nav class="materialize font-mono text-[11.5px] text-ink-2" [attr.aria-label]="'Breadcrumb'">
+          <ol class="flex flex-wrap items-center gap-1.5">
+            <li><a class="hover:text-ink" [routerLink]="home()">{{ ui.project.home[l] }}</a></li>
+            <li aria-hidden="true">/</li>
+            <li><a class="hover:text-ink" [routerLink]="home()" fragment="projetos">{{ ui.nav.projects[l] }}</a></li>
+            <li aria-hidden="true">/</li>
+            <li class="text-ink" aria-current="page">{{ p.title }}</li>
+          </ol>
+        </nav>
+
+        <p class="eyebrow materialize mt-10" style="animation-delay: 80ms">{{ category() }} · {{ p.year }}</p>
+        <h1 class="h-display mt-5 max-w-4xl text-[2.5rem] sm:text-6xl">
+          <span class="mask"><span class="rise" style="animation-delay: 120ms">{{ p.title }}</span></span>
+        </h1>
+        <p class="materialize mt-6 max-w-2xl text-[17px] text-ink-2" style="animation-delay: 260ms">{{ p.summary[l] }}</p>
+
+        <div class="materialize mt-8 flex flex-wrap gap-3" style="animation-delay: 360ms">
+          @if (p.slug === 'g2-boost') {
+            <a class="btn btn-primary" [href]="asset(boost.assets[0].file)" rel="noopener">
+              <app-icon name="windows" [size]="16" />{{ ui.release.download[l] }} · v{{ boost.version }}
+            </a>
+          }
+          @if (p.links.site) {
+            <a class="btn btn-primary" [href]="p.links.site" target="_blank" rel="noopener">
+              <app-icon name="globe" [size]="16" />{{ p.links.site.replace('https://', '') }}<app-icon name="arrow-up-right" [size]="14" />
+            </a>
+          }
+          @if (p.links.repo) {
+            <a class="btn btn-line" [href]="p.links.repo" target="_blank" rel="noopener"><app-icon name="github" [size]="16" />{{ ui.projects.code[l] }}</a>
+          }
+          @if (p.links.video) {
+            <a class="btn btn-line" [href]="p.links.video" target="_blank" rel="noopener"><app-icon name="play" [size]="15" />{{ ui.project.video[l] }}</a>
+          }
+          @if (!p.links.repo && !p.links.site) {
+            <span class="btn btn-line pointer-events-none !text-ink-2"><app-icon name="lock" [size]="15" />{{ ui.project.private[l] }}</span>
+          }
+        </div>
+      </div>
+    </header>
+
+    <div class="wrap py-14 sm:py-20">
+      <div class="ticks materialize" style="animation-delay: 420ms">
+        <div class="card overflow-hidden">
+          <app-cover [img]="p.images[0]" [alt]="p.title + ' — ' + p.summary[l]" [title]="p.title" [kicker]="category()"
+                     [eager]="true" sizes="(min-width: 1152px) 1120px, 100vw" />
+        </div>
+      </div>
+
+      <div class="mt-16 grid gap-14 lg:grid-cols-[1.5fr_1fr] lg:gap-20">
+        <div>
+          <section reveal aria-labelledby="sobre-projeto">
+            <h2 id="sobre-projeto" class="eyebrow">{{ ui.project.about[l] }}</h2>
+            <div class="prose-lite mt-5 text-[16.5px] leading-relaxed">
+              @for (para of p.description[l]; track $index) { <p>{{ para }}</p> }
+            </div>
+          </section>
+
+          <section reveal class="mt-14" aria-labelledby="destaques">
+            <h2 id="destaques" class="eyebrow">{{ ui.project.highlights[l] }}</h2>
+            <ul class="mt-5 divide-y divide-line border-y border-line">
+              @for (h of p.highlights[l]; track $index) {
+                <li class="flex gap-3 py-3.5"><app-icon name="check" [size]="17" class="mt-[3px] text-accent" /><span>{{ h }}</span></li>
+              }
+            </ul>
+          </section>
+
+          @if (p.slug === 'g2-boost') {
+            <section reveal class="mt-14" aria-labelledby="downloads">
+              <h2 id="downloads" class="eyebrow">Downloads · v{{ boost.version }}</h2>
+              <ul class="mt-5 grid gap-3 sm:grid-cols-2">
+                @for (a of boost.assets; track a.id) {
+                  <li>
+                    <a class="card lift flex items-center gap-3 p-4" [href]="asset(a.file)" rel="noopener">
+                      <app-icon name="download" [size]="18" class="text-accent" />
+                      <span class="flex-1"><span class="block text-[14.5px] font-medium">{{ a.label[l] }}</span><span class="font-mono text-[11px] text-ink-2">{{ a.file }}</span></span>
+                      <span class="font-mono text-[11px] text-ink-2">{{ a.size }}</span>
+                    </a>
+                  </li>
+                }
+              </ul>
+              <p class="mt-4 text-[13px] text-ink-2">
+                {{ ui.release.req[l] }} ·
+                <a class="underline underline-offset-4 hover:text-ink" [href]="asset(boost.sums)" rel="noopener">{{ ui.release.checksums[l] }}</a> ·
+                <a class="underline underline-offset-4 hover:text-ink" [href]="boost.releases" target="_blank" rel="noopener">{{ ui.release.notes[l] }}</a>
+              </p>
+            </section>
+          }
+
+          @if (p.images.length > 1) {
+            <section class="mt-14" [attr.aria-label]="l === 'pt' ? 'Galeria' : 'Gallery'">
+              <div class="grid gap-6 sm:grid-cols-2">
+                @for (img of p.images.slice(1); track img) {
+                  <div [reveal]="$index * 60" class="card overflow-hidden">
+                    <app-cover [img]="img" [alt]="p.title + ' — ' + (l === 'pt' ? 'captura ' : 'screenshot ') + ($index + 2)" sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" />
+                  </div>
+                }
+              </div>
+            </section>
+          }
+        </div>
+
+        <aside class="lg:sticky lg:top-24 lg:self-start">
+          <dl reveal class="card divide-y divide-line text-[14px]">
+            <div class="grid grid-cols-[90px_1fr] gap-3 p-4"><dt class="font-mono text-[11px] uppercase tracking-[0.1em] text-ink-2">{{ ui.project.year[l] }}</dt><dd>{{ p.year }}</dd></div>
+            <div class="grid grid-cols-[90px_1fr] gap-3 p-4"><dt class="font-mono text-[11px] uppercase tracking-[0.1em] text-ink-2">{{ ui.project.category[l] }}</dt><dd>{{ category() }}</dd></div>
+            <div class="grid grid-cols-[90px_1fr] gap-3 p-4"><dt class="font-mono text-[11px] uppercase tracking-[0.1em] text-ink-2">{{ ui.project.role[l] }}</dt><dd>{{ p.role[l] }}</dd></div>
+            <div class="grid grid-cols-[90px_1fr] gap-3 p-4">
+              <dt class="font-mono text-[11px] uppercase tracking-[0.1em] text-ink-2">{{ ui.project.stack[l] }}</dt>
+              <dd class="flex flex-wrap gap-1.5">@for (t of p.stack; track t) { <span class="tag">{{ t }}</span> }</dd>
+            </div>
+            @if (p.links.more?.length) {
+              <div class="grid grid-cols-[90px_1fr] gap-3 p-4">
+                <dt class="font-mono text-[11px] uppercase tracking-[0.1em] text-ink-2">Links</dt>
+                <dd>
+                  <ul class="space-y-1.5">
+                    @for (m of p.links.more; track m.url) {
+                      <li><a class="inline-flex items-center gap-1 text-accent-ink hover:underline" [href]="m.url" target="_blank" rel="noopener">{{ m.label }}<app-icon name="arrow-up-right" [size]="13" /></a></li>
+                    }
+                  </ul>
+                </dd>
+              </div>
+            }
+          </dl>
+
+          <div reveal="80" class="mt-8 flex items-center gap-3 rounded-[13px] border border-line p-4">
+            <span class="grid size-10 shrink-0 place-items-center rounded-[10px] bg-accent font-mono text-[12px] font-semibold text-white dark:text-[#0b0f1f]">G2</span>
+            <div class="text-[13.5px]">
+              <p class="text-ink-2">{{ ui.project.by[l] }}</p>
+              <a class="font-medium hover:text-accent-ink" [routerLink]="home()">{{ person.name }}</a>
+            </div>
+            <a class="icon-btn ml-auto" [href]="person.linkedin" target="_blank" rel="noopener me" aria-label="LinkedIn"><app-icon name="linkedin" [size]="17" /></a>
+          </div>
+        </aside>
+      </div>
+
+      <nav class="mt-20 grid gap-6 border-t border-line pt-10 sm:grid-cols-2" [attr.aria-label]="l === 'pt' ? 'Outros projetos' : 'More projects'">
+        <a class="group" [routerLink]="projectPath(l, prev().slug)">
+          <p class="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.12em] text-ink-2"><app-icon name="arrow-left" [size]="13" />{{ ui.project.prev[l] }}</p>
+          <p class="mt-2 text-[20px] font-medium tracking-tight group-hover:text-accent-ink">{{ prev().title }}</p>
+        </a>
+        <a class="group sm:text-right" [routerLink]="projectPath(l, next().slug)">
+          <p class="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.12em] text-ink-2 sm:justify-end">{{ ui.project.next[l] }}<app-icon name="arrow-right" [size]="13" /></p>
+          <p class="mt-2 text-[20px] font-medium tracking-tight group-hover:text-accent-ink">{{ next().title }}</p>
+        </a>
+      </nav>
+      <div class="mt-12 text-center">
+        <a class="btn btn-line" [routerLink]="home()" fragment="projetos"><app-icon name="arrow-left" [size]="16" />{{ ui.project.back[l] }}</a>
+      </div>
+    </div>
+  </article>
+}

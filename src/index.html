@@ -1,14 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>G2Portfolio</title>
-    <base href="/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  </head>
-  <body>
-    <app-root></app-root>
-  </body>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Gustavo Martins Gripaldi | Engenheiro de Dados & Desenvolvedor Full Stack</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="author" content="Gustavo Martins Gripaldi">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#171614" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="me" href="https://www.linkedin.com/in/g2martins/">
+  <link rel="me" href="https://github.com/G2Martins">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+  <!-- Theme + reveal bootstrap before first paint (no flash). Reveal fallback if JS never boots. -->
+  <script>
+    (function () {
+      var c = document.documentElement.classList, t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t ? t === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches) c.add('dark');
+      c.add('js');
+      setTimeout(function () { if (!c.contains('reveal-ready')) c.add('reveal-all'); }, 3000);
+    })();
+  </script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
 </html>

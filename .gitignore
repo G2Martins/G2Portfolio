@@ -39,3 +39,7 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Angular build output (deploy copy lives in /docs)
+/dist
+/.angular

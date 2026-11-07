@@ -1,0 +1,379 @@
+@let l = lang();
+
+<!-- ============ HERO ============ -->
+<section class="relative overflow-hidden" aria-labelledby="hero-title">
+  <div aria-hidden="true" class="pointer-events-none absolute -right-[25%] -top-[35%] h-[48rem] w-[48rem] rounded-full"
+       style="background: radial-gradient(closest-side, var(--glow), transparent)"></div>
+  <div aria-hidden="true" class="dotgrid pointer-events-none absolute inset-0 [mask-image:linear-gradient(to_bottom,black,transparent_80%)]"></div>
+
+  <div class="wrap relative grid gap-14 pb-20 pt-14 sm:pt-20 lg:grid-cols-[1.3fr_1fr] lg:items-center lg:gap-16 lg:pb-28 lg:pt-24">
+    <div>
+      <p class="eyebrow materialize">{{ ui.hero.eyebrow[l] }}</p>
+      <h1 id="hero-title" class="h-display mt-6 text-[2.7rem] [text-wrap:wrap] sm:text-6xl lg:text-[4.5rem]">
+        @for (w of heroWords; track $index) {
+          <span class="mask"><span class="rise" [class.grad]="$last" [style.animation-delay.ms]="100 + $index * 90">{{ w }}</span></span>{{ $last ? '' : ' ' }}
+        }
+      </h1>
+      <p class="materialize mt-6 max-w-xl text-[16px] leading-relaxed text-ink-2 sm:text-[17px]" style="animation-delay: 380ms">
+        {{ ui.hero.lead[l] }}
+      </p>
+      <div class="materialize mt-8 flex flex-wrap gap-3" style="animation-delay: 480ms">
+        <a class="btn btn-primary" [routerLink]="[]" fragment="projetos">{{ ui.hero.ctaProjects[l] }} <app-icon name="arrow-right" [size]="16" /></a>
+        <a class="btn btn-line" [href]="cv" download><app-icon name="file" [size]="16" />{{ ui.nav.cv[l] }} · PDF</a>
+        <a class="btn btn-ghost" [routerLink]="[]" fragment="contato">{{ ui.hero.ctaContact[l] }}</a>
+      </div>
+
+      <dl class="materialize mt-12 grid grid-cols-2 gap-x-6 gap-y-6 border-t border-line pt-6 sm:grid-cols-4" style="animation-delay: 580ms">
+        @for (s of ui.stats; track $index) {
+          <div>
+            <dt class="sr-only">{{ s.label[l] }}</dt>
+            <dd class="text-[22px] font-medium tracking-[-0.03em] sm:text-[26px]">{{ s.value[l] }}</dd>
+            <dd class="mt-1 text-[12.5px] leading-snug text-ink-2" aria-hidden="true">{{ s.label[l] }}</dd>
+          </div>
+        }
+      </dl>
+    </div>
+
+    <aside class="materialize" style="animation-delay: 300ms" [attr.aria-label]="ui.hero.now[l]">
+      <div class="ticks">
+        <div class="card overflow-hidden">
+          <img class="block aspect-[16/9] w-full border-b border-line object-cover" [src]="photo + '-960.webp'"
+               [attr.srcset]="photo + '-480.webp 480w, ' + photo + '-960.webp 960w'" sizes="(min-width: 1024px) 460px, 100vw"
+               [alt]="person.name + (l === 'pt' ? ' em Brasília, ao pôr do sol' : ' in Brasília at sunset')" width="960" height="540"
+               fetchpriority="high" decoding="async" />
+          <div class="p-5 sm:p-6">
+          <div class="flex items-center justify-between">
+            <p class="eyebrow">{{ ui.hero.now[l] }}</p>
+            <span class="flex items-center gap-1.5 font-mono text-[11px] text-ink-2">
+              <span class="live-dot size-1.5 rounded-full bg-ok"></span>{{ l === 'pt' ? 'aberto a conversas' : 'open to talk' }}
+            </span>
+          </div>
+          <ul class="mt-3 divide-y divide-line">
+            @for (n of ui.now; track n.org) {
+              <li class="flex items-center justify-between gap-4 py-3">
+                <div class="min-w-0">
+                  <p class="text-[14px] font-medium">{{ n.org }}</p>
+                  <p class="text-[13px] text-ink-2">{{ n.role[l] }}</p>
+                </div>
+                <p class="shrink-0 text-right font-mono text-[10.5px] text-ink-2">{{ n.meta }}</p>
+              </li>
+            }
+          </ul>
+          <figure class="mt-3 rounded-[10px] bg-surface p-4">
+            <figcaption class="font-mono text-[10.5px] uppercase tracking-[0.12em] text-ink-2">{{ ui.hero.chartTitle[l] }}</figcaption>
+            <div class="mt-3 space-y-2.5" role="img" [attr.aria-label]="ui.hero.chartNote[l]">
+              <div class="flex items-center gap-3">
+                <span class="w-12 font-mono text-[11px] text-ink-2">{{ ui.hero.before[l] }}</span>
+                <div class="h-2 flex-1 overflow-hidden rounded-full bg-well"><div class="bar-grow h-full w-full rounded-full bg-dim" style="animation-delay: 600ms"></div></div>
+                <span class="w-7 text-right font-mono text-[12px]">4h</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-12 font-mono text-[11px] text-ink-2">{{ ui.hero.after[l] }}</span>
+                <div class="h-2 flex-1 overflow-hidden rounded-full bg-well"><div class="bar-grow h-full w-1/4 rounded-full bg-accent" style="animation-delay: 900ms"></div></div>
+                <span class="w-7 text-right font-mono text-[12px] text-accent-ink">1h</span>
+              </div>
+            </div>
+            <p class="mt-3 text-[12px] font-medium text-accent-ink">{{ ui.hero.chartNote[l] }}</p>
+          </figure>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ 01 · G2 BOOST ============ -->
+<section id="g2-boost" class="border-t border-line" aria-labelledby="boost-title">
+  <div class="wrap py-20 sm:py-28">
+    <div reveal class="max-w-3xl">
+      <p class="eyebrow">{{ ui.release.eyebrow[l] }}</p>
+      <h2 id="boost-title" class="h2 mt-4 text-3xl sm:text-5xl">{{ ui.release.title[l] }}</h2>
+      <p class="mt-5 max-w-2xl text-ink-2">{{ ui.release.lead[l] }}</p>
+    </div>
+
+    <div reveal class="ticks mt-12">
+      <div class="card card-accent grid overflow-hidden lg:grid-cols-[1.4fr_1fr]">
+        <div class="border-b border-line bg-surface lg:border-b-0 lg:border-r">
+          <app-cover [img]="boostProject.images[shot()]" [alt]="'G2 Boost — ' + (l === 'pt' ? 'captura de tela do app' : 'app screenshot')"
+                     sizes="(min-width: 1024px) 640px, 100vw" />
+          <div class="flex gap-2 p-3" role="group" [attr.aria-label]="l === 'pt' ? 'Capturas de tela' : 'Screenshots'">
+            @for (img of boostProject.images; track img) {
+              <button type="button" class="aspect-[16/10] w-1/4 overflow-hidden rounded-md border-2 transition-colors"
+                      [class.border-accent]="shot() === $index" [class.border-transparent]="shot() !== $index"
+                      (click)="shot.set($index)" [attr.aria-pressed]="shot() === $index"
+                      [attr.aria-label]="(l === 'pt' ? 'Captura ' : 'Screenshot ') + ($index + 1)">
+                <img [src]="'/img/projects/' + img + '-640.webp'" alt="" width="640" height="400" loading="lazy" decoding="async" class="h-full w-full object-cover object-top" />
+              </button>
+            }
+          </div>
+        </div>
+
+        <div class="flex flex-col p-6 sm:p-8">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="chip"><span class="live-dot size-1.5 rounded-full bg-accent"></span>v{{ boost.version }}</span>
+            <span class="tag">{{ ui.release.req[l] }}</span>
+          </div>
+          <p class="mt-3 font-mono text-[11px] text-ink-2">{{ ui.release.released[l] }}</p>
+
+          <ul class="mt-6 space-y-2.5 text-[14px]">
+            @for (h of boostProject.highlights[l].slice(0, 5); track $index) {
+              <li class="flex gap-2.5"><app-icon name="check" [size]="16" class="mt-[3px] text-accent" /><span>{{ h }}</span></li>
+            }
+          </ul>
+
+          <div class="mt-8 lg:mt-auto lg:pt-8">
+            <a class="btn btn-primary w-full" [href]="asset(boost.assets[0].file)" rel="noopener">
+              <app-icon name="windows" [size]="16" />{{ ui.release.download[l] }}
+              <span class="font-mono text-[11px] opacity-80">· {{ boost.assets[0].size }}</span>
+            </a>
+            <p class="mt-5 font-mono text-[10.5px] uppercase tracking-[0.12em] text-ink-2">{{ ui.release.other[l] }}</p>
+            <ul class="mt-2 grid gap-1 text-[13.5px]">
+              @for (a of boost.assets.slice(1); track a.id) {
+                <li>
+                  <a class="group flex items-center justify-between rounded-md px-2 py-1.5 -mx-2 hover:bg-surface" [href]="asset(a.file)" rel="noopener">
+                    <span class="flex items-center gap-2"><app-icon name="download" [size]="14" class="text-ink-2" />{{ a.label[l] }}</span>
+                    <span class="font-mono text-[11px] text-ink-2">{{ a.size }}</span>
+                  </a>
+                </li>
+              }
+            </ul>
+            <div class="mt-5 flex flex-wrap gap-x-5 gap-y-2 border-t border-line pt-4 text-[13px]">
+              <a class="navlink inline-flex items-center gap-1.5" [href]="asset(boost.sums)" rel="noopener"><app-icon name="shield" [size]="14" />{{ ui.release.checksums[l] }}</a>
+              <a class="navlink" [href]="boost.latest" target="_blank" rel="noopener">{{ ui.release.notes[l] }}</a>
+              <a class="navlink" [routerLink]="projectPath(l, 'g2-boost')">{{ ui.release.details[l] }} →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 · GROVIC DATA ============ -->
+<section id="grovic" class="border-t border-line bg-surface/60" aria-labelledby="grovic-title">
+  <div class="wrap py-20 sm:py-28">
+    <div reveal class="grid gap-8 lg:grid-cols-[1.2fr_1fr] lg:items-end">
+      <div>
+        <p class="eyebrow">{{ ui.grovic.eyebrow[l] }}</p>
+        <h2 id="grovic-title" class="h2 mt-4 text-3xl sm:text-5xl">{{ ui.grovic.title[l] }}</h2>
+      </div>
+      <div>
+        <p class="text-ink-2">{{ grovic.about[l] }}</p>
+        <a class="btn btn-line mt-5" [href]="grovic.url" target="_blank" rel="noopener">
+          <app-icon name="globe" [size]="16" />{{ ui.grovic.visit[l] }}<app-icon name="arrow-up-right" [size]="14" />
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-14 grid gap-8 md:grid-cols-3">
+      @for (p of grovicProjects; track p.slug) {
+        <div [reveal]="$index * 80">
+          <article class="card lift stretch flex h-full flex-col overflow-hidden">
+            <app-cover [img]="p.images[0]" [alt]="p.title + ' — ' + p.summary[l]" class="border-b border-line" />
+            <div class="flex flex-1 flex-col p-5">
+              <div class="flex items-center justify-between gap-3">
+                <h3 class="text-[17px] font-medium tracking-tight">
+                  <a class="stretch-link" [routerLink]="projectPath(l, p.slug)">{{ p.title }}</a>
+                </h3>
+                <span class="chip !bg-transparent !px-0 !text-ok"><span class="live-dot size-1.5 rounded-full bg-ok"></span>{{ ui.grovic.live[l] }}</span>
+              </div>
+              <p class="mt-2 text-[14px] text-ink-2">{{ p.summary[l] }}</p>
+              <div class="mt-4 flex flex-wrap gap-1.5">
+                @for (t of p.stack.slice(0, 4); track t) { <span class="tag">{{ t }}</span> }
+              </div>
+              @if (p.links.site) {
+                <a class="over mt-auto inline-flex items-center gap-1.5 pt-5 text-[13.5px] font-medium text-accent-ink hover:underline"
+                   [href]="p.links.site" target="_blank" rel="noopener">
+                  {{ p.links.site.replace('https://', '') }} <app-icon name="arrow-up-right" [size]="14" />
+                </a>
+              }
+            </div>
+          </article>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 · PROJETOS ============ -->
+<section id="projetos" class="border-t border-line" aria-labelledby="projects-title">
+  <div class="wrap py-20 sm:py-28">
+    <div reveal class="max-w-3xl">
+      <p class="eyebrow">{{ ui.projects.eyebrow[l] }}</p>
+      <h2 id="projects-title" class="h2 mt-4 text-3xl sm:text-5xl">{{ ui.projects.title[l] }}</h2>
+    </div>
+
+    <div reveal class="-mx-1 mt-10 flex gap-2 overflow-x-auto px-1 pb-1" role="group" [attr.aria-label]="l === 'pt' ? 'Filtrar projetos' : 'Filter projects'">
+      <button type="button" class="btn !min-h-9 !rounded-full !px-4 !py-2 !text-[13px]" [class.btn-primary]="filter() === 'all'" [class.btn-line]="filter() !== 'all'"
+              [attr.aria-pressed]="filter() === 'all'" (click)="filter.set('all')">{{ ui.projects.all[l] }}</button>
+      @for (c of categories; track c[0]) {
+        <button type="button" class="btn !min-h-9 !rounded-full !px-4 !py-2 !text-[13px]" [class.btn-primary]="filter() === c[0]" [class.btn-line]="filter() !== c[0]"
+                [attr.aria-pressed]="filter() === c[0]" (click)="filter.set(c[0])">{{ c[1][l] }}</button>
+      }
+    </div>
+
+    <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      @for (p of projects(); track p.slug) {
+        <div [reveal]="($index % 3) * 70">
+          <article class="card lift stretch flex h-full flex-col overflow-hidden">
+            <app-cover [img]="p.images[0]" [alt]="p.title + ' — ' + p.summary[l]" [title]="p.title" [kicker]="catLabel(p.category)" class="border-b border-line" />
+            <div class="flex flex-1 flex-col p-5">
+              <p class="font-mono text-[10.5px] uppercase tracking-[0.12em] text-ink-2">{{ catLabel(p.category) }} · {{ p.year }}</p>
+              <h3 class="mt-2 text-[17px] font-medium tracking-tight">
+                <a class="stretch-link" [routerLink]="projectPath(l, p.slug)">{{ p.title }}</a>
+              </h3>
+              <p class="mt-2 text-[14px] text-ink-2">{{ p.summary[l] }}</p>
+              <div class="mt-4 flex flex-wrap gap-1.5">
+                @for (t of p.stack.slice(0, 4); track t) { <span class="tag">{{ t }}</span> }
+              </div>
+              <div class="mt-auto flex items-center gap-1 pt-4">
+                @if (p.links.site) {
+                  <a class="over icon-btn !size-9" [href]="p.links.site" target="_blank" rel="noopener" [attr.aria-label]="ui.projects.site[l] + ': ' + p.title"><app-icon name="globe" [size]="17" /></a>
+                }
+                @if (p.links.repo) {
+                  <a class="over icon-btn !size-9" [href]="p.links.repo" target="_blank" rel="noopener" [attr.aria-label]="ui.projects.code[l] + ': ' + p.title"><app-icon name="github" [size]="17" /></a>
+                }
+                @if (p.links.video) {
+                  <a class="over icon-btn !size-9" [href]="p.links.video" target="_blank" rel="noopener" [attr.aria-label]="ui.project.video[l] + ': ' + p.title"><app-icon name="play" [size]="16" /></a>
+                }
+                @if (!p.links.repo && !p.links.site) {
+                  <span class="inline-flex items-center gap-1.5 font-mono text-[11px] text-ink-2"><app-icon name="lock" [size]="14" />{{ ui.project.private[l] }}</span>
+                }
+                <span class="ml-auto inline-flex items-center gap-1 text-[13px] font-medium text-accent-ink" aria-hidden="true">{{ ui.projects.open[l] }} <app-icon name="arrow-right" [size]="14" /></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 · EXPERIÊNCIA ============ -->
+<section id="experiencia" class="border-t border-line bg-surface/60" aria-labelledby="xp-title">
+  <div class="wrap py-20 sm:py-28">
+    <div reveal class="max-w-3xl">
+      <p class="eyebrow">{{ ui.experience.eyebrow[l] }}</p>
+      <h2 id="xp-title" class="h2 mt-4 text-3xl sm:text-5xl">{{ ui.experience.title[l] }}</h2>
+    </div>
+
+    <ol class="mt-14 divide-y divide-line border-y border-line">
+      @for (x of experience; track x.org + x.role.pt) {
+        <li reveal class="grid gap-4 py-8 md:grid-cols-[220px_1fr] md:gap-10">
+          <div class="font-mono text-[12px] text-ink-2">
+            <p class="text-ink">{{ x.period[l] }}</p>
+            <p class="mt-1 inline-flex items-center gap-1"><app-icon name="pin" [size]="13" />{{ x.place[l] }}</p>
+          </div>
+          <div>
+            <div class="flex items-center gap-3">
+              @if (x.logo) {
+                <img [src]="x.logo" [alt]="x.org" width="40" height="40" loading="lazy" decoding="async" class="size-10 rounded-lg border border-line bg-white object-contain p-1" />
+              } @else {
+                <span class="grid size-10 place-items-center rounded-lg border border-line bg-paper font-mono text-[13px] text-ink-2" aria-hidden="true">{{ x.org[0] }}</span>
+              }
+              <div>
+                <h3 class="text-[17px] font-medium tracking-tight">{{ x.role[l] }}</h3>
+                <p class="text-[14px] text-ink-2">
+                  @if (x.url) { <a class="underline decoration-line underline-offset-4 hover:text-ink" [href]="x.url" target="_blank" rel="noopener">{{ x.org }}</a> } @else { {{ x.org }} }
+                </p>
+              </div>
+            </div>
+            <ul class="mt-5 space-y-2.5 text-[14.5px]">
+              @for (b of x.bullets[l]; track $index) {
+                <li class="flex gap-3"><span class="mt-[9px] size-1 shrink-0 rounded-full bg-accent"></span><span>{{ b }}</span></li>
+              }
+            </ul>
+            @if (x.stack.length) {
+              <div class="mt-5 flex flex-wrap gap-1.5">
+                @for (t of x.stack; track t) { <span class="tag">{{ t }}</span> }
+              </div>
+            }
+          </div>
+        </li>
+      }
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 05 · SOBRE & SKILLS ============ -->
+<section id="sobre" class="border-t border-line" aria-labelledby="about-title">
+  <div class="wrap grid gap-14 py-20 sm:py-28 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
+    <div reveal>
+      <p class="eyebrow">{{ ui.about.eyebrow[l] }}</p>
+      <h2 id="about-title" class="h2 mt-4 text-3xl sm:text-5xl">{{ ui.about.title[l] }}</h2>
+      <div class="prose-lite mt-6 text-ink-2">
+        @for (p of ui.about.body[l]; track $index) { <p>{{ p }}</p> }
+      </div>
+      <p class="mt-8 font-mono text-[10.5px] uppercase tracking-[0.12em] text-ink-2">{{ ui.about.languages[l] }}</p>
+      <ul class="mt-3 flex flex-wrap gap-2">
+        @for (lg of languages; track lg.name.en) {
+          <li class="tag !text-[11.5px]">{{ lg.name[l] }} · {{ lg.level[l] }}</li>
+        }
+      </ul>
+    </div>
+    <div class="space-y-7">
+      @for (g of skills; track g.label.en) {
+        <div [reveal]="$index * 50">
+          <p class="font-mono text-[10.5px] uppercase tracking-[0.12em] text-ink-2">{{ g.label[l] }}</p>
+          <ul class="mt-3 flex flex-wrap gap-1.5">
+            @for (s of g.items; track s) { <li class="tag !bg-paper !text-[12px] !text-ink">{{ s }}</li> }
+          </ul>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 · FORMAÇÃO ============ -->
+<section id="formacao" class="border-t border-line bg-surface/60" aria-labelledby="edu-title">
+  <div class="wrap py-20 sm:py-28">
+    <div reveal>
+      <p class="eyebrow">{{ ui.education.eyebrow[l] }}</p>
+      <h2 id="edu-title" class="h2 mt-4 text-3xl sm:text-5xl">{{ ui.education.title[l] }}</h2>
+    </div>
+    <div class="mt-12 grid gap-10 lg:grid-cols-[1fr_1.4fr]">
+      <div reveal>
+        <div class="card p-6">
+          <p class="font-mono text-[11px] text-ink-2">{{ education.period[l] }}</p>
+          <h3 class="mt-2 text-[19px] font-medium tracking-tight">{{ education.degree[l] }}</h3>
+          <p class="mt-1 text-ink-2">{{ education.school }}</p>
+          <p class="mt-4 border-t border-line pt-4 text-[14px] text-ink-2">{{ education.note[l] }}</p>
+        </div>
+      </div>
+      <ul class="divide-y divide-line border-y border-line">
+        @for (c of certs; track c.url) {
+          <li [reveal]="$index * 40">
+            <a class="group flex items-center gap-4 py-3.5" [href]="c.url" target="_blank" rel="noopener">
+              <app-icon name="award" [size]="18" class="text-accent" />
+              <span class="min-w-0 flex-1">
+                <span class="block text-[14.5px] group-hover:text-accent-ink">{{ c.name }}</span>
+                <span class="font-mono text-[11px] text-ink-2">{{ c.issuer }} · {{ c.year }}</span>
+              </span>
+              <span class="hidden items-center gap-1 text-[12.5px] text-ink-2 sm:inline-flex">{{ ui.education.verify[l] }} <app-icon name="arrow-up-right" [size]="13" /></span>
+            </a>
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 · CONTATO ============ -->
+<section id="contato" class="relative overflow-hidden border-t border-line" aria-labelledby="contact-title">
+  <div aria-hidden="true" class="dotgrid pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black,transparent_70%)]"></div>
+  <div class="wrap relative py-24 text-center sm:py-32">
+    <div reveal>
+      <p class="eyebrow">{{ ui.contact.eyebrow[l] }}</p>
+      <h2 id="contact-title" class="h-display mt-5 text-5xl sm:text-7xl"><span class="grad">{{ ui.contact.title[l] }}</span></h2>
+      <p class="mx-auto mt-6 max-w-xl text-ink-2">{{ ui.contact.lead[l] }}</p>
+      <a class="mt-8 inline-block break-all text-[20px] font-medium tracking-tight underline decoration-line decoration-1 underline-offset-[6px] transition-colors hover:decoration-accent sm:text-[28px]"
+         [href]="'mailto:' + person.email">{{ person.email }}</a>
+    </div>
+    <div reveal="120" class="mt-10 flex flex-wrap justify-center gap-3">
+      <a class="btn btn-line" [href]="person.linkedin" target="_blank" rel="noopener me"><app-icon name="linkedin" [size]="16" />LinkedIn</a>
+      <a class="btn btn-line" [href]="person.github" target="_blank" rel="noopener me"><app-icon name="github" [size]="16" />GitHub</a>
+      <a class="btn btn-line" [href]="person.whatsapp" target="_blank" rel="noopener"><app-icon name="whatsapp" [size]="16" />WhatsApp</a>
+      <a class="btn btn-primary" [href]="cv" download><app-icon name="download" [size]="16" />{{ ui.nav.cv[l] }}</a>
+    </div>
+  </div>
+</section>
