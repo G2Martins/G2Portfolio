@@ -70,7 +70,7 @@ Também conhecido como / also known as: ${PERSON.alternateName.join(', ')}. Cont
 
 ## Grovic Data (cofundador / co-founder)
 
-- [Grovic Data](${GROVIC.url}): ${GROVIC.tagline.pt} — ${GROVIC.about.pt.split('. ')[0]}.
+- [Grovic Data](${GROVIC.url}): ${GROVIC.tagline.pt}. ${GROVIC.about.pt.split('. ')[0]}.
 ${PROJECTS.filter((p) => p.group === 'grovic').map((p) => `- [${p.title}](${abs(projectPath('pt', p.slug))}): ${p.summary.pt}${p.links.site ? ` Site: ${p.links.site}` : ''}`).join('\n')}
 
 ## G2 Boost (app desktop / desktop app)
@@ -92,7 +92,7 @@ ${PROJECTS.filter((p) => p.group === 'main').map((p) => `- [${p.title}](${abs(pr
 // ---------- llms-full.txt ----------
 const full = (l: Lang) => {
   const t = (o: Record<Lang, string>) => o[l];
-  return `# ${PERSON.name} — ${t(PERSON.jobTitle)}
+  return `# ${PERSON.name} | ${t(PERSON.jobTitle)}
 
 ${intro[l]}
 
@@ -106,14 +106,14 @@ ${UI.about.body[l].join('\n\n')}
 
 ## ${t(UI.nav.experience)}
 
-${EXPERIENCE.map((x) => `### ${t(x.role)} — ${x.org}
+${EXPERIENCE.map((x) => `### ${t(x.role)}, ${x.org}
 ${t(x.period)} · ${t(x.place)}
 
 ${x.bullets[l].map((b) => `- ${b}`).join('\n')}${x.stack.length ? `\n\nStack: ${x.stack.join(', ')}` : ''}`).join('\n\n')}
 
 ## ${l === 'pt' ? 'Projetos' : 'Projects'}
 
-${PROJECTS.map((p) => `### ${p.title} (${p.year}) — ${t(CATEGORIES[p.category])}
+${PROJECTS.map((p) => `### ${p.title} (${p.year}) · ${t(CATEGORIES[p.category])}
 URL: ${abs(projectPath(l, p.slug))}${p.links.site ? `\n${l === 'pt' ? 'Site' : 'Website'}: ${p.links.site}` : ''}${p.links.repo ? `\n${l === 'pt' ? 'Código' : 'Code'}: ${p.links.repo}` : ''}${p.links.download ? `\nDownload: ${p.links.download}` : ''}
 ${t(UI.project.role)}: ${t(p.role)}
 Stack: ${p.stack.join(', ')}
@@ -130,8 +130,8 @@ ${t(UI.about.languages)}: ${LANGUAGES.map((x) => `${t(x.name)} (${t(x.level)})`)
 
 ## ${t(UI.education.title)}
 
-- ${t(EDUCATION.degree)} — ${EDUCATION.school}, ${t(EDUCATION.period)}. ${t(EDUCATION.note)}
-${CERTS.map((c) => `- ${c.name} — ${c.issuer} (${c.year}): ${c.url}`).join('\n')}
+- ${t(EDUCATION.degree)}, ${EDUCATION.school}, ${t(EDUCATION.period)}. ${t(EDUCATION.note)}
+${CERTS.map((c) => `- ${c.name}, ${c.issuer} (${c.year}): ${c.url}`).join('\n')}
 `;
 };
 out('llms-full.txt', `${full('pt')}\n\n---\n\n${full('en')}`);

@@ -47,7 +47,7 @@
     <div class="wrap py-14 sm:py-20">
       <div class="ticks materialize" style="animation-delay: 420ms">
         <div class="card overflow-hidden">
-          <app-cover [img]="p.images[0]" [alt]="p.title + ' — ' + p.summary[l]" [title]="p.title" [kicker]="category()"
+          <app-cover [img]="p.images[0]" [alt]="p.title + ': ' + p.summary[l]" [title]="p.title" [kicker]="category()"
                      [eager]="true" sizes="(min-width: 1152px) 1120px, 100vw" />
         </div>
       </div>
@@ -97,7 +97,7 @@
               <div class="grid gap-6 sm:grid-cols-2">
                 @for (img of p.images.slice(1); track img) {
                   <div [reveal]="$index * 60" class="card overflow-hidden">
-                    <app-cover [img]="img" [alt]="p.title + ' — ' + (l === 'pt' ? 'captura ' : 'screenshot ') + ($index + 2)" sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" />
+                    <app-cover [img]="img" [alt]="p.title + ', ' + (l === 'pt' ? 'captura ' : 'screenshot ') + ($index + 2)" sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" />
                   </div>
                 }
               </div>

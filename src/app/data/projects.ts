@@ -26,7 +26,7 @@ export const CATEGORIES: Record<Category, L> = {
   cloud: { pt: 'Cloud & Infra', en: 'Cloud & Infra' },
 };
 
-const solo: L = { pt: 'Autor — design, backend e frontend', en: 'Author — design, backend and frontend' };
+const solo: L = { pt: 'Autor (design, backend e frontend)', en: 'Author (design, backend and frontend)' };
 const team: L = { pt: 'Desenvolvedor em equipe acadêmica', en: 'Developer in an academic team' };
 const study: L = { pt: 'Projeto de estudo', en: 'Study project' };
 
@@ -43,11 +43,11 @@ export const PROJECTS: Project[] = [
     },
     description: {
       pt: [
-        'O G2 Boost junta num só aplicativo o que normalmente exige várias ferramentas: diagnóstico do hardware, limpeza do Windows, debloat, analisador de disco, rede, jogos e ajustes de desempenho. Tudo com prévia, backup e um clique para desfazer — sem telemetria e sem driver de kernel.',
+        'O G2 Boost junta num só aplicativo o que normalmente exige várias ferramentas: diagnóstico do hardware, limpeza do Windows, debloat, analisador de disco, rede, jogos e ajustes de desempenho. Tudo com prévia, backup e um clique para desfazer, sem telemetria e sem driver de kernel.',
         'É um app desktop nativo em Rust (Tauri 2) com interface em React 19, distribuído com instaladores em português e inglês e checagem de atualização pelo GitHub. Também expõe um servidor MCP com 60 ferramentas, para que assistentes como Claude Desktop e Claude Code operem o app.',
       ],
       en: [
-        'G2 Boost brings together what usually takes several tools: hardware diagnostics, Windows cleanup, debloat, disk analyzer, networking, games and performance tweaks. Everything has a preview, a backup and one-click undo — no telemetry and no kernel driver.',
+        'G2 Boost brings together what usually takes several tools: hardware diagnostics, Windows cleanup, debloat, disk analyzer, networking, games and performance tweaks. Everything has a preview, a backup and one-click undo, with no telemetry and no kernel driver.',
         'It is a native desktop app in Rust (Tauri 2) with a React 19 interface, shipped with Portuguese and English installers and update checks through GitHub. It also exposes an MCP server with 60 tools so assistants such as Claude Desktop and Claude Code can drive the app.',
       ],
     },
@@ -70,7 +70,7 @@ export const PROJECTS: Project[] = [
       ],
     },
     stack: ['Rust', 'Tauri 2', 'React 19', 'TypeScript', 'Tailwind CSS', 'Vite', 'MCP'],
-    role: { pt: 'Criador — produto, Rust, UI e releases', en: 'Creator — product, Rust, UI and releases' },
+    role: { pt: 'Criador (produto, Rust, UI e releases)', en: 'Creator (product, Rust, UI and releases)' },
     links: { download: 'https://github.com/G2Martins/G2-Boost/releases/latest', repo: 'https://github.com/G2Martins/G2-Boost' },
     images: ['g2-boost', 'g2-boost-2', 'g2-boost-3', 'g2-boost-4'],
   },
@@ -86,11 +86,11 @@ export const PROJECTS: Project[] = [
     },
     description: {
       pt: [
-        'Produto carro-chefe da Grovic Data. O Valerium centraliza a operação de pequenas e médias empresas — finanças, CRM, agendamento, contratos e conectores — com uma camada de IA por cima, e é entregue como white-label para nichos como serviços de limpeza, saúde, restaurantes e imobiliárias.',
+        'Produto carro-chefe da Grovic Data. O Valerium centraliza a operação de pequenas e médias empresas (finanças, CRM, agendamento, contratos e conectores) com uma camada de IA por cima, e é entregue como white-label para nichos como serviços de limpeza, saúde, restaurantes e imobiliárias.',
         'Arquitetura em monorepo (Bun + Turborepo) com Next.js, API em Hono + tRPC, Drizzle sobre Supabase e jobs assíncronos com Trigger.dev, em deploy próprio com ambientes de produção e beta.',
       ],
       en: [
-        'Grovic Data’s flagship product. Valerium centralizes small and mid-size business operations — finance, CRM, scheduling, contracts and connectors — with an AI layer on top, delivered white-label for niches like cleaning services, healthcare, restaurants and real estate.',
+        'Grovic Data’s flagship product. Valerium centralizes small and mid-size business operations (finance, CRM, scheduling, contracts and connectors) with an AI layer on top, delivered white-label for niches like cleaning services, healthcare, restaurants and real estate.',
         'Monorepo architecture (Bun + Turborepo) with Next.js, a Hono + tRPC API, Drizzle over Supabase and background jobs on Trigger.dev, self-deployed with production and beta environments.',
       ],
     },
@@ -99,7 +99,7 @@ export const PROJECTS: Project[] = [
       en: ['Multi-tenant with per-client branding (white-label)', 'Finance, CRM, scheduling and contracts modules', 'AI assistant wired to business data', 'Bilingual marketing landing with its own design system'],
     },
     stack: ['Next.js', 'TypeScript', 'Hono', 'tRPC', 'Drizzle', 'Supabase', 'Trigger.dev', 'Turborepo'],
-    role: { pt: 'Cofundador — engenharia full stack', en: 'Co-founder — full stack engineering' },
+    role: { pt: 'Cofundador (engenharia full stack)', en: 'Co-founder (full stack engineering)' },
     links: { site: 'https://valerium.grovicdata.com', more: [{ label: 'grovicdata.com/valerium', url: 'https://grovicdata.com/valerium.html' }] },
     images: ['valerium'],
   },
@@ -128,7 +128,7 @@ export const PROJECTS: Project[] = [
       en: ['In production for a real teaching clinic', 'RBAC: admin, professor and intern', 'SMART goals and patient progress tracking', 'Per-goal progress dashboards'],
     },
     stack: ['Angular', 'Tailwind CSS', 'FastAPI', 'Python', 'MongoDB', 'JWT'],
-    role: { pt: 'Cofundador — full stack', en: 'Co-founder — full stack' },
+    role: { pt: 'Cofundador (full stack)', en: 'Co-founder (full stack)' },
     links: { site: 'https://prontusmart.grovicdata.com', repo: 'https://github.com/G2Martins/ProntuSmart', more: [{ label: 'grovicdata.com/prontusmart', url: 'https://grovicdata.com/prontusmart.html' }] },
     images: ['prontusmart'],
   },
@@ -157,7 +157,7 @@ export const PROJECTS: Project[] = [
       en: ['PT/EN i18n with dedicated routes', 'Zero build dependencies', 'Dedicated product pages', 'Continuous deploy via Git'],
     },
     stack: ['HTML', 'CSS', 'JavaScript', 'Hostinger'],
-    role: { pt: 'Cofundador — design e desenvolvimento', en: 'Co-founder — design and development' },
+    role: { pt: 'Cofundador (design e desenvolvimento)', en: 'Co-founder (design and development)' },
     links: { site: 'https://grovicdata.com' },
     images: ['grovic-data'],
   },
@@ -197,16 +197,16 @@ export const PROJECTS: Project[] = [
     category: 'data',
     group: 'main',
     summary: {
-      pt: 'Detecção e anonimização de dados pessoais em pedidos de acesso à informação (LAI/LGPD) — desafio Participa DF.',
-      en: 'Detection and anonymization of personal data in public-information requests (LAI/LGPD) — Participa DF challenge.',
+      pt: 'Detecção e anonimização de dados pessoais em pedidos de acesso à informação (LAI/LGPD) para o desafio Participa DF.',
+      en: 'Detection and anonymization of personal data in public-information requests (LAI/LGPD) for the Participa DF challenge.',
     },
     description: {
       pt: [
-        'Plataforma full stack criada para o desafio cívico Participa DF. Identifica automaticamente dados pessoais — CPF, RG, telefone e e-mail — em pedidos de acesso à informação, classifica o risco e anonimiza o conteúdo, apoiando a conformidade com a LAI e a LGPD.',
+        'Plataforma full stack criada para o desafio cívico Participa DF. Identifica automaticamente dados pessoais (CPF, RG, telefone e e-mail) em pedidos de acesso à informação, classifica o risco e anonimiza o conteúdo, apoiando a conformidade com a LAI e a LGPD.',
         'API REST em FastAPI, frontend Angular e avaliação do detector por precisão, recall e F1-score.',
       ],
       en: [
-        'Full stack platform built for the Participa DF civic challenge. It automatically identifies personal data — CPF, RG, phone and e-mail — in public-information requests, classifies risk and anonymizes content, supporting compliance with Brazil’s LAI and LGPD.',
+        'Full stack platform built for the Participa DF civic challenge. It automatically identifies personal data (CPF, RG, phone and e-mail) in public-information requests, classifies risk and anonymizes content, supporting compliance with Brazil’s LAI and LGPD.',
         'FastAPI REST API, Angular frontend and detector evaluation by precision, recall and F1-score.',
       ],
     },
@@ -284,8 +284,8 @@ export const PROJECTS: Project[] = [
     category: 'systems',
     group: 'main',
     summary: {
-      pt: 'App próprio de comunicação estilo Discord: voz, vídeo, tela 1080p60, chat, cargos e fóruns — web + desktop.',
-      en: 'Self-built Discord-style communication app: voice, video, 1080p60 screen share, chat, roles and forums — web + desktop.',
+      pt: 'App próprio de comunicação estilo Discord: voz, vídeo, tela 1080p60, chat, cargos e fóruns, na web e no desktop.',
+      en: 'Self-built Discord-style communication app: voice, video, 1080p60 screen share, chat, roles and forums, on web and desktop.',
     },
     description: {
       pt: [
@@ -382,8 +382,8 @@ export const PROJECTS: Project[] = [
     category: 'web',
     group: 'main',
     summary: {
-      pt: 'Gestão de eventos com autenticação, eventos multi-dia e convites — Java 17 + Spring Boot e Angular.',
-      en: 'Event management with authentication, multi-day events and invites — Java 17 + Spring Boot and Angular.',
+      pt: 'Gestão de eventos com autenticação, eventos multi-dia e convites, feito em Java 17 + Spring Boot e Angular.',
+      en: 'Event management with authentication, multi-day events and invites, built with Java 17 + Spring Boot and Angular.',
     },
     description: {
       pt: ['Desenvolvido como desafio técnico para vaga de estágio: sistema de calendário com autenticação de usuários, eventos multi-dia e gerenciamento de convites. Backend Java 17 + Spring Boot com MongoDB e frontend Angular + Tailwind CSS.'],
@@ -446,7 +446,7 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: 'projeto-integrador',
-    title: 'Cãonecta — Projeto Integrador',
+    title: 'Cãonecta: Projeto Integrador',
     year: '2024',
     category: 'systems',
     group: 'main',

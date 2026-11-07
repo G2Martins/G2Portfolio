@@ -17,7 +17,7 @@
 
     <div class="flex items-center gap-1">
       <a class="icon-btn font-mono text-[11px] font-semibold uppercase" [routerLink]="otherLang()" [attr.hreflang]="lang() === 'pt' ? 'en' : 'pt-BR'"
-         [attr.title]="ui.nav.lang[lang()]">{{ lang() === 'pt' ? 'EN' : 'PT' }}<span class="sr-only"> — {{ ui.nav.lang[lang()] }}</span></a>
+         [attr.title]="ui.nav.lang[lang()]">{{ lang() === 'pt' ? 'EN' : 'PT' }}<span class="sr-only">, {{ ui.nav.lang[lang()] }}</span></a>
       <button type="button" class="icon-btn" (click)="toggleTheme()" [attr.aria-label]="ui.nav.theme[lang()]" [attr.title]="ui.nav.theme[lang()]">
         <app-icon name="moon" class="dark:hidden" />
         <app-icon name="sun" class="hidden dark:inline-flex" />
@@ -65,7 +65,7 @@
       <p class="mt-4 max-w-sm text-[13px] text-ink-2">
         {{ lang() === 'pt' ? 'Cofundador da' : 'Co-founder of' }}
         <a class="underline decoration-line underline-offset-4 hover:text-ink" [href]="grovic.url" target="_blank" rel="noopener">Grovic Data</a>
-        — {{ grovic.tagline[lang()] }}.
+        ({{ grovic.tagline[lang()] }}).
       </p>
     </div>
     <nav aria-label="Rodapé">

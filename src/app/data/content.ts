@@ -62,8 +62,8 @@ export const SEO = {
       en: 'Gustavo Martins Gripaldi | Data Engineer & Full Stack Developer',
     } as L,
     description: {
-      pt: 'Gustavo Martins Gripaldi — engenheiro de dados e dev full stack em Brasília. Microsoft Fabric, Power BI, Python e Angular. Cofundador da Grovic Data e criador do G2 Boost.',
-      en: 'Gustavo Martins Gripaldi — data engineer and full stack developer from Brasília, Brazil. Microsoft Fabric, Power BI, Python and Angular. Co-founder of Grovic Data, creator of G2 Boost.',
+      pt: 'Gustavo Martins Gripaldi, engenheiro de dados e dev full stack em Brasília. Microsoft Fabric, Power BI, Python e Angular. Cofundador da Grovic Data e criador do G2 Boost.',
+      en: 'Gustavo Martins Gripaldi, data engineer and full stack developer from Brasília, Brazil. Microsoft Fabric, Power BI, Python and Angular. Co-founder of Grovic Data, creator of G2 Boost.',
     } as L,
   },
 };
@@ -85,8 +85,8 @@ export const UI = {
   hero: {
     eyebrow: { pt: 'Engenharia de Dados & Full Stack · Brasília, DF', en: 'Data Engineering & Full Stack · Brasília, Brazil' },
     lead: {
-      pt: 'Engenheiro de dados e desenvolvedor full stack. Construo lakehouses no Microsoft Fabric, pipelines ETL que caem de 4 horas para 1, dashboards em Power BI — e os produtos que rodam em cima disso. Cofundador da Grovic Data.',
-      en: 'Data engineer and full stack developer. I build Microsoft Fabric lakehouses, ETL pipelines cut from 4 hours to 1, Power BI dashboards — and the products that run on top of them. Co-founder of Grovic Data.',
+      pt: 'Engenheiro de dados e desenvolvedor full stack. Construo lakehouses no Microsoft Fabric, pipelines ETL que caem de 4 horas para 1, dashboards em Power BI e os produtos que rodam em cima disso. Cofundador da Grovic Data.',
+      en: 'Data engineer and full stack developer. I build Microsoft Fabric lakehouses, ETL pipelines cut from 4 hours to 1, Power BI dashboards and the products that run on top of them. Co-founder of Grovic Data.',
     },
     ctaProjects: { pt: 'Ver projetos', en: 'See projects' },
     ctaContact: { pt: 'Falar comigo', en: 'Get in touch' },
@@ -108,11 +108,11 @@ export const UI = {
     { org: 'G2 Boost', role: { pt: 'Release v0.9.3', en: 'Release v0.9.3' }, meta: 'Windows · Rust + React' },
   ],
   release: {
-    eyebrow: { pt: '01 — Lançamento', en: '01 — Release' },
+    eyebrow: { pt: '01 · Lançamento', en: '01 · Release' },
     title: { pt: 'G2 Boost: desempenho para jogos no Windows, sem truque.', en: 'G2 Boost: Windows gaming performance, no tricks.' },
     lead: {
-      pt: 'App desktop que junta num só lugar o que normalmente exige várias ferramentas: diagnóstico de hardware, limpeza, debloat, rede, jogos e ajustes de desempenho — tudo com prévia, backup e um clique para desfazer.',
-      en: 'A desktop app that brings together what usually takes several tools: hardware diagnostics, cleanup, debloat, networking, games and performance tweaks — all with preview, backup and one-click undo.',
+      pt: 'App desktop que junta num só lugar o que normalmente exige várias ferramentas: diagnóstico de hardware, limpeza, debloat, rede, jogos e ajustes de desempenho. Tudo com prévia, backup e um clique para desfazer.',
+      en: 'A desktop app that brings together what usually takes several tools: hardware diagnostics, cleanup, debloat, networking, games and performance tweaks. All with preview, backup and one-click undo.',
     },
     download: { pt: 'Baixar para Windows', en: 'Download for Windows' },
     other: { pt: 'Outros formatos', en: 'Other formats' },
@@ -123,49 +123,49 @@ export const UI = {
     released: { pt: 'Publicado em 28 out 2026', en: 'Released Oct 28, 2026' },
   },
   grovic: {
-    eyebrow: { pt: '02 — Grovic Data', en: '02 — Grovic Data' },
+    eyebrow: { pt: '02 · Grovic Data', en: '02 · Grovic Data' },
     title: { pt: 'Produtos que cofundei e mantenho em produção.', en: 'Products I co-founded and run in production.' },
     visit: { pt: 'Visitar grovicdata.com', en: 'Visit grovicdata.com' },
     live: { pt: 'No ar', en: 'Live' },
   },
   projects: {
-    eyebrow: { pt: '03 — Projetos', en: '03 — Projects' },
-    title: { pt: 'Dados, IA, web e hardware — do notebook ao deploy.', en: 'Data, AI, web and hardware — from notebook to deploy.' },
+    eyebrow: { pt: '03 · Projetos', en: '03 · Projects' },
+    title: { pt: 'Dados, IA, web e hardware: do notebook ao deploy.', en: 'Data, AI, web and hardware: from notebook to deploy.' },
     all: { pt: 'Todos', en: 'All' },
     open: { pt: 'Ver projeto', en: 'View project' },
     site: { pt: 'Site', en: 'Website' },
     code: { pt: 'Código', en: 'Code' },
   },
   experience: {
-    eyebrow: { pt: '04 — Experiência', en: '04 — Experience' },
+    eyebrow: { pt: '04 · Experiência', en: '04 · Experience' },
     title: { pt: 'Impacto medido em horas, reais e chamados.', en: 'Impact measured in hours, money and tickets.' },
   },
   about: {
-    eyebrow: { pt: '05 — Sobre & competências', en: '05 — About & skills' },
+    eyebrow: { pt: '05 · Sobre & competências', en: '05 · About & skills' },
     title: { pt: 'Entre o dado bruto e o produto final.', en: 'Between raw data and the finished product.' },
     body: {
       pt: [
         'Sou Gustavo Martins Gripaldi, engenheiro de dados e desenvolvedor full stack em Brasília. Estudo Engenharia da Computação no IESB e atuo como Assistente de Business Intelligence na Brasal, onde arquiteto lakehouses no Microsoft Fabric sob a arquitetura Medallion e automatizo cargas de ERP SAP.',
-        'Antes dos dados, construí software: na PGFN entreguei uma plataforma de repositório digital em 8 meses, gerando R$ 1 milhão de economia. Hoje junto os dois mundos — pipelines, modelagem dimensional e Power BI de um lado; Angular, Python, Java e apps desktop do outro.',
+        'Antes dos dados, construí software: na PGFN entreguei uma plataforma de repositório digital em 8 meses, gerando R$ 1 milhão de economia. Hoje junto os dois mundos: pipelines, modelagem dimensional e Power BI de um lado; Angular, Python, Java e apps desktop do outro.',
       ],
       en: [
         'I’m Gustavo Martins Gripaldi, a data engineer and full stack developer based in Brasília, Brazil. I study Computer Engineering at IESB and work as a Business Intelligence Assistant at Brasal, where I architect Microsoft Fabric lakehouses following the Medallion architecture and automate SAP ERP loads.',
-        'Before data, I built software: at PGFN (Brazil’s National Treasury Attorney’s Office) I shipped a digital repository platform in 8 months, saving R$ 1 million. Today I combine both worlds — pipelines, dimensional modeling and Power BI on one side; Angular, Python, Java and desktop apps on the other.',
+        'Before data, I built software: at PGFN (Brazil’s National Treasury Attorney’s Office) I shipped a digital repository platform in 8 months, saving R$ 1 million. Today I combine both worlds: pipelines, dimensional modeling and Power BI on one side; Angular, Python, Java and desktop apps on the other.',
       ],
     },
     languages: { pt: 'Idiomas', en: 'Languages' },
   },
   education: {
-    eyebrow: { pt: '06 — Formação', en: '06 — Education' },
+    eyebrow: { pt: '06 · Formação', en: '06 · Education' },
     title: { pt: 'Formação & certificações', en: 'Education & certifications' },
     verify: { pt: 'Verificar', en: 'Verify' },
   },
   contact: {
-    eyebrow: { pt: '07 — Contato', en: '07 — Contact' },
+    eyebrow: { pt: '07 · Contato', en: '07 · Contact' },
     title: { pt: 'Vamos conversar.', en: 'Let’s talk.' },
     lead: {
-      pt: 'Aberto a oportunidades em engenharia de dados, BI e desenvolvimento full stack — presencial em Brasília ou remoto.',
-      en: 'Open to data engineering, BI and full stack roles — on-site in Brasília or remote.',
+      pt: 'Aberto a oportunidades em engenharia de dados, BI e desenvolvimento full stack, presencial em Brasília ou remoto.',
+      en: 'Open to data engineering, BI and full stack roles, on-site in Brasília or remote.',
     },
   },
   footer: {
@@ -260,7 +260,7 @@ export const EXPERIENCE = [
   {
     org: 'Procuradoria-Geral da Fazenda Nacional (PGFN)',
     logo: '/img/logos/pgfn.webp',
-    role: { pt: 'Estagiário de TI — Desenvolvimento Full Stack', en: 'IT Intern — Full Stack Development' },
+    role: { pt: 'Estagiário de TI (Desenvolvimento Full Stack)', en: 'IT Intern (Full Stack Development)' },
     period: { pt: 'Jan 2024 – Abr 2025', en: 'Jan 2024 – Apr 2025' },
     place: { pt: 'Brasília, DF', en: 'Brasília, Brazil' },
     bullets: {
@@ -317,12 +317,12 @@ export const EDUCATION = {
 
 export const CERTS = [
   { name: 'AI Skills Fest 2026', issuer: 'Microsoft', year: '2026', url: 'https://www.credly.com/badges/8001e6ec-67ca-427e-bb84-cf1097341025/linked_in_profile' },
-  { name: 'SAP Analytics Cloud — Data Connections & Performance', issuer: 'SAP', year: '2026', url: 'https://badger.learning.sap.com/verify/xytih-luvup-nipyd-negoc-fofic' },
+  { name: 'SAP Analytics Cloud: Data Connections & Performance', issuer: 'SAP', year: '2026', url: 'https://badger.learning.sap.com/verify/xytih-luvup-nipyd-negoc-fofic' },
   { name: 'Ask Questions to Make Data-Driven Decisions', issuer: 'Google', year: '2026', url: 'https://www.coursera.org/account/accomplishments/verify/4MUK6I6H8OF6' },
   { name: 'Foundations: Data, Data, Everywhere', issuer: 'Google', year: '2026', url: 'https://www.coursera.org/account/accomplishments/verify/UW3IAVYE62WR' },
   { name: 'Formação Python Fundamentals', issuer: 'DIO', year: '2026', url: 'https://www.dio.me/certificate/1HLDDOYX/share' },
   { name: 'Dynamics 365 CRM & Power Platform', issuer: 'Smart Consulting', year: '2025', url: 'https://www.linkedin.com/in/g2martins/details/certifications/' },
   { name: 'Formação Angular Developer', issuer: 'DIO', year: '2024', url: 'https://www.dio.me/certificate/W9DVXIFM/share' },
-  { name: 'Santander Bootcamp — Fullstack Java + Angular', issuer: 'DIO', year: '2024', url: 'https://www.dio.me/certificate/ZLR6VNRL/share' },
+  { name: 'Santander Bootcamp: Fullstack Java + Angular', issuer: 'DIO', year: '2024', url: 'https://www.dio.me/certificate/ZLR6VNRL/share' },
   { name: 'PostgreSQL: Conceitos e Melhores Práticas', issuer: 'DIO', year: '2024', url: 'https://www.dio.me/certificate/5B1FE78F/share' },
 ];

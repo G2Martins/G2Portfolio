@@ -94,7 +94,7 @@
     <div reveal class="ticks mt-12">
       <div class="card card-accent grid overflow-hidden lg:grid-cols-[1.4fr_1fr]">
         <div class="border-b border-line bg-surface lg:border-b-0 lg:border-r">
-          <app-cover [img]="boostProject.images[shot()]" [alt]="'G2 Boost — ' + (l === 'pt' ? 'captura de tela do app' : 'app screenshot')"
+          <app-cover [img]="boostProject.images[shot()]" [alt]="'G2 Boost: ' + (l === 'pt' ? 'captura de tela do app' : 'app screenshot')"
                      sizes="(min-width: 1024px) 640px, 100vw" />
           <div class="flex gap-2 p-3" role="group" [attr.aria-label]="l === 'pt' ? 'Capturas de tela' : 'Screenshots'">
             @for (img of boostProject.images; track img) {
@@ -169,7 +169,7 @@
       @for (p of grovicProjects; track p.slug) {
         <div [reveal]="$index * 80">
           <article class="card lift stretch flex h-full flex-col overflow-hidden">
-            <app-cover [img]="p.images[0]" [alt]="p.title + ' — ' + p.summary[l]" class="border-b border-line" />
+            <app-cover [img]="p.images[0]" [alt]="p.title + ': ' + p.summary[l]" class="border-b border-line" />
             <div class="flex flex-1 flex-col p-5">
               <div class="flex items-center justify-between gap-3">
                 <h3 class="text-[17px] font-medium tracking-tight">
@@ -216,7 +216,7 @@
       @for (p of projects(); track p.slug) {
         <div [reveal]="($index % 3) * 70">
           <article class="card lift stretch flex h-full flex-col overflow-hidden">
-            <app-cover [img]="p.images[0]" [alt]="p.title + ' — ' + p.summary[l]" [title]="p.title" [kicker]="catLabel(p.category)" class="border-b border-line" />
+            <app-cover [img]="p.images[0]" [alt]="p.title + ': ' + p.summary[l]" [title]="p.title" [kicker]="catLabel(p.category)" class="border-b border-line" />
             <div class="flex flex-1 flex-col p-5">
               <p class="font-mono text-[10.5px] uppercase tracking-[0.12em] text-ink-2">{{ catLabel(p.category) }} · {{ p.year }}</p>
               <h3 class="mt-2 text-[17px] font-medium tracking-tight">

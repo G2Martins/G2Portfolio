@@ -1,4 +1,4 @@
-# Gustavo Martins Gripaldi — portfolio. All crawlers (search + AI) welcome.
+# Gustavo Martins Gripaldi portfolio. All crawlers (search + AI) welcome.
 User-agent: *
 Allow: /
 
