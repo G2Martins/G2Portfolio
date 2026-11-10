@@ -390,25 +390,31 @@ export const PROJECTS: Project[] = [
   {
     slug: 'calendario-web',
     title: 'Calendário Web',
-    year: '2025',
+    year: '2026',
     category: 'web',
     group: 'main',
     summary: {
-      pt: 'Gestão de eventos com autenticação, eventos multi-dia e convites, feito em Java 17 + Spring Boot e Angular.',
-      en: 'Event management with authentication, multi-day events and invites, built with Java 17 + Spring Boot and Angular.',
+      pt: 'Agenda com eventos de vários dias, convites e visões de mês, semana e dia. Demo ao vivo com a API do Spring Boot simulada no navegador.',
+      en: 'Calendar with multi-day events, invites and month, week and day views. Live demo with the Spring Boot API simulated in the browser.',
     },
     description: {
-      pt: ['Desenvolvido como desafio técnico para vaga de estágio: sistema de calendário com autenticação de usuários, eventos multi-dia e gerenciamento de convites. Backend Java 17 + Spring Boot com MongoDB e frontend Angular + Tailwind CSS.'],
-      en: ['Built as a technical challenge for an internship role: a calendar system with user authentication, multi-day events and invite management. Java 17 + Spring Boot backend on MongoDB and an Angular + Tailwind CSS frontend.'],
+      pt: [
+        'Nasceu como desafio técnico de estágio: Angular no front, Spring Boot e MongoDB no back. Para virar uma demo ao vivo, reconstruí o front em Angular 21 e fiz um interceptor que responde às mesmas rotas e DTOs da API Spring com uma versão em TypeScript dos serviços, guardada no navegador e coberta por testes.',
+        'Tem grade do mês com eventos de vários dias, linhas do tempo de semana e dia, criação e edição com checagem de conflito, convites com aceitar e recusar, busca e usuários de demonstração. Na revisão, corrigi quatro pontos da API original (status por convidado, dono preservado na edição, erros 400/404/409 e nada de senha trafegando). O backend continua no repositório, e um comando aponta o front para ele.',
+      ],
+      en: [
+        'It started as an internship technical challenge: Angular on the front end, Spring Boot and MongoDB on the back end. To make it a live demo, I rebuilt the front end in Angular 21 and wrote an interceptor that answers the same Spring routes and DTOs with a TypeScript version of the services, stored in the browser and covered by tests.',
+        'It has a month grid with multi-day events, week and day timelines, create and edit with conflict checks, invites with accept and decline, search and demo users. While reviewing, I fixed four issues in the original API (per-guest status, owner kept on edit, 400/404/409 errors and no passwords on the wire). The backend is still in the repository, and one command points the front end at it.',
+      ],
     },
     highlights: {
-      pt: ['Autenticação de usuários', 'Eventos multi-dia e convites', 'API REST em Spring Boot'],
-      en: ['User authentication', 'Multi-day events and invites', 'Spring Boot REST API'],
+      pt: ['API do Spring Boot espelhada no navegador, com testes', 'Eventos de vários dias, convites e três visões de agenda', 'Calendário acessível por teclado (grade ARIA) e diálogos nativos', 'Lighthouse 97 a 98 em performance; 100 em acessibilidade e SEO'],
+      en: ['Spring Boot API mirrored in the browser, with tests', 'Multi-day events, invites and three calendar views', 'Keyboard-accessible calendar (ARIA grid) and native dialogs', 'Lighthouse 97 to 98 performance; 100 accessibility and SEO'],
     },
-    stack: ['Java 17', 'Spring Boot', 'MongoDB', 'Angular', 'Tailwind CSS'],
+    stack: ['Angular 21', 'TypeScript', 'Spring Boot', 'MongoDB', 'Tailwind CSS'],
     role: solo,
-    links: { repo: 'https://github.com/G2Martins/CalendarioWeb', video: 'https://youtu.be/ls9PW4uSBew' },
-    images: ['calendario-web'],
+    links: { site: 'https://g2martins.github.io/CalendarioWeb/', repo: 'https://github.com/G2Martins/CalendarioWeb', video: 'https://youtu.be/ls9PW4uSBew' },
+    images: ['calendario-web', 'calendario-web-2', 'calendario-web-3', 'calendario-web-4'],
   },
   {
     slug: 'rr-nexus',

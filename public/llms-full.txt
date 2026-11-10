@@ -254,17 +254,21 @@ O dashboard explora as 2.901 partidas ranqueadas do fim de 2020 (duração, serv
 - Avaliação crítica contra a linha de base
 - Downloads: CSV, modelo em JSON e dicionário de dados
 
-### Calendário Web (2025) · Full Stack
+### Calendário Web (2026) · Full Stack
 URL: https://g2portfolio.grovicdata.com/projetos/calendario-web/
+Site: https://g2martins.github.io/CalendarioWeb/
 Código: https://github.com/G2Martins/CalendarioWeb
 Papel: Autor (design, backend e frontend)
-Stack: Java 17, Spring Boot, MongoDB, Angular, Tailwind CSS
+Stack: Angular 21, TypeScript, Spring Boot, MongoDB, Tailwind CSS
 
-Desenvolvido como desafio técnico para vaga de estágio: sistema de calendário com autenticação de usuários, eventos multi-dia e gerenciamento de convites. Backend Java 17 + Spring Boot com MongoDB e frontend Angular + Tailwind CSS.
+Nasceu como desafio técnico de estágio: Angular no front, Spring Boot e MongoDB no back. Para virar uma demo ao vivo, reconstruí o front em Angular 21 e fiz um interceptor que responde às mesmas rotas e DTOs da API Spring com uma versão em TypeScript dos serviços, guardada no navegador e coberta por testes.
 
-- Autenticação de usuários
-- Eventos multi-dia e convites
-- API REST em Spring Boot
+Tem grade do mês com eventos de vários dias, linhas do tempo de semana e dia, criação e edição com checagem de conflito, convites com aceitar e recusar, busca e usuários de demonstração. Na revisão, corrigi quatro pontos da API original (status por convidado, dono preservado na edição, erros 400/404/409 e nada de senha trafegando). O backend continua no repositório, e um comando aponta o front para ele.
+
+- API do Spring Boot espelhada no navegador, com testes
+- Eventos de vários dias, convites e três visões de agenda
+- Calendário acessível por teclado (grade ARIA) e diálogos nativos
+- Lighthouse 97 a 98 em performance; 100 em acessibilidade e SEO
 
 ### RR-Nexus (2025) · Cloud & Infra
 URL: https://g2portfolio.grovicdata.com/projetos/rr-nexus/
@@ -661,17 +665,21 @@ The dashboard explores 2,901 ranked matches from late 2020 (duration, servers, p
 - Critical evaluation against the baseline
 - Downloads: CSV, model JSON and data dictionary
 
-### Calendário Web (2025) · Full Stack
+### Calendário Web (2026) · Full Stack
 URL: https://g2portfolio.grovicdata.com/en/projects/calendario-web/
+Website: https://g2martins.github.io/CalendarioWeb/
 Code: https://github.com/G2Martins/CalendarioWeb
 Role: Author (design, backend and frontend)
-Stack: Java 17, Spring Boot, MongoDB, Angular, Tailwind CSS
+Stack: Angular 21, TypeScript, Spring Boot, MongoDB, Tailwind CSS
 
-Built as a technical challenge for an internship role: a calendar system with user authentication, multi-day events and invite management. Java 17 + Spring Boot backend on MongoDB and an Angular + Tailwind CSS frontend.
+It started as an internship technical challenge: Angular on the front end, Spring Boot and MongoDB on the back end. To make it a live demo, I rebuilt the front end in Angular 21 and wrote an interceptor that answers the same Spring routes and DTOs with a TypeScript version of the services, stored in the browser and covered by tests.
 
-- User authentication
-- Multi-day events and invites
-- Spring Boot REST API
+It has a month grid with multi-day events, week and day timelines, create and edit with conflict checks, invites with accept and decline, search and demo users. While reviewing, I fixed four issues in the original API (per-guest status, owner kept on edit, 400/404/409 errors and no passwords on the wire). The backend is still in the repository, and one command points the front end at it.
+
+- Spring Boot API mirrored in the browser, with tests
+- Multi-day events, invites and three calendar views
+- Keyboard-accessible calendar (ARIA grid) and native dialogs
+- Lighthouse 97 to 98 performance; 100 accessibility and SEO
 
 ### RR-Nexus (2025) · Cloud & Infra
 URL: https://g2portfolio.grovicdata.com/en/projects/rr-nexus/
