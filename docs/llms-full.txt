@@ -185,7 +185,8 @@ Para a demo ao vivo, reconstruí o front em Angular 21 e espelhei a API no naveg
 
 ### H-Drop (2026) · Sistemas, IoT & Desktop
 URL: https://g2portfolio.grovicdata.com/projetos/h-drop/
-Código: https://github.com/G2Martins/H-Drop
+Site: https://alphacomplabs.github.io/H-Drop/
+Código: https://github.com/AlphaCompLabs/H-Drop
 Papel: Desenvolvedor em equipe acadêmica
 Stack: ESP32, MQTT, FastAPI, Angular, Leaflet, 4G LTE
 
@@ -606,7 +607,8 @@ For the live demo I rebuilt the front end in Angular 21 and mirrored the API in 
 
 ### H-Drop (2026) · Systems, IoT & Desktop
 URL: https://g2portfolio.grovicdata.com/en/projects/h-drop/
-Code: https://github.com/G2Martins/H-Drop
+Website: https://alphacomplabs.github.io/H-Drop/
+Code: https://github.com/AlphaCompLabs/H-Drop
 Role: Developer in an academic team
 Stack: ESP32, MQTT, FastAPI, Angular, Leaflet, 4G LTE
 

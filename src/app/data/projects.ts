@@ -274,8 +274,8 @@ export const PROJECTS: Project[] = [
     },
     stack: ['ESP32', 'MQTT', 'FastAPI', 'Angular', 'Leaflet', '4G LTE'],
     role: team,
-    links: { repo: 'https://github.com/G2Martins/H-Drop' },
-    images: ['h-drop', 'h-drop-2'],
+    links: { site: 'https://alphacomplabs.github.io/H-Drop/', repo: 'https://github.com/AlphaCompLabs/H-Drop' },
+    images: ['h-drop', 'h-drop-2', 'h-drop-3', 'h-drop-4'],
   },
   {
     slug: 'g2cord',
@@ -327,7 +327,7 @@ export const PROJECTS: Project[] = [
     stack: ['Python', 'Scapy', 'FastAPI', 'Angular', 'Tailwind CSS'],
     role: team,
     links: { repo: 'https://github.com/AlphaCompLabs/Dash_TempoReal' },
-    images: ['dash-tempo-real'],
+    images: ['dash-tempo-real', 'dash-tempo-real-2', 'dash-tempo-real-3', 'dash-tempo-real-4'],
   },
   {
     slug: 'eleicoes-sp-2024-ia',
