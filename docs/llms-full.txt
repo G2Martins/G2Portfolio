@@ -285,27 +285,35 @@ Aplicação distribuída de três camadas que usa Round Robin DNS para balancear
 
 ### AWS + Terraform (2024) · Cloud & Infra
 URL: https://g2portfolio.grovicdata.com/projetos/aws-terraform/
+Site: https://g2martins.github.io/AWS-Desafio-Terraform/
 Código: https://github.com/G2Martins/AWS-Desafio-Terraform
 Papel: Projeto de estudo
-Stack: Terraform, AWS, EC2, VPC, Nginx
+Stack: Terraform, AWS, EC2, VPC, Nginx, Angular 21
 
-Infraestrutura AWS automatizada com Terraform: criação de VPC, subnet, security group e instância EC2 com regras de segurança reforçadas e instalação automática do Nginx.
+Desafio técnico de um processo seletivo: provisionar na AWS uma rede isolada, uma sub-rede pública, um security group restritivo e uma instância Debian 12 que já sobe servindo Nginx, tudo descrito num único main.tf.
 
-- VPC, subnet e security group via IaC
-- EC2 com Nginx provisionado automaticamente
-- Regras de segurança restritivas
+Em 2026 transformei o repositório num site de documentação: diagrama da arquitetura em que cada recurso leva à sua linha no código, o main.tf com destaque de sintaxe gerado no build, como rodar, notas de segurança e custo. Fiz também uma revisão honesta: listei os pontos do código que impediriam o apply e o que eu mudaria antes de produção (IMDSv2, SSM no lugar de SSH, state remoto).
+
+- VPC, subnet, security group e EC2 com Nginx via IaC
+- Diagrama da arquitetura ligado às linhas do main.tf
+- Revisão técnica com o que corrigir antes de produção
+- Checagem no build contra chaves AWS expostas
 
 ### Cãonecta: Projeto Integrador (2024) · Sistemas, IoT & Desktop
 URL: https://g2portfolio.grovicdata.com/projetos/projeto-integrador/
+Site: https://g2martins.github.io/Projeto-Integrador/
 Código: https://github.com/G2Martins/Projeto-Integrador
 Papel: Desenvolvedor em equipe acadêmica
-Stack: Arduino, C++, Python, HTML, CSS
+Stack: Arduino, C++, RFID RC522, RTC DS1307, Python, HTML/CSS/JS
 
-Projeto integrador da faculdade que une hardware e software: uma porta para pets controlada por Arduino, com horários de travamento e destravamento definidos num painel web e integração em Python.
+Projeto Integrador do 3º semestre de Engenharia da Computação, feito em equipe em 2024: uma portinhola para pets que trava e destrava sozinha dentro de uma janela de horário definida num painel web, com relógio de tempo real e leitor RFID.
 
-- Controle de trava com Arduino
-- Agendamento pelo painel web
-- Integração Python ↔ microcontrolador
+Em 2026 reorganizei o material num site de projeto: problema e solução, lista de hardware, ligação do RC522, diagrama do fluxo, o firmware e o protótipo em Python com destaque de sintaxe, uma demonstração do painel que roda sem rede e uma revisão do que faltava no protótipo.
+
+- Trava por janela de horário com relógio de tempo real
+- Leitor RFID RC522 e firmware para microcontrolador
+- Protótipo em Python portado para o firmware
+- Painel web com demonstração offline
 
 ### G2Store (2026) · Full Stack
 URL: https://g2portfolio.grovicdata.com/projetos/g2store/
@@ -697,27 +705,35 @@ Three-tier distributed application using Round Robin DNS to balance load across 
 
 ### AWS + Terraform (2024) · Cloud & Infra
 URL: https://g2portfolio.grovicdata.com/en/projects/aws-terraform/
+Website: https://g2martins.github.io/AWS-Desafio-Terraform/
 Code: https://github.com/G2Martins/AWS-Desafio-Terraform
 Role: Study project
-Stack: Terraform, AWS, EC2, VPC, Nginx
+Stack: Terraform, AWS, EC2, VPC, Nginx, Angular 21
 
-Automated AWS infrastructure with Terraform: VPC, subnet, security group and an EC2 instance with hardened security rules and automatic Nginx installation.
+A technical challenge from a hiring process: provision on AWS an isolated network, a public subnet, a restrictive security group and a Debian 12 instance that boots serving Nginx, all in a single main.tf.
 
-- VPC, subnet and security group via IaC
-- EC2 with auto-provisioned Nginx
-- Restrictive security rules
+In 2026 I turned the repository into a documentation site: an architecture diagram where each resource links to its line in the code, main.tf with build-time syntax highlighting, how to run, security and cost notes. I also wrote an honest review: the issues in the code that would block an apply and what I would change before production (IMDSv2, SSM instead of SSH, remote state).
+
+- VPC, subnet, security group and EC2 with Nginx via IaC
+- Architecture diagram linked to main.tf lines
+- Technical review of what to fix before production
+- Build check against exposed AWS keys
 
 ### Cãonecta: Projeto Integrador (2024) · Systems, IoT & Desktop
 URL: https://g2portfolio.grovicdata.com/en/projects/projeto-integrador/
+Website: https://g2martins.github.io/Projeto-Integrador/
 Code: https://github.com/G2Martins/Projeto-Integrador
 Role: Developer in an academic team
-Stack: Arduino, C++, Python, HTML, CSS
+Stack: Arduino, C++, RFID RC522, RTC DS1307, Python, HTML/CSS/JS
 
-University integrative project combining hardware and software: an Arduino-controlled pet door whose lock and unlock schedules are set from a web dashboard, with a Python integration layer.
+A 3rd-semester Computer Engineering integrative project, built as a team in 2024: a pet door that locks and unlocks on its own within a time window set from a web panel, with a real-time clock and an RFID reader.
 
-- Arduino lock control
-- Scheduling from the web dashboard
-- Python ↔ microcontroller integration
+In 2026 I reorganized the material into a project site: problem and solution, hardware list, RC522 wiring, flow diagram, the firmware and the Python prototype with syntax highlighting, an offline demo of the panel and a review of what the prototype was missing.
+
+- Time-window lock with a real-time clock
+- RC522 RFID reader and microcontroller firmware
+- Python prototype ported to the firmware
+- Web panel with an offline demo
 
 ### G2Store (2026) · Full Stack
 URL: https://g2portfolio.grovicdata.com/en/projects/g2store/

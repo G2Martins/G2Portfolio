@@ -446,21 +446,27 @@ export const PROJECTS: Project[] = [
     category: 'cloud',
     group: 'main',
     summary: {
-      pt: 'Infraestrutura como código na AWS: VPC, subnet, security group e EC2 com Nginx provisionados por Terraform.',
-      en: 'Infrastructure as code on AWS: VPC, subnet, security group and EC2 with Nginx provisioned by Terraform.',
+      pt: 'Infraestrutura como código na AWS (VPC, subnet, security group e EC2 com Nginx), com site de documentação e revisão técnica do Terraform.',
+      en: 'Infrastructure as code on AWS (VPC, subnet, security group and EC2 with Nginx), with a documentation site and a technical review of the Terraform.',
     },
     description: {
-      pt: ['Infraestrutura AWS automatizada com Terraform: criação de VPC, subnet, security group e instância EC2 com regras de segurança reforçadas e instalação automática do Nginx.'],
-      en: ['Automated AWS infrastructure with Terraform: VPC, subnet, security group and an EC2 instance with hardened security rules and automatic Nginx installation.'],
+      pt: [
+        'Desafio técnico de um processo seletivo: provisionar na AWS uma rede isolada, uma sub-rede pública, um security group restritivo e uma instância Debian 12 que já sobe servindo Nginx, tudo descrito num único main.tf.',
+        'Em 2026 transformei o repositório num site de documentação: diagrama da arquitetura em que cada recurso leva à sua linha no código, o main.tf com destaque de sintaxe gerado no build, como rodar, notas de segurança e custo. Fiz também uma revisão honesta: listei os pontos do código que impediriam o apply e o que eu mudaria antes de produção (IMDSv2, SSM no lugar de SSH, state remoto).',
+      ],
+      en: [
+        'A technical challenge from a hiring process: provision on AWS an isolated network, a public subnet, a restrictive security group and a Debian 12 instance that boots serving Nginx, all in a single main.tf.',
+        'In 2026 I turned the repository into a documentation site: an architecture diagram where each resource links to its line in the code, main.tf with build-time syntax highlighting, how to run, security and cost notes. I also wrote an honest review: the issues in the code that would block an apply and what I would change before production (IMDSv2, SSM instead of SSH, remote state).',
+      ],
     },
     highlights: {
-      pt: ['VPC, subnet e security group via IaC', 'EC2 com Nginx provisionado automaticamente', 'Regras de segurança restritivas'],
-      en: ['VPC, subnet and security group via IaC', 'EC2 with auto-provisioned Nginx', 'Restrictive security rules'],
+      pt: ['VPC, subnet, security group e EC2 com Nginx via IaC', 'Diagrama da arquitetura ligado às linhas do main.tf', 'Revisão técnica com o que corrigir antes de produção', 'Checagem no build contra chaves AWS expostas'],
+      en: ['VPC, subnet, security group and EC2 with Nginx via IaC', 'Architecture diagram linked to main.tf lines', 'Technical review of what to fix before production', 'Build check against exposed AWS keys'],
     },
-    stack: ['Terraform', 'AWS', 'EC2', 'VPC', 'Nginx'],
+    stack: ['Terraform', 'AWS', 'EC2', 'VPC', 'Nginx', 'Angular 21'],
     role: study,
-    links: { repo: 'https://github.com/G2Martins/AWS-Desafio-Terraform' },
-    images: ['aws-terraform'],
+    links: { site: 'https://g2martins.github.io/AWS-Desafio-Terraform/', repo: 'https://github.com/G2Martins/AWS-Desafio-Terraform' },
+    images: ['aws-terraform', 'aws-terraform-2', 'aws-terraform-3', 'aws-terraform-4'],
   },
   {
     slug: 'projeto-integrador',
@@ -469,21 +475,27 @@ export const PROJECTS: Project[] = [
     category: 'systems',
     group: 'main',
     summary: {
-      pt: 'Porta inteligente para cachorro com Arduino: horários de travamento configurados num painel web.',
-      en: 'Arduino smart dog door: lock schedules configured from a web dashboard.',
+      pt: 'Portinhola para pets com trava por horário, controlada por microcontrolador e painel web. Projeto Integrador de Engenharia da Computação.',
+      en: 'Pet door with a time-based lock, driven by a microcontroller and a web panel. Computer Engineering integrative project.',
     },
     description: {
-      pt: ['Projeto integrador da faculdade que une hardware e software: uma porta para pets controlada por Arduino, com horários de travamento e destravamento definidos num painel web e integração em Python.'],
-      en: ['University integrative project combining hardware and software: an Arduino-controlled pet door whose lock and unlock schedules are set from a web dashboard, with a Python integration layer.'],
+      pt: [
+        'Projeto Integrador do 3º semestre de Engenharia da Computação, feito em equipe em 2024: uma portinhola para pets que trava e destrava sozinha dentro de uma janela de horário definida num painel web, com relógio de tempo real e leitor RFID.',
+        'Em 2026 reorganizei o material num site de projeto: problema e solução, lista de hardware, ligação do RC522, diagrama do fluxo, o firmware e o protótipo em Python com destaque de sintaxe, uma demonstração do painel que roda sem rede e uma revisão do que faltava no protótipo.',
+      ],
+      en: [
+        'A 3rd-semester Computer Engineering integrative project, built as a team in 2024: a pet door that locks and unlocks on its own within a time window set from a web panel, with a real-time clock and an RFID reader.',
+        'In 2026 I reorganized the material into a project site: problem and solution, hardware list, RC522 wiring, flow diagram, the firmware and the Python prototype with syntax highlighting, an offline demo of the panel and a review of what the prototype was missing.',
+      ],
     },
     highlights: {
-      pt: ['Controle de trava com Arduino', 'Agendamento pelo painel web', 'Integração Python ↔ microcontrolador'],
-      en: ['Arduino lock control', 'Scheduling from the web dashboard', 'Python ↔ microcontroller integration'],
+      pt: ['Trava por janela de horário com relógio de tempo real', 'Leitor RFID RC522 e firmware para microcontrolador', 'Protótipo em Python portado para o firmware', 'Painel web com demonstração offline'],
+      en: ['Time-window lock with a real-time clock', 'RC522 RFID reader and microcontroller firmware', 'Python prototype ported to the firmware', 'Web panel with an offline demo'],
     },
-    stack: ['Arduino', 'C++', 'Python', 'HTML', 'CSS'],
+    stack: ['Arduino', 'C++', 'RFID RC522', 'RTC DS1307', 'Python', 'HTML/CSS/JS'],
     role: team,
-    links: { repo: 'https://github.com/G2Martins/Projeto-Integrador' },
-    images: ['projeto-integrador'],
+    links: { site: 'https://g2martins.github.io/Projeto-Integrador/', repo: 'https://github.com/G2Martins/Projeto-Integrador' },
+    images: ['projeto-integrador', 'projeto-integrador-2', 'projeto-integrador-3', 'projeto-integrador-4'],
   },
   {
     slug: 'g2store',
