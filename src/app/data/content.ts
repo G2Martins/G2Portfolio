@@ -167,6 +167,9 @@ export const UI = {
       pt: 'Aberto a oportunidades em engenharia de dados, BI e desenvolvimento full stack, presencial em Brasília ou remoto.',
       en: 'Open to data engineering, BI and full stack roles, on-site in Brasília or remote.',
     },
+    copy: { pt: 'Copiar e-mail', en: 'Copy e-mail' },
+    copied: { pt: 'E-mail copiado', en: 'E-mail copied' },
+    open: { pt: 'Aberto a vagas', en: 'Open to work' },
     wa: {
       pt: 'Olá, Gustavo! Vi seu portfólio e gostaria de conversar sobre uma oportunidade.',
       en: 'Hi Gustavo! I saw your portfolio and would like to talk about an opportunity.',

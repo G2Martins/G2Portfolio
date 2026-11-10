@@ -45,7 +45,7 @@
           <div class="flex items-center justify-between">
             <p class="eyebrow">{{ ui.hero.now[l] }}</p>
             <span class="flex items-center gap-1.5 font-mono text-[11px] text-ink-2">
-              <span class="live-dot size-1.5 rounded-full bg-ok"></span>{{ l === 'pt' ? 'aberto a conversas' : 'open to talk' }}
+              <span class="live-dot size-1.5 rounded-full bg-ok"></span>{{ ui.contact.open[l] }}
             </span>
           </div>
           <ul class="mt-3 divide-y divide-line">
@@ -366,8 +366,14 @@
       <p class="eyebrow">{{ ui.contact.eyebrow[l] }}</p>
       <h2 id="contact-title" class="h-display mt-5 text-5xl sm:text-7xl"><span class="grad">{{ ui.contact.title[l] }}</span></h2>
       <p class="mx-auto mt-6 max-w-xl text-ink-2">{{ ui.contact.lead[l] }}</p>
-      <a class="mt-8 inline-block break-all text-[20px] font-medium tracking-tight underline decoration-line decoration-1 underline-offset-[6px] transition-colors hover:decoration-accent sm:text-[28px]"
-         [href]="'mailto:' + person.email">{{ person.email }}</a>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-2">
+        <a class="break-all text-[20px] font-medium tracking-tight underline decoration-line decoration-1 underline-offset-[6px] transition-colors hover:decoration-accent sm:text-[28px]"
+           [href]="'mailto:' + person.email">{{ person.email }}</a>
+        <button type="button" class="icon-btn" (click)="copyEmail()" [attr.aria-label]="ui.contact.copy[l]" [attr.title]="ui.contact.copy[l]">
+          <app-icon [name]="copied() ? 'check' : 'copy'" [size]="18" [class.text-ok]="copied()" />
+        </button>
+      </div>
+      <p class="mt-2 h-5 font-mono text-[11.5px] text-ok" aria-live="polite">{{ copied() ? ui.contact.copied[l] : '' }}</p>
     </div>
     <div reveal="120" class="mt-10 flex flex-wrap justify-center gap-3">
       <a class="btn btn-line" [href]="person.linkedin" target="_blank" rel="noopener me"><app-icon name="linkedin" [size]="16" />LinkedIn</a>

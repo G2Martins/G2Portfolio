@@ -39,6 +39,14 @@ export class Home {
   protected readonly wa = computed(() => `${PERSON.whatsapp}?text=${encodeURIComponent(UI.contact.wa[this.lang()])}`);
   protected filter = signal<Category | 'all'>('all');
   protected shot = signal(0);
+  protected copied = signal(false);
+
+  protected copyEmail() {
+    navigator.clipboard?.writeText(PERSON.email).then(() => {
+      this.copied.set(true);
+      setTimeout(() => this.copied.set(false), 1800);
+    });
+  }
   protected projects = computed(() => {
     const f = this.filter();
     return PROJECTS.filter((p) => p.group === 'main' && (f === 'all' || p.category === f));
