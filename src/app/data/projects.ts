@@ -226,27 +226,27 @@ export const PROJECTS: Project[] = [
     category: 'web',
     group: 'main',
     summary: {
-      pt: 'Transfere, gera e sincroniza playlists entre Spotify e YouTube Music com matching automático.',
-      en: 'Transfers, generates and syncs playlists between Spotify and YouTube Music with automatic matching.',
+      pt: 'Transfira, gere e sincronize playlists entre Spotify, YouTube Music, Apple Music, Amazon Music e Deezer. Demo ao vivo com a API espelhada no navegador.',
+      en: 'Transfer, generate and sync playlists across Spotify, YouTube Music, Apple Music, Amazon Music and Deezer. Live demo with the API mirrored in the browser.',
     },
     description: {
       pt: [
-        'Plataforma web para transferir playlists entre serviços de streaming, gerar novas por mood ou gênero e mantê-las sincronizadas periodicamente entre vários provedores.',
-        'Login OAuth2 com cada serviço, backend FastAPI + MongoDB e frontend Angular com i18n (Transloco) e Tailwind CSS.',
+        'Plataforma full stack para levar playlists de um serviço de streaming para outro: backend em FastAPI com MongoDB, JWT, OAuth2 com os provedores e sincronizações agendadas com APScheduler; frontend em Angular com i18n em português e inglês.',
+        'Para a demo ao vivo, reconstruí o front em Angular 21 e espelhei a API no navegador: mesmas rotas, mesmos formatos e mensagens de erro, com testes. O fluxo inteiro funciona: OAuth simulado, assistente de transferência com prévia das correspondências e nível de confiança, progresso que continua depois de recarregar, histórico, compartilhamento, gerador de playlist e um painel do agendador. Ao espelhar a API, encontrei e corrigi na demo seis bugs do backend original, todos documentados.',
       ],
       en: [
-        'Web platform to transfer playlists between streaming services, generate new ones by mood or genre and keep them periodically synced across providers.',
-        'OAuth2 login with each service, a FastAPI + MongoDB backend and an Angular frontend with i18n (Transloco) and Tailwind CSS.',
+        'A full stack platform to move playlists from one streaming service to another: FastAPI backend with MongoDB, JWT, OAuth2 with the providers and scheduled syncs with APScheduler; Angular front end with Portuguese and English i18n.',
+        'For the live demo I rebuilt the front end in Angular 21 and mirrored the API in the browser: same routes, same shapes and error messages, with tests. The whole flow works: simulated OAuth, a transfer wizard with match preview and confidence levels, progress that survives reloads, history, sharing, a playlist generator and a scheduler panel. While mirroring the API I found and fixed in the demo six bugs of the original backend, all documented.',
       ],
     },
     highlights: {
-      pt: ['Matching automático de faixas entre provedores', 'Geração de playlists por mood e gênero', 'Sincronização periódica multi-provedor', 'OAuth2 com Spotify e YouTube Music'],
-      en: ['Automatic track matching across providers', 'Mood- and genre-based playlist generation', 'Periodic multi-provider sync', 'OAuth2 with Spotify and YouTube Music'],
+      pt: ['API FastAPI espelhada no navegador, com testes', 'Assistente de transferência com prévia e nível de confiança', 'Seis bugs do backend original encontrados e documentados', 'Lighthouse 90 a 95 em performance; 100 em acessibilidade e SEO'],
+      en: ['FastAPI API mirrored in the browser, with tests', 'Transfer wizard with match preview and confidence levels', 'Six bugs of the original backend found and documented', 'Lighthouse 90 to 95 performance; 100 accessibility and SEO'],
     },
-    stack: ['Angular', 'FastAPI', 'MongoDB', 'OAuth2', 'Transloco', 'Tailwind CSS'],
+    stack: ['Angular 21', 'TypeScript', 'FastAPI', 'MongoDB', 'OAuth2', 'Transloco'],
     role: solo,
-    links: { repo: 'https://github.com/G2Martins/ITransferMusic' },
-    images: ['itransfermusic'],
+    links: { site: 'https://g2martins.github.io/ITransferMusic/', repo: 'https://github.com/G2Martins/ITransferMusic' },
+    images: ['itransfermusic', 'itransfermusic-2', 'itransfermusic-3', 'itransfermusic-4'],
   },
   {
     slug: 'h-drop',

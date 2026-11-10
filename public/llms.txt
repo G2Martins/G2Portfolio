@@ -31,7 +31,7 @@ Também conhecido como / also known as: Gustavo Gripaldi, Gustavo Martins, G2Mar
 
 - [Routify](https://g2portfolio.grovicdata.com/projetos/routify/): TCC: otimização preditiva de rotas logísticas em Brasília com XGBoost, TomTom e app React Native. (Python, FastAPI, XGBoost, React Native)
 - [SafeDoc-DF](https://g2portfolio.grovicdata.com/projetos/safedoc-df/): Detecção e anonimização de dados pessoais (LAI/LGPD) em pedidos de acesso à informação. Demo ao vivo: o motor roda no navegador. (Python, FastAPI, Angular 21, TypeScript)
-- [ITransferMusic](https://g2portfolio.grovicdata.com/projetos/itransfermusic/): Transfere, gera e sincroniza playlists entre Spotify e YouTube Music com matching automático. (Angular, FastAPI, MongoDB, OAuth2)
+- [ITransferMusic](https://g2portfolio.grovicdata.com/projetos/itransfermusic/): Transfira, gere e sincronize playlists entre Spotify, YouTube Music, Apple Music, Amazon Music e Deezer. Demo ao vivo com a API espelhada no navegador. (Angular 21, TypeScript, FastAPI, MongoDB)
 - [H-Drop](https://g2portfolio.grovicdata.com/projetos/h-drop/): Barco autônomo (ASV) para logística humanitária em áreas alagadas, com Mission Control em tempo real. (ESP32, MQTT, FastAPI, Angular)
 - [G2Cord](https://g2portfolio.grovicdata.com/projetos/g2cord/): App próprio de comunicação estilo Discord: voz, vídeo, tela 1080p60, chat, cargos e fóruns, na web e no desktop. (Go, SQLite, LiveKit, WebRTC)
 - [Dashboard de Tráfego em Tempo Real](https://g2portfolio.grovicdata.com/projetos/dash-tempo-real/): Captura pacotes de rede com Scapy e mostra protocolos e tráfego ao vivo num dashboard Angular. (Python, Scapy, FastAPI, Angular)
