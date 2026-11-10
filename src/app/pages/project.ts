@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, effect, inject, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, computed, effect, inject, input, signal, untracked, viewChild } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { G2BOOST, Lang, PERSON, SITE_URL, UI, g2boostAsset, homePath, projectPath } from '../data/content';
 import { CATEGORIES, PROJECTS, Project } from '../data/projects';
@@ -69,9 +69,31 @@ export class ProjectPage {
   protected home = computed(() => (this.lang() === 'pt' ? '/' : '/en'));
   protected category = computed(() => CATEGORIES[this.p().category][this.lang()]);
 
+  // Carousel: native CSS scroll-snap (swipe works without JS); JS only syncs the counter and the buttons.
+  protected readonly slide = signal(0);
+  private readonly track = viewChild<ElementRef<HTMLElement>>('track');
+  protected go(i: number) {
+    const el = this.track()?.nativeElement;
+    if (!el) return;
+    const n = this.p().images.length;
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    el.scrollTo({ left: ((i + n) % n) * el.clientWidth, behavior: reduce ? 'auto' : 'smooth' });
+  }
+  protected onScroll(el: HTMLElement) {
+    this.slide.set(Math.round(el.scrollLeft / el.clientWidth));
+  }
+
   constructor() {
     const seo = inject(Seo);
     const router = inject(Router);
+    // Same component instance is reused between projects (prev/next): reset the carousel.
+    effect(() => {
+      this.slug();
+      untracked(() => {
+        this.slide.set(0);
+        this.track()?.nativeElement.scrollTo({ left: 0 });
+      });
+    });
     effect(() => {
       const lang = this.lang();
       const p = this.p();

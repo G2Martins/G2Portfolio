@@ -46,10 +46,39 @@
 
     <div class="wrap py-14 sm:py-20">
       <div class="ticks materialize" style="animation-delay: 420ms">
-        <div class="card overflow-hidden">
-          <app-cover [img]="p.images[0]" [alt]="p.title + ': ' + p.summary[l]" [title]="p.title" [kicker]="category()"
-                     [eager]="true" sizes="(min-width: 1152px) 1120px, 100vw" />
-        </div>
+        @if (p.images.length > 1) {
+          <section class="card overflow-hidden" [attr.aria-label]="l === 'pt' ? 'Galeria de capturas' : 'Screenshot gallery'" aria-roledescription="carousel">
+            <div #track class="no-scrollbar flex snap-x snap-mandatory overflow-x-auto overscroll-x-contain" (scroll)="onScroll(track)" tabindex="0"
+                 [attr.aria-label]="l === 'pt' ? 'Capturas, arraste ou use as setas' : 'Screenshots, swipe or use the arrows'"
+                 (keydown.arrowright)="go(slide() + 1); $event.preventDefault()" (keydown.arrowleft)="go(slide() - 1); $event.preventDefault()">
+              @for (img of p.images; track img; let i = $index) {
+                <div class="w-full shrink-0 snap-center" role="group" aria-roledescription="slide" [attr.aria-label]="(i + 1) + ' / ' + p.images.length">
+                  <app-cover [img]="img" [alt]="i === 0 ? p.title + ': ' + p.summary[l] : p.title + ', ' + (l === 'pt' ? 'captura ' : 'screenshot ') + (i + 1)"
+                             [title]="p.title" [kicker]="category()" [eager]="i === 0" sizes="(min-width: 1152px) 1120px, 100vw" />
+                </div>
+              }
+            </div>
+            <div class="flex items-center gap-3 border-t border-line p-3">
+              <button type="button" class="icon-btn" (click)="go(slide() - 1)" [attr.aria-label]="l === 'pt' ? 'Captura anterior' : 'Previous screenshot'"><app-icon name="arrow-left" [size]="17" /></button>
+              <div class="no-scrollbar flex flex-1 gap-2 overflow-x-auto">
+                @for (img of p.images; track img; let i = $index) {
+                  <button type="button" class="w-20 shrink-0 overflow-hidden rounded-md border-2 transition-colors sm:w-24"
+                          [class.border-accent]="slide() === i" [class.border-transparent]="slide() !== i"
+                          [attr.aria-pressed]="slide() === i" [attr.aria-label]="(l === 'pt' ? 'Ver captura ' : 'Show screenshot ') + (i + 1)" (click)="go(i)">
+                    <img [src]="'/img/projects/' + img + '-640.webp'" alt="" width="640" height="400" loading="lazy" decoding="async" class="block aspect-[16/10] w-full object-cover" />
+                  </button>
+                }
+              </div>
+              <span class="font-mono text-[11px] text-ink-2" aria-live="polite">{{ slide() + 1 }} / {{ p.images.length }}</span>
+              <button type="button" class="icon-btn" (click)="go(slide() + 1)" [attr.aria-label]="l === 'pt' ? 'Próxima captura' : 'Next screenshot'"><app-icon name="arrow-right" [size]="17" /></button>
+            </div>
+          </section>
+        } @else {
+          <div class="card overflow-hidden">
+            <app-cover [img]="p.images[0]" [alt]="p.title + ': ' + p.summary[l]" [title]="p.title" [kicker]="category()"
+                       [eager]="true" sizes="(min-width: 1152px) 1120px, 100vw" />
+          </div>
+        }
       </div>
 
       <div class="mt-16 grid gap-14 lg:grid-cols-[1.5fr_1fr] lg:gap-20">
@@ -92,17 +121,6 @@
             </section>
           }
 
-          @if (p.images.length > 1) {
-            <section class="mt-14" [attr.aria-label]="l === 'pt' ? 'Galeria' : 'Gallery'">
-              <div class="grid gap-6 sm:grid-cols-2">
-                @for (img of p.images.slice(1); track img) {
-                  <div [reveal]="$index * 60" class="card overflow-hidden">
-                    <app-cover [img]="img" [alt]="p.title + ', ' + (l === 'pt' ? 'captura ' : 'screenshot ') + ($index + 2)" sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" />
-                  </div>
-                }
-              </div>
-            </section>
-          }
         </div>
 
         <aside class="lg:sticky lg:top-24 lg:self-start">

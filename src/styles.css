@@ -177,6 +177,8 @@
   .stretch .over { position: relative; z-index: 1; }
 
   .prose-lite p + p { margin-top: 1rem; }
+  .no-scrollbar { scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
 }
 
 /* ---------- Motion ---------- */
