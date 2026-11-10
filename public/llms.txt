@@ -29,7 +29,7 @@ Também conhecido como / also known as: Gustavo Gripaldi, Gustavo Martins, G2Mar
 
 ## Projetos / Projects
 
-- [Routify](https://g2portfolio.grovicdata.com/projetos/routify/): TCC: otimização preditiva de rotas logísticas em Brasília com XGBoost, TomTom e app React Native. (Python, FastAPI, XGBoost, React Native)
+- [Routify](https://g2portfolio.grovicdata.com/projetos/routify/): TCC: roteamento preditivo para Brasília. A LIA, um modelo XGBoost, prevê o congestionamento de cada trecho e o A* traça a rota mais rápida prevista. (Python, FastAPI, XGBoost, Optuna)
 - [SafeDoc-DF](https://g2portfolio.grovicdata.com/projetos/safedoc-df/): Detecção e anonimização de dados pessoais (LAI/LGPD) em pedidos de acesso à informação. Demo ao vivo: o motor roda no navegador. (Python, FastAPI, Angular 21, TypeScript)
 - [ITransferMusic](https://g2portfolio.grovicdata.com/projetos/itransfermusic/): Transfira, gere e sincronize playlists entre Spotify, YouTube Music, Apple Music, Amazon Music e Deezer. Demo ao vivo com a API espelhada no navegador. (Angular 21, TypeScript, FastAPI, MongoDB)
 - [H-Drop](https://g2portfolio.grovicdata.com/projetos/h-drop/): Barco autônomo (ASV) para logística humanitária em áreas alagadas, com Mission Control em tempo real. (ESP32, MQTT, FastAPI, Angular)

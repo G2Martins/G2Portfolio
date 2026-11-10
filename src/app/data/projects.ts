@@ -168,27 +168,27 @@ export const PROJECTS: Project[] = [
     category: 'data',
     group: 'main',
     summary: {
-      pt: 'TCC: otimização preditiva de rotas logísticas em Brasília com XGBoost, TomTom e app React Native.',
-      en: 'Capstone: predictive logistics routing in Brasília with XGBoost, TomTom and a React Native app.',
+      pt: 'TCC: roteamento preditivo para Brasília. A LIA, um modelo XGBoost, prevê o congestionamento de cada trecho e o A* traça a rota mais rápida prevista.',
+      en: 'Capstone: predictive routing for Brasília. LIA, an XGBoost model, forecasts congestion on each road segment and A* finds the fastest predicted route.',
     },
     description: {
       pt: [
-        'Trabalho de conclusão de curso em Engenharia da Computação no IESB. O Routify otimiza rotas logísticas em tempo real para smart cities, combinando dados de tráfego da TomTom e do OpenStreetMap com modelos de machine learning para prever congestionamentos.',
-        'Backend em FastAPI com modelos XGBoost, app mobile em React Native (Expo), persistência no Supabase e uma assistente de IA, a LIA.',
+        'Trabalho de conclusão de curso em Engenharia da Computação no IESB, feito em dupla. O Routify não reage só ao trânsito de agora: aprende o padrão de cada via por horário e dia da semana e prevê o quanto cada trecho vai estar congestionado na hora da viagem.',
+        'O motor é a LIA (Logística de Inteligência Artificial), um XGBoost ajustado com Optuna e validado em séries temporais, treinado com 1,65 milhão de leituras da TomTom em cerca de 630 vias do DF. O erro típico por trecho é de ±37 s, 37% menor do que usar só o histórico. A rota sai de um A* sobre o grafo do OpenStreetMap com esses tempos previstos, e o app em Expo roda no celular e na web, com trânsito ao vivo, planejamento do horário de saída e um painel do modelo.',
       ],
       en: [
-        'Capstone project for my Computer Engineering degree at IESB. Routify optimizes logistics routes in real time for smart cities, combining TomTom and OpenStreetMap traffic data with machine learning models that predict congestion.',
-        'FastAPI backend with XGBoost models, a React Native (Expo) mobile app, Supabase persistence and an AI assistant called LIA.',
+        'Capstone project for my Computer Engineering degree at IESB, built by a team of two. Routify does not just react to current traffic: it learns each road\'s pattern by hour and weekday and forecasts how congested each segment will be at travel time.',
+        'The engine is LIA (Logistics Artificial Intelligence), an XGBoost model tuned with Optuna and validated on time series, trained on 1.65 million TomTom readings across about 630 roads in the Federal District. The typical error per segment is ±37 s, 37% lower than using history alone. Routes come from A* over the OpenStreetMap graph with those predicted times, and the Expo app runs on mobile and the web, with live traffic, departure-time planning and a model dashboard.',
       ],
     },
     highlights: {
-      pt: ['Previsão de tráfego com XGBoost', 'Integração TomTom + OpenStreetMap', 'App mobile React Native / Expo', 'Assistente de IA (LIA) para o operador'],
-      en: ['Traffic forecasting with XGBoost', 'TomTom + OpenStreetMap integration', 'React Native / Expo mobile app', 'AI assistant (LIA) for operators'],
+      pt: ['LIA: XGBoost que prevê o congestionamento por trecho', 'Erro típico de ±37 s, 37% abaixo do histórico puro', '1,65 milhão de leituras TomTom em cerca de 630 vias do DF', 'A* sobre o grafo do OpenStreetMap; app Expo para celular e web'],
+      en: ['LIA: XGBoost forecasting congestion per road segment', 'Typical error of ±37 s, 37% below a history-only baseline', '1.65 million TomTom readings across about 630 roads', 'A* over the OpenStreetMap graph; Expo app for mobile and web'],
     },
-    stack: ['Python', 'FastAPI', 'XGBoost', 'React Native', 'Expo', 'Supabase', 'TomTom API'],
+    stack: ['Python', 'FastAPI', 'XGBoost', 'Optuna', 'React Native', 'Expo', 'Supabase', 'TomTom API'],
     role: team,
     links: { site: 'https://routify.grovicdata.com', repo: 'https://github.com/G2Martins/Routify' },
-    images: ['routify', 'routify-2'],
+    images: ['routify', 'routify-2', 'routify-3', 'routify-4', 'routify-5', 'routify-6', 'routify-7'],
   },
   {
     slug: 'safedoc-df',
@@ -326,7 +326,7 @@ export const PROJECTS: Project[] = [
     },
     stack: ['Python', 'Scapy', 'FastAPI', 'Angular', 'Tailwind CSS'],
     role: team,
-    links: { repo: 'https://github.com/AlphaCompLabs/Dash_TempoReal' },
+    links: { site: 'https://alphacomplabs.github.io/Dash_TempoReal/', repo: 'https://github.com/AlphaCompLabs/Dash_TempoReal' },
     images: ['dash-tempo-real', 'dash-tempo-real-2', 'dash-tempo-real-3', 'dash-tempo-real-4'],
   },
   {

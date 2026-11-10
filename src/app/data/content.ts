@@ -258,7 +258,7 @@ export const EXPERIENCE = [
       },
       {
         img: '/img/awards/brasal-destaque-performance-marco',
-        title: { pt: 'Destaque do Mês em Performance (março)', en: 'Employee of the Month, Performance (March)' },
+        title: { pt: 'Destaque do Mês em Performance (março de 2026)', en: 'Employee of the Month, Performance (March 2026)' },
         detail: {
           pt: 'Entregas de dados, documentação de governança, treinamento de D&A, People Analytics no Fabric e migração do ambiente de dados para a nuvem.',
           en: 'Data deliveries, data-governance documentation, D&A training, People Analytics on Fabric and the move of the data platform to the cloud.',
@@ -266,7 +266,7 @@ export const EXPERIENCE = [
       },
       {
         img: '/img/awards/brasal-destaque-clima-novembro',
-        title: { pt: 'Destaque do Mês em Clima (novembro)', en: 'Employee of the Month, Team Climate (November)' },
+        title: { pt: 'Destaque do Mês em Clima (novembro de 2025)', en: 'Employee of the Month, Team Climate (November 2025)' },
         detail: {
           pt: 'Reconhecido pelo espírito colaborativo, pela comunicação entre as áreas e pelo apoio ao time.',
           en: 'Recognized for collaboration, cross-team communication and supporting the team.',

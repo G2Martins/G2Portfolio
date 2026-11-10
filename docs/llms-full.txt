@@ -36,8 +36,8 @@ Stack: Snowflake, SQL, PySpark, Microsoft Fabric, Pentaho, Azure Synapse, Power 
 
 Reconhecimentos:
 - Agente Top · Semana do Parceiro 2026: Destaque da categoria: mais de 100 chamados atendidos, 100% de satisfação dos clientes e todos os prazos cumpridos.
-- Destaque do Mês em Performance (março): Entregas de dados, documentação de governança, treinamento de D&A, People Analytics no Fabric e migração do ambiente de dados para a nuvem.
-- Destaque do Mês em Clima (novembro): Reconhecido pelo espírito colaborativo, pela comunicação entre as áreas e pelo apoio ao time.
+- Destaque do Mês em Performance (março de 2026): Entregas de dados, documentação de governança, treinamento de D&A, People Analytics no Fabric e migração do ambiente de dados para a nuvem.
+- Destaque do Mês em Clima (novembro de 2025): Reconhecido pelo espírito colaborativo, pela comunicação entre as áreas e pelo apoio ao time.
 
 ### Estagiário em Ciência de Dados, Brasal Refrigerantes
 Abr 2025 – Set 2025 · Brasília, DF
@@ -140,16 +140,16 @@ URL: https://g2portfolio.grovicdata.com/projetos/routify/
 Site: https://routify.grovicdata.com
 Código: https://github.com/G2Martins/Routify
 Papel: Desenvolvedor em equipe acadêmica
-Stack: Python, FastAPI, XGBoost, React Native, Expo, Supabase, TomTom API
+Stack: Python, FastAPI, XGBoost, Optuna, React Native, Expo, Supabase, TomTom API
 
-Trabalho de conclusão de curso em Engenharia da Computação no IESB. O Routify otimiza rotas logísticas em tempo real para smart cities, combinando dados de tráfego da TomTom e do OpenStreetMap com modelos de machine learning para prever congestionamentos.
+Trabalho de conclusão de curso em Engenharia da Computação no IESB, feito em dupla. O Routify não reage só ao trânsito de agora: aprende o padrão de cada via por horário e dia da semana e prevê o quanto cada trecho vai estar congestionado na hora da viagem.
 
-Backend em FastAPI com modelos XGBoost, app mobile em React Native (Expo), persistência no Supabase e uma assistente de IA, a LIA.
+O motor é a LIA (Logística de Inteligência Artificial), um XGBoost ajustado com Optuna e validado em séries temporais, treinado com 1,65 milhão de leituras da TomTom em cerca de 630 vias do DF. O erro típico por trecho é de ±37 s, 37% menor do que usar só o histórico. A rota sai de um A* sobre o grafo do OpenStreetMap com esses tempos previstos, e o app em Expo roda no celular e na web, com trânsito ao vivo, planejamento do horário de saída e um painel do modelo.
 
-- Previsão de tráfego com XGBoost
-- Integração TomTom + OpenStreetMap
-- App mobile React Native / Expo
-- Assistente de IA (LIA) para o operador
+- LIA: XGBoost que prevê o congestionamento por trecho
+- Erro típico de ±37 s, 37% abaixo do histórico puro
+- 1,65 milhão de leituras TomTom em cerca de 630 vias do DF
+- A* sobre o grafo do OpenStreetMap; app Expo para celular e web
 
 ### SafeDoc-DF (2026) · Dados & IA
 URL: https://g2portfolio.grovicdata.com/projetos/safedoc-df/
@@ -215,6 +215,7 @@ Backend em Go com SQLite, mídia em tempo real via LiveKit (SFU WebRTC) supervis
 
 ### Dashboard de Tráfego em Tempo Real (2025) · Dados & IA
 URL: https://g2portfolio.grovicdata.com/projetos/dash-tempo-real/
+Site: https://alphacomplabs.github.io/Dash_TempoReal/
 Código: https://github.com/AlphaCompLabs/Dash_TempoReal
 Papel: Desenvolvedor em equipe acadêmica
 Stack: Python, Scapy, FastAPI, Angular, Tailwind CSS
@@ -459,8 +460,8 @@ Stack: Snowflake, SQL, PySpark, Microsoft Fabric, Pentaho, Azure Synapse, Power 
 
 Recognition:
 - Top Agent · Partner Week 2026: Category winner: 100+ tickets resolved, 100% customer satisfaction and every deadline met.
-- Employee of the Month, Performance (March): Data deliveries, data-governance documentation, D&A training, People Analytics on Fabric and the move of the data platform to the cloud.
-- Employee of the Month, Team Climate (November): Recognized for collaboration, cross-team communication and supporting the team.
+- Employee of the Month, Performance (March 2026): Data deliveries, data-governance documentation, D&A training, People Analytics on Fabric and the move of the data platform to the cloud.
+- Employee of the Month, Team Climate (November 2025): Recognized for collaboration, cross-team communication and supporting the team.
 
 ### Data Science Intern, Brasal Refrigerantes
 Apr 2025 – Sep 2025 · Brasília, Brazil
@@ -563,16 +564,16 @@ URL: https://g2portfolio.grovicdata.com/en/projects/routify/
 Website: https://routify.grovicdata.com
 Code: https://github.com/G2Martins/Routify
 Role: Developer in an academic team
-Stack: Python, FastAPI, XGBoost, React Native, Expo, Supabase, TomTom API
+Stack: Python, FastAPI, XGBoost, Optuna, React Native, Expo, Supabase, TomTom API
 
-Capstone project for my Computer Engineering degree at IESB. Routify optimizes logistics routes in real time for smart cities, combining TomTom and OpenStreetMap traffic data with machine learning models that predict congestion.
+Capstone project for my Computer Engineering degree at IESB, built by a team of two. Routify does not just react to current traffic: it learns each road's pattern by hour and weekday and forecasts how congested each segment will be at travel time.
 
-FastAPI backend with XGBoost models, a React Native (Expo) mobile app, Supabase persistence and an AI assistant called LIA.
+The engine is LIA (Logistics Artificial Intelligence), an XGBoost model tuned with Optuna and validated on time series, trained on 1.65 million TomTom readings across about 630 roads in the Federal District. The typical error per segment is ±37 s, 37% lower than using history alone. Routes come from A* over the OpenStreetMap graph with those predicted times, and the Expo app runs on mobile and the web, with live traffic, departure-time planning and a model dashboard.
 
-- Traffic forecasting with XGBoost
-- TomTom + OpenStreetMap integration
-- React Native / Expo mobile app
-- AI assistant (LIA) for operators
+- LIA: XGBoost forecasting congestion per road segment
+- Typical error of ±37 s, 37% below a history-only baseline
+- 1.65 million TomTom readings across about 630 roads
+- A* over the OpenStreetMap graph; Expo app for mobile and web
 
 ### SafeDoc-DF (2026) · Data & AI
 URL: https://g2portfolio.grovicdata.com/en/projects/safedoc-df/
@@ -638,6 +639,7 @@ Go backend on SQLite, real-time media through LiveKit (WebRTC SFU) supervised by
 
 ### Dashboard de Tráfego em Tempo Real (2025) · Data & AI
 URL: https://g2portfolio.grovicdata.com/en/projects/dash-tempo-real/
+Website: https://alphacomplabs.github.io/Dash_TempoReal/
 Code: https://github.com/AlphaCompLabs/Dash_TempoReal
 Role: Developer in an academic team
 Stack: Python, Scapy, FastAPI, Angular, Tailwind CSS
