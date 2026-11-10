@@ -470,25 +470,41 @@ export const PROJECTS: Project[] = [
   {
     slug: 'g2store',
     title: 'G2Store',
-    year: '2024',
+    year: '2026',
     category: 'web',
     group: 'main',
     summary: {
-      pt: 'E-commerce de jogos em Angular com catálogo, página de produto e carrinho responsivos.',
-      en: 'Angular games e-commerce with responsive catalog, product page and cart.',
+      pt: 'Loja digital de jogos com dados do IGDB: pré-venda do GTA VI, exclusivos por plataforma, gift cards, consoles e checkout simulado.',
+      en: 'Digital game store with IGDB data: GTA VI pre-orders, platform-exclusive rules, gift cards, consoles and a simulated checkout.',
     },
     description: {
-      pt: ['Loja virtual de jogos inspirada em grandes stores, desenvolvida em Angular: catálogo, destaques, página de produto e carrinho com layout responsivo.'],
-      en: ['Games web store inspired by major storefronts, built in Angular: catalog, highlights, product page and cart with a responsive layout.'],
+      pt: [
+        'Reconstruí do zero minha antiga loja (Angular 14, que imitava a PlayStation Store) como uma loja digital multiplataforma com identidade própria. Capas, screenshots, plataformas e classificação vêm do IGDB no build, para 42 jogos de PC, PlayStation, Xbox e Nintendo.',
+        'A regra central: cada jogo só pode ser comprado nas plataformas em que realmente sai. GTA VI fica só em PS5 e Xbox, em pré-venda com contagem regressiva; Zelda: Ocarina of Time, só no Switch 2. Tem catálogo com filtros, busca, lista de desejos, gift cards, consoles, carrinho com cupom, Pix simulado e "Meus pedidos" com códigos de demonstração.',
+      ],
+      en: [
+        'I rebuilt my old store (Angular 14, which mimicked the PlayStation Store) from scratch as a multi-platform digital store with its own identity. Covers, screenshots, platforms and age ratings come from IGDB at build time, for 42 games across PC, PlayStation, Xbox and Nintendo.',
+        'The core rule: each game can only be bought for the platforms it actually ships on. GTA VI is PS5 and Xbox only, on pre-order with a countdown; Zelda: Ocarina of Time is Switch 2 only. It has a filterable catalogue, search, wishlist, gift cards, consoles, a cart with coupons, a simulated Pix payment and "My orders" with demo codes.',
+      ],
     },
     highlights: {
-      pt: ['Catálogo e página de produto', 'Carrinho de compras', 'Layout responsivo'],
-      en: ['Catalog and product page', 'Shopping cart', 'Responsive layout'],
+      pt: [
+        '47 páginas pré-renderizadas (SSG) com dados do IGDB',
+        'Venda só nas plataformas reais de cada jogo; pré-venda vira lançamento sozinha pela data',
+        'Carrinho, cupom, checkout simulado e pedidos, sem coletar nenhum dado',
+        'Lighthouse 100 em acessibilidade, boas práticas e SEO',
+      ],
+      en: [
+        '47 prerendered (SSG) pages with IGDB data',
+        'Sold only on each game’s real platforms; pre-orders flip to released by date',
+        'Cart, coupons, simulated checkout and orders, collecting no data',
+        'Lighthouse 100 for accessibility, best practices and SEO',
+      ],
     },
-    stack: ['Angular', 'TypeScript', 'Tailwind CSS'],
-    role: study,
+    stack: ['Angular 21', 'TypeScript', 'Tailwind CSS', 'IGDB API', 'SSG'],
+    role: solo,
     links: { site: 'https://g2martins.github.io/G2Store/', repo: 'https://github.com/G2Martins/G2Store' },
-    images: ['g2store'],
+    images: ['g2store', 'g2store-2', 'g2store-3', 'g2store-4'],
   },
   {
     slug: 'starplex',
