@@ -62,5 +62,5 @@ npm run build:pages  # build + copia dist pra docs/ (publicação)
 - **Python com caminho não-ASCII via argumento** chega corrompido. Rodar de dentro da pasta, com caminho relativo, ou caminho literal no próprio script.
 - **Hidratação incremental foi rejeitada** aqui: quebra o scroll para âncora (`/#projetos`) vindo das páginas de projeto.
 - **Lighthouse local:** o Kaspersky injeta um script bloqueante; usar `--blocked-url-patterns="*kaspersky-labs.com*"`.
-- **Favicon, ícones e OG** derivam do SVG do G2 Boost (`G2 Boost/src-tauri/icons/g2boost.svg`), renderizados com Playwright (fontes Geist embutidas em base64, senão o Chromium não carrega via `file://`).
+- **Logo do portfólio = variante do selo "G²" do G2 Boost na paleta do site** (gradiente `#003ADD → #001C80`, "G" em papel). A fonte é `public/favicon.svg`; ícones PNG/ICO e o selo da OG são renderizados dela com Playwright (fundo sem cantos em apple-touch e maskable). O app G2 Boost mantém o laranja original. Na OG, trocar só a região do selo; ao detectar por cor, limitar a busca ao canto (o nome em tinta escura entra na detecção).
 - **CV em PDF** é o arquivo original do Gustavo: só os metadados foram alterados (PyPDF2, copiando página a página; `clone_reader_document_root` gera PDF quebrado). Conteúdo novo exige PDF novo dele.
