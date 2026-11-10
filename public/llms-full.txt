@@ -222,29 +222,37 @@ Dashboard de análise de tráfego de rede em tempo real: captura pacotes com Sca
 - Agregação por protocolo em tempo real
 - Visualização dinâmica no navegador
 
-### Previsão Eleições SP 2024 (2024) · Dados & IA
+### Eleições SP 2024 (IA) (2026) · Dados & IA
 URL: https://g2portfolio.grovicdata.com/projetos/eleicoes-sp-2024-ia/
+Site: https://g2martins.github.io/EleicoesSP-2024-IA/
 Código: https://github.com/G2Martins/EleicoesSP-2024-IA
-Papel: Projeto de estudo
-Stack: Python, scikit-learn, Pandas, NumPy, Seaborn
+Papel: Autor (design, backend e frontend)
+Stack: Python, scikit-learn, NumPy, Angular 21, TypeScript, SSG
 
-Modelo de previsão eleitoral para São Paulo 2024 com regressão logística multinomial (scikit-learn). Inclui pré-processamento, one-hot encoding e visualização das features com Pandas, NumPy, Matplotlib e Seaborn.
+Trabalho da faculdade transformado em um app de dados didático. O modelo original foi treinado com 100 eleitores gerados aleatoriamente; a página deixa isso claro em todo lugar e mostra o que um modelo aprende quando os dados são sorteados: 16,7% de acerto no teste, abaixo do acaso.
 
-- Regressão logística multinomial
-- Pipeline de pré-processamento e one-hot encoding
-- Análise visual das variáveis
+Tem dashboard da base, matriz de confusão, curvas ROC por candidato, mapas de probabilidade e um simulador com a contribuição de cada variável no logit. Ao revisar o código, corrigi um erro de rótulo das classes no original. Um quadro separado traz o resultado real de 2024 (TSE) só como contexto.
 
-### PredictWin LoL IA (2024) · Dados & IA
+- Inferência softmax no navegador idêntica ao scikit-learn
+- Bug de rótulos das classes encontrado e corrigido
+- Avisos claros: dados fictícios, não é previsão
+- Dashboard, ROC, mapas de probabilidade e simulador
+
+### PredictWin LoL (IA) (2026) · Dados & IA
 URL: https://g2portfolio.grovicdata.com/projetos/predictwin-lol-ia/
+Site: https://g2martins.github.io/PredictWin-LOL-IA/
 Código: https://github.com/G2Martins/PredictWin-LOL-IA
-Papel: Projeto de estudo
-Stack: Python, scikit-learn, Pandas, Matplotlib
+Papel: Autor (design, backend e frontend)
+Stack: Python, scikit-learn, pandas, Angular 21, TypeScript, SSG
 
-Projeto da disciplina de Inteligência Artificial: regressão logística múltipla para prever o resultado de partidas de League of Legends, com pré-processamento, seleção e visualização de features em Python.
+Projeto da matéria de IA que virou um app de dados. Um script em Python treina o modelo exatamente como o código original e exporta coeficientes, métricas e análises; a inferência roda em TypeScript no navegador, idêntica ao scikit-learn (diferença máxima de 1e-16, checada no build).
 
-- Regressão logística múltipla
-- Engenharia e seleção de features
-- Avaliação e visualização do modelo
+O dashboard explora as 2.901 partidas ranqueadas do fim de 2020 (duração, servidores, picks por rota, correlações, importância por permutação). A avaliação é honesta: com 21,7% de vitórias na base, o modelo não supera a linha de base (AUC 0,52 no teste), e a página explica o porquê. O simulador mostra quanto cada campeão pesa na previsão, e os dados ficam disponíveis para download.
+
+- Inferência no navegador idêntica ao scikit-learn (paridade 1e-16)
+- Dashboard de EDA, ROC, calibração e matriz de confusão
+- Avaliação crítica contra a linha de base
+- Downloads: CSV, modelo em JSON e dicionário de dados
 
 ### Calendário Web (2025) · Full Stack
 URL: https://g2portfolio.grovicdata.com/projetos/calendario-web/
@@ -342,18 +350,21 @@ O fluxo funciona por teclado e leitor de tela, o resultado vira um card em PNG g
 - Acessível por teclado e leitor de tela
 - Lighthouse 92 a 100 em performance; 100 em acessibilidade e SEO
 
-### G2HubBlog (2024) · Full Stack
+### G2 Hub (2026) · Full Stack
 URL: https://g2portfolio.grovicdata.com/projetos/g2hubblog/
 Site: https://g2martins.github.io/G2HubBlog/
 Código: https://github.com/G2Martins/G2HubBlog
-Papel: Projeto de estudo
-Stack: Angular, TypeScript, CSS
+Papel: Autor (design, backend e frontend)
+Stack: Angular 21, TypeScript, Tailwind CSS, TMDB API, IGDB API, SSG
 
-Blog construído em Angular a partir de um layout do Dribbble: home com destaques, rotas por post e componentes reutilizáveis.
+Reconstruí do zero meu antigo blog (Angular 14) como o G2 Hub, um site editorial no estilo de jornal noturno. Escrevi 22 artigos em português: notícias, reviews como opinião da redação, guias e listas. Datas, plataformas, elenco e estúdios vêm só dos dados do TMDB e do IGDB ou de fontes conferidas.
 
-- Roteamento por post
-- Componentização
-- Deploy no GitHub Pages
+Tem home com matéria em destaque, seções, "Mais lidas", faixa de lançamentos da semana, páginas de categoria, tag e autor, busca com índice pré-gerado, calendário de lançamentos e feed RSS. Cada artigo carrega só os dados que cita, então a página fica leve.
+
+- 22 artigos autorais com fatos vindos de TMDB, IGDB e fontes conferidas
+- 72 páginas pré-renderizadas (SSG), RSS e sitemap
+- Busca no navegador sobre índice pré-gerado
+- Lighthouse 93 a 98 em performance; 100 em acessibilidade e SEO
 
 ### Formações DIO (2023–2026) · Cloud & Infra
 URL: https://g2portfolio.grovicdata.com/projetos/formacoes-dio/
@@ -618,29 +629,37 @@ Real-time network traffic analysis dashboard: captures packets with Scapy, aggre
 - Real-time per-protocol aggregation
 - Dynamic in-browser visualization
 
-### Previsão Eleições SP 2024 (2024) · Data & AI
+### Eleições SP 2024 (IA) (2026) · Data & AI
 URL: https://g2portfolio.grovicdata.com/en/projects/eleicoes-sp-2024-ia/
+Website: https://g2martins.github.io/EleicoesSP-2024-IA/
 Code: https://github.com/G2Martins/EleicoesSP-2024-IA
-Role: Study project
-Stack: Python, scikit-learn, Pandas, NumPy, Seaborn
+Role: Author (design, backend and frontend)
+Stack: Python, scikit-learn, NumPy, Angular 21, TypeScript, SSG
 
-Electoral forecasting model for São Paulo 2024 using multinomial logistic regression (scikit-learn). Includes preprocessing, one-hot encoding and feature visualization with Pandas, NumPy, Matplotlib and Seaborn.
+A college assignment turned into a teaching data app. The original model was trained on 100 randomly generated voters; the page says so everywhere and shows what a model learns when the data is random: 16.7% test accuracy, below chance.
 
-- Multinomial logistic regression
-- Preprocessing pipeline and one-hot encoding
-- Visual feature analysis
+It has a dataset dashboard, confusion matrix, per-candidate ROC curves, probability maps and a simulator showing each variable’s contribution to the logit. While reviewing the code I fixed a class-label bug in the original. A separate box shows the real 2024 result (TSE) as context only.
 
-### PredictWin LoL IA (2024) · Data & AI
+- In-browser softmax inference identical to scikit-learn
+- Class-label bug found and fixed
+- Clear notices: fictitious data, not a forecast
+- Dashboard, ROC, probability maps and simulator
+
+### PredictWin LoL (IA) (2026) · Data & AI
 URL: https://g2portfolio.grovicdata.com/en/projects/predictwin-lol-ia/
+Website: https://g2martins.github.io/PredictWin-LOL-IA/
 Code: https://github.com/G2Martins/PredictWin-LOL-IA
-Role: Study project
-Stack: Python, scikit-learn, Pandas, Matplotlib
+Role: Author (design, backend and frontend)
+Stack: Python, scikit-learn, pandas, Angular 21, TypeScript, SSG
 
-Artificial Intelligence course project: multiple logistic regression to predict League of Legends match outcomes, with preprocessing, feature selection and visualization in Python.
+An AI-course project turned into a data app. A Python script trains the model exactly like the original code and exports coefficients, metrics and analyses; inference runs in TypeScript in the browser, identical to scikit-learn (max difference 1e-16, checked in the build).
 
-- Multiple logistic regression
-- Feature engineering and selection
-- Model evaluation and visualization
+The dashboard explores 2,901 ranked matches from late 2020 (duration, servers, picks per role, correlations, permutation importance). The evaluation is honest: with 21.7% wins in the data, the model does not beat the baseline (test AUC 0.52), and the page explains why. The simulator shows how much each champion weighs in the prediction, and the data is available for download.
+
+- In-browser inference identical to scikit-learn (1e-16 parity)
+- EDA dashboard, ROC, calibration and confusion matrix
+- Critical evaluation against the baseline
+- Downloads: CSV, model JSON and data dictionary
 
 ### Calendário Web (2025) · Full Stack
 URL: https://g2portfolio.grovicdata.com/en/projects/calendario-web/
@@ -738,18 +757,21 @@ The flow works with keyboard and screen readers, the result becomes a PNG card g
 - Keyboard and screen-reader accessible
 - Lighthouse 92 to 100 performance; 100 accessibility and SEO
 
-### G2HubBlog (2024) · Full Stack
+### G2 Hub (2026) · Full Stack
 URL: https://g2portfolio.grovicdata.com/en/projects/g2hubblog/
 Website: https://g2martins.github.io/G2HubBlog/
 Code: https://github.com/G2Martins/G2HubBlog
-Role: Study project
-Stack: Angular, TypeScript, CSS
+Role: Author (design, backend and frontend)
+Stack: Angular 21, TypeScript, Tailwind CSS, TMDB API, IGDB API, SSG
 
-Blog built in Angular from a Dribbble layout: highlights on the home page, per-post routes and reusable components.
+I rebuilt my old blog (Angular 14) from scratch as G2 Hub, an editorial site styled as a night newspaper. I wrote 22 articles in Portuguese: news, reviews as the newsroom’s opinion, guides and lists. Dates, platforms, cast and studios come only from TMDB and IGDB data or verified sources.
 
-- Per-post routing
-- Component-driven UI
-- Deployed on GitHub Pages
+It has a home page with a featured story, sections, "most read", a weekly releases strip, category, tag and author pages, search over a prebuilt index, a release calendar and an RSS feed. Each article loads only the data it cites, so pages stay light.
+
+- 22 original articles with facts from TMDB, IGDB and verified sources
+- 72 prerendered (SSG) pages, RSS and sitemap
+- In-browser search over a prebuilt index
+- Lighthouse 93 to 98 performance; 100 accessibility and SEO
 
 ### Formações DIO (2023–2026) · Cloud & Infra
 URL: https://g2portfolio.grovicdata.com/en/projects/formacoes-dio/

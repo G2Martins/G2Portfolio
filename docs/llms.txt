@@ -35,8 +35,8 @@ Também conhecido como / also known as: Gustavo Gripaldi, Gustavo Martins, G2Mar
 - [H-Drop](https://g2portfolio.grovicdata.com/projetos/h-drop/): Barco autônomo (ASV) para logística humanitária em áreas alagadas, com Mission Control em tempo real. (ESP32, MQTT, FastAPI, Angular)
 - [G2Cord](https://g2portfolio.grovicdata.com/projetos/g2cord/): App próprio de comunicação estilo Discord: voz, vídeo, tela 1080p60, chat, cargos e fóruns, na web e no desktop. (Go, SQLite, LiveKit, WebRTC)
 - [Dashboard de Tráfego em Tempo Real](https://g2portfolio.grovicdata.com/projetos/dash-tempo-real/): Captura pacotes de rede com Scapy e mostra protocolos e tráfego ao vivo num dashboard Angular. (Python, Scapy, FastAPI, Angular)
-- [Previsão Eleições SP 2024](https://g2portfolio.grovicdata.com/projetos/eleicoes-sp-2024-ia/): Regressão logística multinomial que prevê intenção de voto por idade, renda, escolaridade, região e gênero. (Python, scikit-learn, Pandas, NumPy)
-- [PredictWin LoL IA](https://g2portfolio.grovicdata.com/projetos/predictwin-lol-ia/): Modelo de regressão logística que prevê o vencedor de partidas de League of Legends a partir das estatísticas. (Python, scikit-learn, Pandas, Matplotlib)
+- [Eleições SP 2024 (IA)](https://g2portfolio.grovicdata.com/projetos/eleicoes-sp-2024-ia/): App educacional de regressão logística multinomial com dados fictícios: dashboard, avaliação do modelo, simulador e downloads. Não é previsão eleitoral. (Python, scikit-learn, NumPy, Angular 21)
+- [PredictWin LoL (IA)](https://g2portfolio.grovicdata.com/projetos/predictwin-lol-ia/): App interativo de um modelo de regressão logística para vitórias no LoL: 2.901 partidas reais, dashboard, avaliação honesta e simulador. (Python, scikit-learn, pandas, Angular 21)
 - [Calendário Web](https://g2portfolio.grovicdata.com/projetos/calendario-web/): Gestão de eventos com autenticação, eventos multi-dia e convites, feito em Java 17 + Spring Boot e Angular. (Java 17, Spring Boot, MongoDB, Angular)
 - [RR-Nexus](https://g2portfolio.grovicdata.com/projetos/rr-nexus/): Aplicação distribuída em 3 camadas com Round Robin DNS e sessão centralizada para alta disponibilidade. (Node.js, DNS, Load Balancing, Sessions)
 - [AWS + Terraform](https://g2portfolio.grovicdata.com/projetos/aws-terraform/): Infraestrutura como código na AWS: VPC, subnet, security group e EC2 com Nginx provisionados por Terraform. (Terraform, AWS, EC2, VPC)
@@ -44,7 +44,7 @@ Também conhecido como / also known as: Gustavo Gripaldi, Gustavo Martins, G2Mar
 - [G2Store](https://g2portfolio.grovicdata.com/projetos/g2store/): Loja digital de jogos com dados do IGDB: pré-venda do GTA VI, exclusivos por plataforma, gift cards, consoles e checkout simulado. (Angular 21, TypeScript, Tailwind CSS, IGDB API)
 - [Starplex](https://g2portfolio.grovicdata.com/projetos/starplex/): Rede de cinemas fictícia com filmes em cartaz reais (TMDB), mapa de assentos, bomboniere e checkout simulado. (Angular 21, TypeScript, Tailwind CSS, TMDB API)
 - [G2 Buzz](https://g2portfolio.grovicdata.com/projetos/g2buzzfeed/): Site de quizzes autorais em português: personalidade, trivia com explicação e enquetes, com card de resultado para baixar. (Angular 21, TypeScript, Tailwind CSS, Canvas API)
-- [G2HubBlog](https://g2portfolio.grovicdata.com/projetos/g2hubblog/): Blog em Angular com layout inspirado no Dribbble, rotas por post e componentes reutilizáveis. (Angular, TypeScript, CSS)
+- [G2 Hub](https://g2portfolio.grovicdata.com/projetos/g2hubblog/): Site editorial de games, filmes e séries com 22 artigos autorais, reviews, guias, calendário de lançamentos e RSS. (Angular 21, TypeScript, Tailwind CSS, TMDB API)
 - [Formações DIO](https://g2portfolio.grovicdata.com/projetos/formacoes-dio/): Desafios das formações DIO: Spring Security + JWT, Power BI, Python, Java, Linux e IaC. (Java, Spring Boot, Power BI, Python)
 
 ## Optional
