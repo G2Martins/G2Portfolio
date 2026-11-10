@@ -1,8 +1,8 @@
 # Gustavo Martins Gripaldi | Engenheiro de Dados & Desenvolvedor Full Stack
 
-Gustavo Martins Gripaldi é engenheiro de dados & desenvolvedor full stack em Brasília (DF, Brasil). Atua como Assistente de Business Intelligence na Brasal Participações (Microsoft Fabric, PySpark, Power BI), é cofundador da Grovic Data e criador do G2 Boost. Estuda Engenharia da Computação no IESB (2023–2026).
+Gustavo Martins Gripaldi é engenheiro de dados & desenvolvedor full stack em Brasília (DF, Brasil). Atua como Assistente de Engenharia de Dados na Brasal Participações (Snowflake, SQL, PySpark, Power BI), é cofundador da Grovic Data e criador do G2 Boost. Estuda Engenharia da Computação no IESB (2023–2026).
 
-Sou Gustavo Martins Gripaldi, engenheiro de dados e desenvolvedor full stack em Brasília. Estudo Engenharia da Computação no IESB e atuo como Assistente de Business Intelligence na Brasal, onde arquiteto lakehouses no Microsoft Fabric sob a arquitetura Medallion e automatizo cargas de ERP SAP.
+Sou Gustavo Martins Gripaldi, engenheiro de dados e desenvolvedor full stack em Brasília. Estudo Engenharia da Computação no IESB e atuo como Assistente de Engenharia de Dados na Brasal, onde arquiteto lakehouses no Microsoft Fabric sob a arquitetura Medallion e automatizo cargas de ERP SAP.
 
 Antes dos dados, construí software: na PGFN entreguei uma plataforma de repositório digital em 8 meses, gerando R$ 1 milhão de economia. Hoje junto os dois mundos: pipelines, modelagem dimensional e Power BI de um lado; Angular, Python, Java e apps desktop do outro.
 
@@ -23,7 +23,7 @@ Antes dos dados, construí software: na PGFN entreguei uma plataforma de reposit
 
 Stack: Next.js, Angular, FastAPI, Supabase, MongoDB
 
-### Assistente de Business Intelligence, Brasal Participações
+### Assistente de Engenharia de Dados, Brasal Participações
 Set 2025 – Atual · Brasília, DF
 
 - Otimizei pipelines no Pentaho Data Integration e rotinas em Python sobre APIs do ERP SAP ECC, reduzindo cargas pesadas de 4 horas para 1 hora.
@@ -32,7 +32,7 @@ Set 2025 – Atual · Brasília, DF
 - Estruturei painéis de performance comercial com DAX avançado: recebimentos futuros, carteira líquida e comissões em tempo real.
 - Reduzi em 50% os chamados atrasados e a reabertura de ordens de serviço com governança de demandas via Jira e Agidesk; defini diretrizes de governança de dados (LGPD, DataOps, Data Quality, Data Owners).
 
-Stack: Microsoft Fabric, PySpark, Pentaho, Azure Synapse, Power BI, DAX, SAP ECC
+Stack: Snowflake, SQL, PySpark, Microsoft Fabric, Pentaho, Azure Synapse, Power BI, DAX, SAP ECC
 
 ### Estagiário em Ciência de Dados, Brasal Refrigerantes
 Abr 2025 – Set 2025 · Brasília, DF
@@ -377,9 +377,9 @@ Idiomas: Português (Nativo), Inglês (Intermediário (profissional)), Espanhol 
 
 # Gustavo Martins Gripaldi | Data Engineer & Full Stack Developer
 
-Gustavo Martins Gripaldi is a data engineer & full stack developer based in Brasília, Brazil. He works as a Business Intelligence Assistant at Brasal Participações (Microsoft Fabric, PySpark, Power BI), co-founded Grovic Data and created G2 Boost. Computer Engineering student at IESB (2023–2026).
+Gustavo Martins Gripaldi is a data engineer & full stack developer based in Brasília, Brazil. Works as a Data Engineering Assistant at Brasal Participações (Snowflake, SQL, PySpark, Power BI), co-founded Grovic Data and created G2 Boost. Computer Engineering student at IESB (2023–2026).
 
-I’m Gustavo Martins Gripaldi, a data engineer and full stack developer based in Brasília, Brazil. I study Computer Engineering at IESB and work as a Business Intelligence Assistant at Brasal, where I architect Microsoft Fabric lakehouses following the Medallion architecture and automate SAP ERP loads.
+I’m Gustavo Martins Gripaldi, a data engineer and full stack developer based in Brasília, Brazil. I study Computer Engineering at IESB and work as a Data Engineering Assistant at Brasal, where I architect Microsoft Fabric lakehouses following the Medallion architecture and automate SAP ERP loads.
 
 Before data, I built software: at PGFN (Brazil’s National Treasury Attorney’s Office) I shipped a digital repository platform in 8 months, saving R$ 1 million. Today I combine both worlds: pipelines, dimensional modeling and Power BI on one side; Angular, Python, Java and desktop apps on the other.
 
@@ -400,7 +400,7 @@ Before data, I built software: at PGFN (Brazil’s National Treasury Attorney’
 
 Stack: Next.js, Angular, FastAPI, Supabase, MongoDB
 
-### Business Intelligence Assistant, Brasal Participações
+### Data Engineering Assistant, Brasal Participações
 Sep 2025 – Present · Brasília, Brazil
 
 - Optimized Pentaho Data Integration pipelines and Python routines over SAP ECC ERP APIs, cutting heavy loads from 4 hours to 1 hour.
@@ -409,7 +409,7 @@ Sep 2025 – Present · Brasília, Brazil
 - Built sales-performance dashboards with advanced DAX: future receivables, net portfolio and commission rules in real time.
 - Cut overdue tickets and work-order reopen rate by 50% through demand governance in Jira and Agidesk; set data-governance guidelines (LGPD, DataOps, Data Quality, Data Owners).
 
-Stack: Microsoft Fabric, PySpark, Pentaho, Azure Synapse, Power BI, DAX, SAP ECC
+Stack: Snowflake, SQL, PySpark, Microsoft Fabric, Pentaho, Azure Synapse, Power BI, DAX, SAP ECC
 
 ### Data Science Intern, Brasal Refrigerantes
 Apr 2025 – Sep 2025 · Brasília, Brazil

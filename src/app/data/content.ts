@@ -103,7 +103,7 @@ export const UI = {
     { value: { pt: '20+', en: '20+' }, label: { pt: 'projetos publicados', en: 'shipped projects' } },
   ],
   now: [
-    { org: 'Brasal Participações', role: { pt: 'Assistente de BI', en: 'BI Assistant' }, meta: 'Snowflake · SQL · PySpark · Power BI' },
+    { org: 'Brasal Participações', role: { pt: 'Assistente de Engenharia de Dados', en: 'Data Engineering Assistant' }, meta: 'Snowflake · SQL · PySpark · Power BI' },
     { org: 'Grovic Data', role: { pt: 'Cofundador', en: 'Co-founder' }, meta: 'Valerium · ProntuSMART' },
     { org: 'G2 Boost', role: { pt: 'Release v0.9.3', en: 'Release v0.9.3' }, meta: 'Windows · Rust + React' },
   ],
@@ -145,11 +145,11 @@ export const UI = {
     title: { pt: 'Entre o dado bruto e o produto final.', en: 'Between raw data and the finished product.' },
     body: {
       pt: [
-        'Sou Gustavo Martins Gripaldi, engenheiro de dados e desenvolvedor full stack em Brasília. Estudo Engenharia da Computação no IESB e atuo como Assistente de Business Intelligence na Brasal, onde arquiteto lakehouses no Microsoft Fabric sob a arquitetura Medallion e automatizo cargas de ERP SAP.',
+        'Sou Gustavo Martins Gripaldi, engenheiro de dados e desenvolvedor full stack em Brasília. Estudo Engenharia da Computação no IESB e atuo como Assistente de Engenharia de Dados na Brasal, onde arquiteto lakehouses no Microsoft Fabric sob a arquitetura Medallion e automatizo cargas de ERP SAP.',
         'Antes dos dados, construí software: na PGFN entreguei uma plataforma de repositório digital em 8 meses, gerando R$ 1 milhão de economia. Hoje junto os dois mundos: pipelines, modelagem dimensional e Power BI de um lado; Angular, Python, Java e apps desktop do outro.',
       ],
       en: [
-        'I’m Gustavo Martins Gripaldi, a data engineer and full stack developer based in Brasília, Brazil. I study Computer Engineering at IESB and work as a Business Intelligence Assistant at Brasal, where I architect Microsoft Fabric lakehouses following the Medallion architecture and automate SAP ERP loads.',
+        'I’m Gustavo Martins Gripaldi, a data engineer and full stack developer based in Brasília, Brazil. I study Computer Engineering at IESB and work as a Data Engineering Assistant at Brasal, where I architect Microsoft Fabric lakehouses following the Medallion architecture and automate SAP ERP loads.',
         'Before data, I built software: at PGFN (Brazil’s National Treasury Attorney’s Office) I shipped a digital repository platform in 8 months, saving R$ 1 million. Today I combine both worlds: pipelines, dimensional modeling and Power BI on one side; Angular, Python, Java and desktop apps on the other.',
       ],
     },
@@ -217,7 +217,7 @@ export const EXPERIENCE = [
   {
     org: 'Brasal Participações',
     logo: '/img/logos/brasal.webp',
-    role: { pt: 'Assistente de Business Intelligence', en: 'Business Intelligence Assistant' },
+    role: { pt: 'Assistente de Engenharia de Dados', en: 'Data Engineering Assistant' },
     period: { pt: 'Set 2025 – Atual', en: 'Sep 2025 – Present' },
     place: { pt: 'Brasília, DF', en: 'Brasília, Brazil' },
     bullets: {
@@ -236,7 +236,7 @@ export const EXPERIENCE = [
         'Cut overdue tickets and work-order reopen rate by 50% through demand governance in Jira and Agidesk; set data-governance guidelines (LGPD, DataOps, Data Quality, Data Owners).',
       ],
     },
-    stack: ['Microsoft Fabric', 'PySpark', 'Pentaho', 'Azure Synapse', 'Power BI', 'DAX', 'SAP ECC'],
+    stack: ['Snowflake', 'SQL', 'PySpark', 'Microsoft Fabric', 'Pentaho', 'Azure Synapse', 'Power BI', 'DAX', 'SAP ECC'],
   },
   {
     org: 'Brasal Refrigerantes',

@@ -46,8 +46,8 @@ ${pages.flatMap((p) => [urlEntry(p.pt, p, p.images, p.prio), urlEntry(p.en, p, p
 
 // ---------- llms.txt (https://llmstxt.org) ----------
 const intro = {
-  pt: `${PERSON.name} é ${PERSON.jobTitle.pt.toLowerCase()} em Brasília (DF, Brasil). Atua como Assistente de Business Intelligence na Brasal Participações (Microsoft Fabric, PySpark, Power BI), é cofundador da Grovic Data e criador do G2 Boost. Estuda Engenharia da Computação no IESB (2023–2026).`,
-  en: `${PERSON.name} is a ${PERSON.jobTitle.en.toLowerCase()} based in Brasília, Brazil. He works as a Business Intelligence Assistant at Brasal Participações (Microsoft Fabric, PySpark, Power BI), co-founded Grovic Data and created G2 Boost. Computer Engineering student at IESB (2023–2026).`,
+  pt: `${PERSON.name} é ${PERSON.jobTitle.pt.toLowerCase()} em Brasília (DF, Brasil). Atua como Assistente de Engenharia de Dados na Brasal Participações (Snowflake, SQL, PySpark, Power BI), é cofundador da Grovic Data e criador do G2 Boost. Estuda Engenharia da Computação no IESB (2023–2026).`,
+  en: `${PERSON.name} is a ${PERSON.jobTitle.en.toLowerCase()} based in Brasília, Brazil. Works as a Data Engineering Assistant at Brasal Participações (Snowflake, SQL, PySpark, Power BI), co-founded Grovic Data and created G2 Boost. Computer Engineering student at IESB (2023–2026).`,
 };
 
 out(
