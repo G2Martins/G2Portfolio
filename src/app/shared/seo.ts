@@ -50,7 +50,7 @@ export function personNode(lang: Lang) {
       url: c.url,
     })),
     award: EXPERIENCE.flatMap((x) => (x.awards ?? []).map((a) => `${a.title[lang]}, ${x.org}`)),
-    sameAs: [PERSON.linkedin, PERSON.github, GROVIC.url],
+    sameAs: [PERSON.linkedin, PERSON.github],
   };
 }
 

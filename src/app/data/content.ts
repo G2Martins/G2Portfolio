@@ -60,12 +60,12 @@ export const g2boostAsset = (file: string) => `https://github.com/G2Martins/G2-B
 export const SEO = {
   home: {
     title: {
-      pt: 'Gustavo Martins Gripaldi | Engenheiro de Dados & Desenvolvedor Full Stack',
+      pt: 'Gustavo Martins Gripaldi | Engenheiro de Dados e Full Stack',
       en: 'Gustavo Martins Gripaldi | Data Engineer & Full Stack Developer',
     } as L,
     description: {
-      pt: 'Gustavo Martins Gripaldi, engenheiro de dados e dev full stack em Brasília. Microsoft Fabric, Power BI, Python e Angular. Cofundador da Grovic Data e criador do G2 Boost.',
-      en: 'Gustavo Martins Gripaldi, data engineer and full stack developer from Brasília, Brazil. Microsoft Fabric, Power BI, Python and Angular. Co-founder of Grovic Data, creator of G2 Boost.',
+      pt: 'Gustavo Martins Gripaldi, engenheiro de dados e dev full stack em Brasília: Snowflake, Fabric, Power BI, Python e Angular. Cofundador da Grovic Data.',
+      en: 'Gustavo Martins Gripaldi, data engineer and full stack developer in Brasília, Brazil: Snowflake, Fabric, Power BI, Python, Angular. Co-founder of Grovic Data.',
     } as L,
   },
 };

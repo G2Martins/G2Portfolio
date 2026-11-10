@@ -7,6 +7,13 @@ import { Icon } from '../shared/icon';
 import { Reveal } from '../shared/reveal';
 import { Seo, breadcrumbs, grovicNode, personNode, websiteNode } from '../shared/seo';
 
+/** ≤ 160 chars so Google shows it whole: keep the byline when it fits, else the summary (cut at a word). */
+function metaDescription(summary: string, byline: string) {
+  const full = `${summary} ${byline}`;
+  if (full.length <= 160) return full;
+  return summary.length <= 160 ? summary : `${summary.slice(0, 157).replace(/\s+\S*$/, '')}…`;
+}
+
 function projectNode(p: Project, lang: Lang) {
   const url = SITE_URL + projectPath(lang, p.slug);
   const base = {
@@ -104,7 +111,7 @@ export class ProjectPage {
       seo.set({
         lang,
         title: `${p.title} | ${PERSON.name}`,
-        description: `${p.summary[lang]} ${lang === 'pt' ? 'Projeto de' : 'A project by'} ${PERSON.name}.`,
+        description: metaDescription(p.summary[lang], `${lang === 'pt' ? 'Projeto de' : 'A project by'} ${PERSON.name}.`),
         path: projectPath(lang, p.slug),
         alternates: { pt: projectPath('pt', p.slug), en: projectPath('en', p.slug) },
         image: p.images[0] ? `/img/projects/${p.images[0]}-1280.webp` : undefined,

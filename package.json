@@ -9,7 +9,8 @@
     "seo": "node scripts/seo.ts",
     "build": "npm run seo && ng build",
     "build:pages": "npm run build && node scripts/pages.ts",
-    "check": "node scripts/check.ts"
+    "check": "node scripts/check.ts",
+    "indexnow": "node scripts/indexnow.ts"
   },
   "packageManager": "npm@11.12.1",
   "dependencies": {

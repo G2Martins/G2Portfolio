@@ -25,6 +25,9 @@ for (const u of urls) {
   const ld = html.match(/<script id="ld-json" type="application\/ld\+json">(.*?)<\/script>/s)?.[1];
   try { must(JSON.parse(ld ?? '')['@graph'].length >= 3, `${u}: thin JSON-LD`); } catch { fails.push(`${u}: invalid JSON-LD`); }
   for (const [, src] of html.matchAll(/(?:src|href)="(\/(?:img|cv|og)\/[^"]+)"/g)) must(existsSync(file(src)), `${u}: broken ${src}`);
+  // Internal page links must end in '/': GitHub Pages answers /path with a 301 to /path/.
+  for (const [, href] of html.matchAll(/href="(\/[^"#?]*)/g))
+    must(href.endsWith('/') || /\.[a-z0-9]+$/i.test(href), `${u}: link without trailing slash ${href}`);
   for (const [, set] of html.matchAll(/srcset="([^"]+)"/g))
     for (const part of set.split(',')) { const s = part.trim().split(' ')[0]; must(existsSync(file(s)), `${u}: broken ${s}`); }
 }

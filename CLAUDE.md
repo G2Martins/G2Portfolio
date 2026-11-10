@@ -21,6 +21,7 @@ npm run seo          # gera public/sitemap.xml, llms.txt e llms-full.txt a parti
 npm run build        # seo + ng build (prerender de todas as rotas)
 npm run check        # valida cada URL do sitemap: 1 h1, canonical, description, hreflang, JSON-LD, imagens existentes
 npm run build:pages  # build + copia dist pra docs/ (publicação)
+npm run indexnow     # depois do deploy no ar: avisa Bing/Yandex (IndexNow) de todas as URLs do sitemap
 ```
 
 ## 3. Mapa de módulos
@@ -44,6 +45,8 @@ npm run build:pages  # build + copia dist pra docs/ (publicação)
 - **Cada projeto com demo vive no próprio repo** (`G:\1. Projetos\2.Projetos_Programação\<Projeto>`), publicado no GitHub Pages dele. Aqui só a ficha: textos, prints (`<slug>`, `<slug>-2..4`) e link do site. Ao publicar um projeto: atualizar a ficha e o "About" do repo no GitHub (descrição com o link, homepage, tópicos).
 - **Sem travessão "—" em texto visível** (copy, alt, títulos, llms.txt, manifest, OG, metadados do PDF). Usar ":", ",", "." ou "·".
 - **Sem pronome em texto na terceira pessoa** sobre o Gustavo (llms.txt etc.): usar o nome ou frase sem sujeito.
+- **Links internos sempre com barra no fim** (`/projetos/x/`): o GitHub Pages responde `/projetos/x` com 301. O `TrailingSlashSerializer` (`src/app/shared/trailing-slash.ts`) faz isso no router e o `npm run check` falha se aparecer link sem barra.
+- **Elemento de LCP sem animação de entrada** (lead do hero, resumo do projeto): opacidade 0 no início atrasa o LCP.
 - **Toda rota pré-renderizada.** APIs do browser só em `afterNextRender` ou eventos.
 - **Animação só `transform`/`opacity`**, respeitando `prefers-reduced-motion`; conteúdo visível sem JS (gate `.js` em `styles.css`).
 - **Design = linguagem Valerium** (`G:\1. Projetos\6. Grovic Data\Valerium-Portal` é a referência): papel quente, acento `#003ADD`, eyebrow mono, cards "well", out-expo.
