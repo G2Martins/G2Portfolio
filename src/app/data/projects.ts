@@ -436,8 +436,8 @@ export const PROJECTS: Project[] = [
     },
     stack: ['Node.js', 'DNS', 'Load Balancing', 'Sessions'],
     role: team,
-    links: { repo: 'https://github.com/AlphaCompLabs/Projeto-RR-Nexus/tree/dev' },
-    images: ['rr-nexus'],
+    links: { site: 'https://alphacomplabs.github.io/Projeto-RR-Nexus/', repo: 'https://github.com/AlphaCompLabs/Projeto-RR-Nexus' },
+    images: ['rr-nexus', 'rr-nexus-2', 'rr-nexus-3', 'rr-nexus-4'],
   },
   {
     slug: 'aws-terraform',

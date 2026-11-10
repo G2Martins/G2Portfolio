@@ -275,7 +275,8 @@ Tem grade do mês com eventos de vários dias, linhas do tempo de semana e dia, 
 
 ### RR-Nexus (2025) · Cloud & Infra
 URL: https://g2portfolio.grovicdata.com/projetos/rr-nexus/
-Código: https://github.com/AlphaCompLabs/Projeto-RR-Nexus/tree/dev
+Site: https://alphacomplabs.github.io/Projeto-RR-Nexus/
+Código: https://github.com/AlphaCompLabs/Projeto-RR-Nexus
 Papel: Desenvolvedor em equipe acadêmica
 Stack: Node.js, DNS, Load Balancing, Sessions
 
@@ -697,7 +698,8 @@ It has a month grid with multi-day events, week and day timelines, create and ed
 
 ### RR-Nexus (2025) · Cloud & Infra
 URL: https://g2portfolio.grovicdata.com/en/projects/rr-nexus/
-Code: https://github.com/AlphaCompLabs/Projeto-RR-Nexus/tree/dev
+Website: https://alphacomplabs.github.io/Projeto-RR-Nexus/
+Code: https://github.com/AlphaCompLabs/Projeto-RR-Nexus
 Role: Developer in an academic team
 Stack: Node.js, DNS, Load Balancing, Sessions
 
