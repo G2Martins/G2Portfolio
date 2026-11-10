@@ -547,26 +547,42 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: 'g2buzzfeed',
-    title: 'G2BuzzFeed',
-    year: '2024',
+    title: 'G2 Buzz',
+    year: '2026',
     category: 'web',
     group: 'main',
     summary: {
-      pt: 'Quiz interativo estilo BuzzFeed em Angular, com resultado calculado pelas respostas.',
-      en: 'BuzzFeed-style interactive quiz in Angular, with a result computed from the answers.',
+      pt: 'Site de quizzes autorais em português: personalidade, trivia com explicação e enquetes, com card de resultado para baixar.',
+      en: 'Original Portuguese quiz site: personality, trivia with explanations and polls, with a downloadable result card.',
     },
     description: {
-      pt: ['Quiz interativo no estilo BuzzFeed construído em Angular: perguntas encadeadas e resultado calculado a partir das escolhas do usuário.'],
-      en: ['BuzzFeed-style interactive quiz built in Angular: chained questions and a result computed from the user’s choices.'],
+      pt: [
+        'Reconstruí do zero meu antigo quiz (G2BuzzFeed, Angular 14) como o G2 Buzz, um site de quizzes com identidade própria. São 17 quizzes escritos por mim: personalidade ("Qual linguagem de programação combina com você?"), trivia com explicação em cada resposta, enquetes de isto ou aquilo e grades de pôsteres e capas vindas do TMDB e do IGDB.',
+        'O fluxo funciona por teclado e leitor de tela, o resultado vira um card em PNG gerado no navegador para baixar e compartilhar, e "Meus resultados" guarda o histórico localmente. Cada quiz tem página pré-renderizada com card de compartilhamento próprio.',
+      ],
+      en: [
+        'I rebuilt my old quiz (G2BuzzFeed, Angular 14) from scratch as G2 Buzz, a quiz site with its own identity. It has 17 quizzes I wrote: personality ("Which programming language matches you?"), trivia with an explanation for every answer, this-or-that polls and grids of posters and covers from TMDB and IGDB.',
+        'The flow works with keyboard and screen readers, the result becomes a PNG card generated in the browser to download and share, and "My results" keeps the history locally. Every quiz has a prerendered page with its own share card.',
+      ],
     },
     highlights: {
-      pt: ['Fluxo de perguntas com estado', 'Cálculo de resultado', 'Deploy no GitHub Pages'],
-      en: ['Stateful question flow', 'Result computation', 'Deployed on GitHub Pages'],
+      pt: [
+        '17 quizzes autorais em 4 formatos, com fatos conferidos',
+        'Card de resultado em PNG gerado no navegador (canvas)',
+        'Acessível por teclado e leitor de tela',
+        'Lighthouse 92 a 100 em performance; 100 em acessibilidade e SEO',
+      ],
+      en: [
+        '17 original quizzes in 4 formats, with fact-checked trivia',
+        'Result card as a PNG generated in the browser (canvas)',
+        'Keyboard and screen-reader accessible',
+        'Lighthouse 92 to 100 performance; 100 accessibility and SEO',
+      ],
     },
-    stack: ['Angular', 'TypeScript', 'Tailwind CSS'],
-    role: study,
+    stack: ['Angular 21', 'TypeScript', 'Tailwind CSS', 'Canvas API', 'SSG'],
+    role: solo,
     links: { site: 'https://g2martins.github.io/G2BuzzFeed/', repo: 'https://github.com/G2Martins/G2BuzzFeed' },
-    images: ['g2buzzfeed'],
+    images: ['g2buzzfeed', 'g2buzzfeed-2', 'g2buzzfeed-3', 'g2buzzfeed-4'],
   },
   {
     slug: 'g2hubblog',

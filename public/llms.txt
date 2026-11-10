@@ -43,7 +43,7 @@ Também conhecido como / also known as: Gustavo Gripaldi, Gustavo Martins, G2Mar
 - [Cãonecta: Projeto Integrador](https://g2portfolio.grovicdata.com/projetos/projeto-integrador/): Porta inteligente para cachorro com Arduino: horários de travamento configurados num painel web. (Arduino, C++, Python, HTML)
 - [G2Store](https://g2portfolio.grovicdata.com/projetos/g2store/): Loja digital de jogos com dados do IGDB: pré-venda do GTA VI, exclusivos por plataforma, gift cards, consoles e checkout simulado. (Angular 21, TypeScript, Tailwind CSS, IGDB API)
 - [Starplex](https://g2portfolio.grovicdata.com/projetos/starplex/): Rede de cinemas fictícia com filmes em cartaz reais (TMDB), mapa de assentos, bomboniere e checkout simulado. (Angular 21, TypeScript, Tailwind CSS, TMDB API)
-- [G2BuzzFeed](https://g2portfolio.grovicdata.com/projetos/g2buzzfeed/): Quiz interativo estilo BuzzFeed em Angular, com resultado calculado pelas respostas. (Angular, TypeScript, Tailwind CSS)
+- [G2 Buzz](https://g2portfolio.grovicdata.com/projetos/g2buzzfeed/): Site de quizzes autorais em português: personalidade, trivia com explicação e enquetes, com card de resultado para baixar. (Angular 21, TypeScript, Tailwind CSS, Canvas API)
 - [G2HubBlog](https://g2portfolio.grovicdata.com/projetos/g2hubblog/): Blog em Angular com layout inspirado no Dribbble, rotas por post e componentes reutilizáveis. (Angular, TypeScript, CSS)
 - [Formações DIO](https://g2portfolio.grovicdata.com/projetos/formacoes-dio/): Desafios das formações DIO: Spring Security + JWT, Power BI, Python, Java, Linux e IaC. (Java, Spring Boot, Power BI, Python)
 

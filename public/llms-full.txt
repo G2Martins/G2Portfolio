@@ -326,18 +326,21 @@ O fluxo completo roda sem backend: sessões dos próximos 7 dias por cinema, map
 - Bomboniere e checkout simulado, sem coletar nenhum dado
 - Hidratação incremental; Lighthouse 100 em acessibilidade e SEO
 
-### G2BuzzFeed (2024) · Full Stack
+### G2 Buzz (2026) · Full Stack
 URL: https://g2portfolio.grovicdata.com/projetos/g2buzzfeed/
 Site: https://g2martins.github.io/G2BuzzFeed/
 Código: https://github.com/G2Martins/G2BuzzFeed
-Papel: Projeto de estudo
-Stack: Angular, TypeScript, Tailwind CSS
+Papel: Autor (design, backend e frontend)
+Stack: Angular 21, TypeScript, Tailwind CSS, Canvas API, SSG
 
-Quiz interativo no estilo BuzzFeed construído em Angular: perguntas encadeadas e resultado calculado a partir das escolhas do usuário.
+Reconstruí do zero meu antigo quiz (G2BuzzFeed, Angular 14) como o G2 Buzz, um site de quizzes com identidade própria. São 17 quizzes escritos por mim: personalidade ("Qual linguagem de programação combina com você?"), trivia com explicação em cada resposta, enquetes de isto ou aquilo e grades de pôsteres e capas vindas do TMDB e do IGDB.
 
-- Fluxo de perguntas com estado
-- Cálculo de resultado
-- Deploy no GitHub Pages
+O fluxo funciona por teclado e leitor de tela, o resultado vira um card em PNG gerado no navegador para baixar e compartilhar, e "Meus resultados" guarda o histórico localmente. Cada quiz tem página pré-renderizada com card de compartilhamento próprio.
+
+- 17 quizzes autorais em 4 formatos, com fatos conferidos
+- Card de resultado em PNG gerado no navegador (canvas)
+- Acessível por teclado e leitor de tela
+- Lighthouse 92 a 100 em performance; 100 em acessibilidade e SEO
 
 ### G2HubBlog (2024) · Full Stack
 URL: https://g2portfolio.grovicdata.com/projetos/g2hubblog/
@@ -719,18 +722,21 @@ The whole flow runs without a backend: 7 days of sessions per cinema, a seat map
 - Snack bar and simulated checkout that collects no data
 - Incremental hydration; Lighthouse 100 for accessibility and SEO
 
-### G2BuzzFeed (2024) · Full Stack
+### G2 Buzz (2026) · Full Stack
 URL: https://g2portfolio.grovicdata.com/en/projects/g2buzzfeed/
 Website: https://g2martins.github.io/G2BuzzFeed/
 Code: https://github.com/G2Martins/G2BuzzFeed
-Role: Study project
-Stack: Angular, TypeScript, Tailwind CSS
+Role: Author (design, backend and frontend)
+Stack: Angular 21, TypeScript, Tailwind CSS, Canvas API, SSG
 
-BuzzFeed-style interactive quiz built in Angular: chained questions and a result computed from the user’s choices.
+I rebuilt my old quiz (G2BuzzFeed, Angular 14) from scratch as G2 Buzz, a quiz site with its own identity. It has 17 quizzes I wrote: personality ("Which programming language matches you?"), trivia with an explanation for every answer, this-or-that polls and grids of posters and covers from TMDB and IGDB.
 
-- Stateful question flow
-- Result computation
-- Deployed on GitHub Pages
+The flow works with keyboard and screen readers, the result becomes a PNG card generated in the browser to download and share, and "My results" keeps the history locally. Every quiz has a prerendered page with its own share card.
+
+- 17 original quizzes in 4 formats, with fact-checked trivia
+- Result card as a PNG generated in the browser (canvas)
+- Keyboard and screen-reader accessible
+- Lighthouse 92 to 100 performance; 100 accessibility and SEO
 
 ### G2HubBlog (2024) · Full Stack
 URL: https://g2portfolio.grovicdata.com/en/projects/g2hubblog/
