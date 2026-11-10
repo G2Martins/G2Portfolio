@@ -297,18 +297,21 @@ Loja virtual de jogos inspirada em grandes stores, desenvolvida em Angular: cat�
 - Carrinho de compras
 - Layout responsivo
 
-### Starplex (2024) · Full Stack
+### Starplex (2026) · Full Stack
 URL: https://g2portfolio.grovicdata.com/projetos/starplex/
 Site: https://g2martins.github.io/Starplex/
 Código: https://github.com/G2Martins/Starplex
-Papel: Projeto de estudo
-Stack: Angular, TypeScript, CSS
+Papel: Autor (design, backend e frontend)
+Stack: Angular 21, TypeScript, Tailwind CSS, TMDB API, SSG
 
-Website de cinema em Angular com listagem de filmes, sessões e fluxo de compra de ingressos, em interface responsiva.
+Reconstruí do zero meu antigo site de cinema (Angular 14) como um MVP de venda de ingressos. A programação vem da API do TMDB no build: filmes em cartaz e próximas estreias no Brasil, com sinopse, elenco, trailer e classificação indicativa.
 
-- Listagem de filmes e sessões
-- Fluxo de compra de ingressos
-- Interface responsiva
+O fluxo completo roda sem backend: sessões dos próximos 7 dias por cinema, mapa de assentos com PCD, namoradeira e VIP, inteira e meia, combos da bomboniere, pagamento Pix simulado e ingressos salvos em "Meus ingressos".
+
+- Uma página pré-renderizada (SSG) por filme, com dados do TMDB
+- Mapa de assentos navegável por teclado, com PCD, namoradeira e VIP
+- Bomboniere e checkout simulado, sem coletar nenhum dado
+- Hidratação incremental; Lighthouse 100 em acessibilidade e SEO
 
 ### G2BuzzFeed (2024) · Full Stack
 URL: https://g2portfolio.grovicdata.com/projetos/g2buzzfeed/
@@ -674,18 +677,21 @@ Games web store inspired by major storefronts, built in Angular: catalog, highli
 - Shopping cart
 - Responsive layout
 
-### Starplex (2024) · Full Stack
+### Starplex (2026) · Full Stack
 URL: https://g2portfolio.grovicdata.com/en/projects/starplex/
 Website: https://g2martins.github.io/Starplex/
 Code: https://github.com/G2Martins/Starplex
-Role: Study project
-Stack: Angular, TypeScript, CSS
+Role: Author (design, backend and frontend)
+Stack: Angular 21, TypeScript, Tailwind CSS, TMDB API, SSG
 
-Angular cinema website with film listings, showtimes and a ticket-purchase flow in a responsive interface.
+I rebuilt my old cinema website (Angular 14) from scratch as a ticketing MVP. Showtimes come from the TMDB API at build time: films now playing and coming soon in Brazil, with synopsis, cast, trailer and age rating.
 
-- Film and showtime listings
-- Ticket purchase flow
-- Responsive interface
+The whole flow runs without a backend: 7 days of sessions per cinema, a seat map with accessible, couple and VIP seats, full and half-price tickets, snack combos, a simulated Pix payment and tickets saved under "My tickets".
+
+- One prerendered (SSG) page per film, with TMDB data
+- Keyboard-navigable seat map with accessible, couple and VIP seats
+- Snack bar and simulated checkout that collects no data
+- Incremental hydration; Lighthouse 100 for accessibility and SEO
 
 ### G2BuzzFeed (2024) · Full Stack
 URL: https://g2portfolio.grovicdata.com/en/projects/g2buzzfeed/

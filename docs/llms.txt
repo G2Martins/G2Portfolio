@@ -41,7 +41,7 @@ Também conhecido como / also known as: Gustavo Gripaldi, Gustavo Martins, G2Mar
 - [AWS + Terraform](https://g2portfolio.grovicdata.com/projetos/aws-terraform/): Infraestrutura como código na AWS: VPC, subnet, security group e EC2 com Nginx provisionados por Terraform. (Terraform, AWS, EC2, VPC)
 - [Cãonecta: Projeto Integrador](https://g2portfolio.grovicdata.com/projetos/projeto-integrador/): Porta inteligente para cachorro com Arduino: horários de travamento configurados num painel web. (Arduino, C++, Python, HTML)
 - [G2Store](https://g2portfolio.grovicdata.com/projetos/g2store/): E-commerce de jogos em Angular com catálogo, página de produto e carrinho responsivos. (Angular, TypeScript, Tailwind CSS)
-- [Starplex](https://g2portfolio.grovicdata.com/projetos/starplex/): Site de cinema em Angular com filmes em cartaz, sessões e compra de ingressos. (Angular, TypeScript, CSS)
+- [Starplex](https://g2portfolio.grovicdata.com/projetos/starplex/): Rede de cinemas fictícia com filmes em cartaz reais (TMDB), mapa de assentos, bomboniere e checkout simulado. (Angular 21, TypeScript, Tailwind CSS, TMDB API)
 - [G2BuzzFeed](https://g2portfolio.grovicdata.com/projetos/g2buzzfeed/): Quiz interativo estilo BuzzFeed em Angular, com resultado calculado pelas respostas. (Angular, TypeScript, Tailwind CSS)
 - [G2HubBlog](https://g2portfolio.grovicdata.com/projetos/g2hubblog/): Blog em Angular com layout inspirado no Dribbble, rotas por post e componentes reutilizáveis. (Angular, TypeScript, CSS)
 - [Formações DIO](https://g2portfolio.grovicdata.com/projetos/formacoes-dio/): Desafios das formações DIO: Spring Security + JWT, Power BI, Python, Java, Linux e IaC. (Java, Spring Boot, Power BI, Python)

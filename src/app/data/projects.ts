@@ -493,25 +493,41 @@ export const PROJECTS: Project[] = [
   {
     slug: 'starplex',
     title: 'Starplex',
-    year: '2024',
+    year: '2026',
     category: 'web',
     group: 'main',
     summary: {
-      pt: 'Site de cinema em Angular com filmes em cartaz, sessões e compra de ingressos.',
-      en: 'Angular cinema website with now-showing films, showtimes and ticket purchase.',
+      pt: 'Rede de cinemas fictícia com filmes em cartaz reais (TMDB), mapa de assentos, bomboniere e checkout simulado.',
+      en: 'Fictional cinema chain with real now-playing films (TMDB), seat map, snack bar and simulated checkout.',
     },
     description: {
-      pt: ['Website de cinema em Angular com listagem de filmes, sessões e fluxo de compra de ingressos, em interface responsiva.'],
-      en: ['Angular cinema website with film listings, showtimes and a ticket-purchase flow in a responsive interface.'],
+      pt: [
+        'Reconstruí do zero meu antigo site de cinema (Angular 14) como um MVP de venda de ingressos. A programação vem da API do TMDB no build: filmes em cartaz e próximas estreias no Brasil, com sinopse, elenco, trailer e classificação indicativa.',
+        'O fluxo completo roda sem backend: sessões dos próximos 7 dias por cinema, mapa de assentos com PCD, namoradeira e VIP, inteira e meia, combos da bomboniere, pagamento Pix simulado e ingressos salvos em "Meus ingressos".',
+      ],
+      en: [
+        'I rebuilt my old cinema website (Angular 14) from scratch as a ticketing MVP. Showtimes come from the TMDB API at build time: films now playing and coming soon in Brazil, with synopsis, cast, trailer and age rating.',
+        'The whole flow runs without a backend: 7 days of sessions per cinema, a seat map with accessible, couple and VIP seats, full and half-price tickets, snack combos, a simulated Pix payment and tickets saved under "My tickets".',
+      ],
     },
     highlights: {
-      pt: ['Listagem de filmes e sessões', 'Fluxo de compra de ingressos', 'Interface responsiva'],
-      en: ['Film and showtime listings', 'Ticket purchase flow', 'Responsive interface'],
+      pt: [
+        'Uma página pré-renderizada (SSG) por filme, com dados do TMDB',
+        'Mapa de assentos navegável por teclado, com PCD, namoradeira e VIP',
+        'Bomboniere e checkout simulado, sem coletar nenhum dado',
+        'Hidratação incremental; Lighthouse 100 em acessibilidade e SEO',
+      ],
+      en: [
+        'One prerendered (SSG) page per film, with TMDB data',
+        'Keyboard-navigable seat map with accessible, couple and VIP seats',
+        'Snack bar and simulated checkout that collects no data',
+        'Incremental hydration; Lighthouse 100 for accessibility and SEO',
+      ],
     },
-    stack: ['Angular', 'TypeScript', 'CSS'],
-    role: study,
+    stack: ['Angular 21', 'TypeScript', 'Tailwind CSS', 'TMDB API', 'SSG'],
+    role: solo,
     links: { site: 'https://g2martins.github.io/Starplex/', repo: 'https://github.com/G2Martins/Starplex' },
-    images: ['starplex'],
+    images: ['starplex', 'starplex-2', 'starplex-3', 'starplex-4'],
   },
   {
     slug: 'g2buzzfeed',
