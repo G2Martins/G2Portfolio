@@ -187,7 +187,7 @@ export const PROJECTS: Project[] = [
     },
     stack: ['Python', 'FastAPI', 'XGBoost', 'React Native', 'Expo', 'Supabase', 'TomTom API'],
     role: team,
-    links: { repo: 'https://github.com/G2Martins/Routify' },
+    links: { site: 'https://routify.grovicdata.com', repo: 'https://github.com/G2Martins/Routify' },
     images: ['routify'],
   },
   {

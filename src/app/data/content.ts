@@ -97,15 +97,15 @@ export const UI = {
     chartNote: { pt: '−75% no tempo de processamento', en: '−75% processing time' },
   },
   stats: [
-    { value: { pt: '2+', en: '2+' }, label: { pt: 'anos em dados e software', en: 'years in data & software' } },
+    { value: { pt: '3+', en: '3+' }, label: { pt: 'anos com dados', en: 'years in data' } },
     { value: { pt: 'R$ 1 mi', en: 'R$ 1M' }, label: { pt: 'economizados na PGFN', en: 'saved at PGFN (BRL)' } },
     { value: { pt: '4h → 1h', en: '4h → 1h' }, label: { pt: 'cargas ETL otimizadas', en: 'ETL loads optimized' } },
     { value: { pt: '20+', en: '20+' }, label: { pt: 'projetos publicados', en: 'shipped projects' } },
   ],
   now: [
-    { org: 'Brasal Participações', role: { pt: 'Assistente de BI', en: 'BI Assistant' }, meta: 'Fabric · PySpark · Power BI' },
-    { org: 'Grovic Data', role: { pt: 'Cofundador', en: 'Co-founder' }, meta: 'Valerium · ProntuSMART' },
-    { org: 'G2 Boost', role: { pt: 'Release v0.9.3', en: 'Release v0.9.3' }, meta: 'Windows · Rust + React' },
+    { org: 'Brasal Participações', role: { pt: 'Assistente de BI', en: 'BI Assistant' }, meta: 'Snowflake · SQL · PySpark · Power BI' },
+    { org: 'Grovic Data', role: { pt: 'Cofundador', en: 'Co-founder' }, meta: 'Valerium · ProntuSMART' },
+    { org: 'G2 Boost', role: { pt: 'Release v0.9.3', en: 'Release v0.9.3' }, meta: 'Windows · Rust + React' },
   ],
   release: {
     eyebrow: { pt: '01 · Lançamento', en: '01 · Release' },
@@ -167,9 +167,12 @@ export const UI = {
       pt: 'Aberto a oportunidades em engenharia de dados, BI e desenvolvimento full stack, presencial em Brasília ou remoto.',
       en: 'Open to data engineering, BI and full stack roles, on-site in Brasília or remote.',
     },
+    wa: {
+      pt: 'Olá, Gustavo! Vi seu portfólio e gostaria de conversar sobre uma oportunidade.',
+      en: 'Hi Gustavo! I saw your portfolio and would like to talk about an opportunity.',
+    },
   },
   footer: {
-    built: { pt: 'Feito com Angular, pré-renderizado e servido estático.', en: 'Built with Angular, prerendered and served static.' },
     rights: { pt: 'Todos os direitos reservados.', en: 'All rights reserved.' },
   },
   project: {
@@ -294,7 +297,7 @@ export const EXPERIENCE = [
 ];
 
 export const SKILLS = [
-  { label: { pt: 'Engenharia de Dados & BI', en: 'Data Engineering & BI' }, items: ['Microsoft Fabric', 'PySpark', 'Pentaho (PDI)', 'Azure Data Lake', 'Azure Synapse', 'OneLake', 'ETL / ELT', 'Star Schema', 'Medallion', 'Lakehouse', 'Data Warehouse', 'Data Quality', 'DataOps'] },
+  { label: { pt: 'Engenharia de Dados & BI', en: 'Data Engineering & BI' }, items: ['Snowflake', 'Microsoft Fabric', 'PySpark', 'Pentaho (PDI)', 'Azure Data Lake', 'Azure Synapse', 'OneLake', 'ETL / ELT', 'Star Schema', 'Medallion', 'Lakehouse', 'Data Warehouse', 'Data Quality', 'DataOps'] },
   { label: { pt: 'Visualização', en: 'Visualization' }, items: ['Power BI', 'DAX avançado', 'Dashboards', 'Storytelling de dados'] },
   { label: { pt: 'Linguagens & Backend', en: 'Languages & Backend' }, items: ['Python', 'Pandas', 'FastAPI', 'SQL', 'Java', 'Spring Boot', 'C / C++', 'APIs REST'] },
   { label: { pt: 'Bancos de dados', en: 'Databases' }, items: ['PostgreSQL', 'SQL Server', 'Oracle', 'MySQL', 'MongoDB', 'Apache Solr', 'Supabase'] },

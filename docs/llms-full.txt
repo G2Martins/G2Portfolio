@@ -127,6 +127,7 @@ Escrito em HTML, CSS e JavaScript puros, sem etapa de build, com deploy contínu
 
 ### Routify (2026) · Dados & IA
 URL: https://g2portfolio.grovicdata.com/projetos/routify/
+Site: https://routify.grovicdata.com
 Código: https://github.com/G2Martins/Routify
 Papel: Desenvolvedor em equipe acadêmica
 Stack: Python, FastAPI, XGBoost, React Native, Expo, Supabase, TomTom API
@@ -349,7 +350,7 @@ Repositórios dos bootcamps e formações da DIO (Digital Innovation One), inclu
 
 ## Competências
 
-- Engenharia de Dados & BI: Microsoft Fabric, PySpark, Pentaho (PDI), Azure Data Lake, Azure Synapse, OneLake, ETL / ELT, Star Schema, Medallion, Lakehouse, Data Warehouse, Data Quality, DataOps
+- Engenharia de Dados & BI: Snowflake, Microsoft Fabric, PySpark, Pentaho (PDI), Azure Data Lake, Azure Synapse, OneLake, ETL / ELT, Star Schema, Medallion, Lakehouse, Data Warehouse, Data Quality, DataOps
 - Visualização: Power BI, DAX avançado, Dashboards, Storytelling de dados
 - Linguagens & Backend: Python, Pandas, FastAPI, SQL, Java, Spring Boot, C / C++, APIs REST
 - Bancos de dados: PostgreSQL, SQL Server, Oracle, MySQL, MongoDB, Apache Solr, Supabase
@@ -503,6 +504,7 @@ Written in plain HTML, CSS and JavaScript with no build step, continuously deplo
 
 ### Routify (2026) · Data & AI
 URL: https://g2portfolio.grovicdata.com/en/projects/routify/
+Website: https://routify.grovicdata.com
 Code: https://github.com/G2Martins/Routify
 Role: Developer in an academic team
 Stack: Python, FastAPI, XGBoost, React Native, Expo, Supabase, TomTom API
@@ -725,7 +727,7 @@ Repositories from DIO (Digital Innovation One) bootcamps, including the Santande
 
 ## Skills
 
-- Data Engineering & BI: Microsoft Fabric, PySpark, Pentaho (PDI), Azure Data Lake, Azure Synapse, OneLake, ETL / ELT, Star Schema, Medallion, Lakehouse, Data Warehouse, Data Quality, DataOps
+- Data Engineering & BI: Snowflake, Microsoft Fabric, PySpark, Pentaho (PDI), Azure Data Lake, Azure Synapse, OneLake, ETL / ELT, Star Schema, Medallion, Lakehouse, Data Warehouse, Data Quality, DataOps
 - Visualization: Power BI, DAX avançado, Dashboards, Storytelling de dados
 - Languages & Backend: Python, Pandas, FastAPI, SQL, Java, Spring Boot, C / C++, APIs REST
 - Databases: PostgreSQL, SQL Server, Oracle, MySQL, MongoDB, Apache Solr, Supabase

@@ -36,6 +36,7 @@ export class Home {
   protected readonly projectPath = projectPath;
 
   protected readonly heroWords = PERSON.name.split(' ');
+  protected readonly wa = computed(() => `${PERSON.whatsapp}?text=${encodeURIComponent(UI.contact.wa[this.lang()])}`);
   protected filter = signal<Category | 'all'>('all');
   protected shot = signal(0);
   protected projects = computed(() => {
