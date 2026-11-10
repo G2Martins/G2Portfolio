@@ -34,7 +34,8 @@ npm run build:pages  # build + copia dist pra docs/ (publicação)
 | `src/app/shared/seo.ts` | Title, meta, OG, canonical, hreflang, JSON-LD `@graph` (Person, WebSite, Organization) |
 | `src/app/shared/cover.ts`, `reveal.ts`, `icon.ts` | Imagem WebP 640/1280 com fallback, reveal-on-scroll, ícones SVG inline |
 | `scripts/seo.ts`, `check.ts`, `pages.ts` | Sitemap + llms.txt, verificação de SEO, cópia pra `docs/` |
-| `public/` | CV em PDF, OG, ícones, `img/projects/<slug>-{640,1280}.webp`, CNAME, robots |
+| `cv/` | Fonte do CV (HTML + JSON por idioma) e `build.py` |
+| `public/` | CVs em PDF (PT/EN), OG, ícones, `img/projects/<slug>-{640,1280}.webp`, CNAME, robots |
 
 ## 4. Regras SEMPRE-ATIVAS
 
@@ -63,4 +64,4 @@ npm run build:pages  # build + copia dist pra docs/ (publicação)
 - **Hidratação incremental foi rejeitada** aqui: quebra o scroll para âncora (`/#projetos`) vindo das páginas de projeto.
 - **Lighthouse local:** o Kaspersky injeta um script bloqueante; usar `--blocked-url-patterns="*kaspersky-labs.com*"`.
 - **Logo do portfólio = variante do selo "G²" do G2 Boost na paleta do site** (gradiente `#003ADD → #001C80`, "G" em papel). A fonte é `public/favicon.svg`; ícones PNG/ICO e o selo da OG são renderizados dela com Playwright (fundo sem cantos em apple-touch e maskable). O app G2 Boost mantém o laranja original. Na OG, trocar só a região do selo; ao detectar por cor, limitar a busca ao canto (o nome em tinta escura entra na detecção).
-- **CV em PDF** é o arquivo original do Gustavo: só os metadados foram alterados (PyPDF2, copiando página a página; `clone_reader_document_root` gera PDF quebrado). Conteúdo novo exige PDF novo dele.
+- **CV (PT e EN) tem fonte editável em `cv/`** (`template.html` + `pt.json`/`en.json`, fonte Carlito igual ao original do LibreOffice). `cd cv && python -I build.py` gera `public/cv/gustavo-martins-gripaldi-cv.pdf` e `-cv-en.pdf` e checa cargo, ausência de "—", nº de páginas e links. A versão EN do site aponta para o CV em inglês (`cvPath(lang)`). Metadados via PyPDF2 copiando página a página (`clone_reader_document_root` quebra o PDF).

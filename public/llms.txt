@@ -10,7 +10,8 @@ Também conhecido como / also known as: Gustavo Gripaldi, Gustavo Martins, G2Mar
 
 - [Portfólio (PT-BR)](https://g2portfolio.grovicdata.com/): Gustavo Martins Gripaldi, engenheiro de dados e dev full stack em Brasília. Microsoft Fabric, Power BI, Python e Angular. Cofundador da Grovic Data e criador do G2 Boost.
 - [Portfolio (English)](https://g2portfolio.grovicdata.com/en/): Gustavo Martins Gripaldi, data engineer and full stack developer from Brasília, Brazil. Microsoft Fabric, Power BI, Python and Angular. Co-founder of Grovic Data, creator of G2 Boost.
-- [Currículo / Résumé (PDF)](https://g2portfolio.grovicdata.com/cv/gustavo-martins-gripaldi-cv.pdf): CV completo com experiência, projetos e certificações
+- [Currículo (PDF, PT-BR)](https://g2portfolio.grovicdata.com/cv/gustavo-martins-gripaldi-cv.pdf): CV completo com experiência, projetos e certificações
+- [Résumé (PDF, English)](https://g2portfolio.grovicdata.com/cv/gustavo-martins-gripaldi-cv-en.pdf): full résumé in English
 - [LinkedIn](https://www.linkedin.com/in/g2martins/): perfil profissional
 - [GitHub](https://github.com/G2Martins): código-fonte público
 

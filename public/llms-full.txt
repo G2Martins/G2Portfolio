@@ -34,6 +34,11 @@ Set 2025 – Atual · Brasília, DF
 
 Stack: Snowflake, SQL, PySpark, Microsoft Fabric, Pentaho, Azure Synapse, Power BI, DAX, SAP ECC
 
+Reconhecimentos:
+- Agente Top · Semana do Parceiro 2026: Destaque da categoria: mais de 100 chamados atendidos, 100% de satisfação dos clientes e todos os prazos cumpridos.
+- Destaque do Mês em Performance (março): Entregas de dados, documentação de governança, treinamento de D&A, People Analytics no Fabric e migração do ambiente de dados para a nuvem.
+- Destaque do Mês em Clima (novembro): Reconhecido pelo espírito colaborativo, pela comunicação entre as áreas e pelo apoio ao time.
+
 ### Estagiário em Ciência de Dados, Brasal Refrigerantes
 Abr 2025 – Set 2025 · Brasília, DF
 
@@ -58,6 +63,11 @@ Stack: Java, Spring Boot, Angular, PostgreSQL, Apache Solr, Docker
 Jan 2021 – Dez 2022 · João Pessoa, PB
 
 - Gestão de redes sociais e produção gráfica/audiovisual (Canva, Photoshop, Premiere Pro); apoio ao CEO em faturamento e atendimento.
+
+## Publicações e na mídia
+
+- [Motivos para escolher o Microsoft Fabric como sua ferramenta de ETL em 2026](https://www.linkedin.com/pulse/motivos-para-escolher-o-microsoft-fabric-como-sua-de-gustavo-l8ckf/) (Artigo, LinkedIn, jan 2026)
+- [Keyrus e Brasal iniciam projeto de dados e IA no Snowflake (SnowDay Brasília)](https://www.linkedin.com/posts/keyrusbrasil-brasal-snowflake-ugcPost-7519040018246701056-Wqxd/) (Na mídia, Keyrus Brasil · LinkedIn, out 2026)
 
 ## Projetos
 
@@ -393,7 +403,7 @@ Before data, I built software: at PGFN (Brazil’s National Treasury Attorney’
 - E-mail: gustavogripaldi@outlook.com
 - LinkedIn: https://www.linkedin.com/in/g2martins/
 - GitHub: https://github.com/G2Martins
-- CV (PDF): https://g2portfolio.grovicdata.com/cv/gustavo-martins-gripaldi-cv.pdf
+- CV (PDF): https://g2portfolio.grovicdata.com/cv/gustavo-martins-gripaldi-cv-en.pdf
 
 ## Experience
 
@@ -416,6 +426,11 @@ Sep 2025 – Present · Brasília, Brazil
 - Cut overdue tickets and work-order reopen rate by 50% through demand governance in Jira and Agidesk; set data-governance guidelines (LGPD, DataOps, Data Quality, Data Owners).
 
 Stack: Snowflake, SQL, PySpark, Microsoft Fabric, Pentaho, Azure Synapse, Power BI, DAX, SAP ECC
+
+Recognition:
+- Top Agent · Partner Week 2026: Category winner: 100+ tickets resolved, 100% customer satisfaction and every deadline met.
+- Employee of the Month, Performance (March): Data deliveries, data-governance documentation, D&A training, People Analytics on Fabric and the move of the data platform to the cloud.
+- Employee of the Month, Team Climate (November): Recognized for collaboration, cross-team communication and supporting the team.
 
 ### Data Science Intern, Brasal Refrigerantes
 Apr 2025 – Sep 2025 · Brasília, Brazil
@@ -441,6 +456,11 @@ Stack: Java, Spring Boot, Angular, PostgreSQL, Apache Solr, Docker
 Jan 2021 – Dec 2022 · João Pessoa, Brazil
 
 - Social media management and graphic/video production (Canva, Photoshop, Premiere Pro); supported the CEO with invoicing and customer service.
+
+## Writing & media
+
+- [Why choose Microsoft Fabric as your ETL tool in 2026 (in Portuguese)](https://www.linkedin.com/pulse/motivos-para-escolher-o-microsoft-fabric-como-sua-de-gustavo-l8ckf/) (Article, LinkedIn, Jan 2026)
+- [Keyrus and Brasal kick off a data and AI project on Snowflake (SnowDay Brasília)](https://www.linkedin.com/posts/keyrusbrasil-brasal-snowflake-ugcPost-7519040018246701056-Wqxd/) (In the media, Keyrus Brasil · LinkedIn, Oct 2026)
 
 ## Projects
 

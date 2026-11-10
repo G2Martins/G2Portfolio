@@ -7,6 +7,8 @@ export type LL = Record<Lang, string[]>;
 
 export const SITE_URL = 'https://g2portfolio.grovicdata.com';
 export const CV_PATH = '/cv/gustavo-martins-gripaldi-cv.pdf';
+export const CV_PATH_EN = '/cv/gustavo-martins-gripaldi-cv-en.pdf';
+export const cvPath = (lang: Lang) => (lang === 'pt' ? CV_PATH : CV_PATH_EN);
 export const OG_IMAGE = '/og/gustavo-martins-gripaldi.png';
 export const PHOTO = '/img/gustavo-martins-gripaldi'; // -480.webp / -960.webp (16:9) + .jpg (square, 600px)
 
@@ -155,6 +157,11 @@ export const UI = {
     },
     languages: { pt: 'Idiomas', en: 'Languages' },
   },
+  awards: { pt: 'Reconhecimentos', en: 'Recognition' },
+  media: {
+    title: { pt: 'Publicações e na mídia', en: 'Writing & media' },
+    open: { pt: 'Abrir', en: 'Open' },
+  },
   education: {
     eyebrow: { pt: '06 · Formação', en: '06 · Education' },
     title: { pt: 'Formação & certificações', en: 'Education & certifications' },
@@ -240,6 +247,32 @@ export const EXPERIENCE = [
       ],
     },
     stack: ['Snowflake', 'SQL', 'PySpark', 'Microsoft Fabric', 'Pentaho', 'Azure Synapse', 'Power BI', 'DAX', 'SAP ECC'],
+    awards: [
+      {
+        img: '/img/awards/brasal-agente-top-2026',
+        title: { pt: 'Agente Top · Semana do Parceiro 2026', en: 'Top Agent · Partner Week 2026' },
+        detail: {
+          pt: 'Destaque da categoria: mais de 100 chamados atendidos, 100% de satisfação dos clientes e todos os prazos cumpridos.',
+          en: 'Category winner: 100+ tickets resolved, 100% customer satisfaction and every deadline met.',
+        },
+      },
+      {
+        img: '/img/awards/brasal-destaque-performance-marco',
+        title: { pt: 'Destaque do Mês em Performance (março)', en: 'Employee of the Month, Performance (March)' },
+        detail: {
+          pt: 'Entregas de dados, documentação de governança, treinamento de D&A, People Analytics no Fabric e migração do ambiente de dados para a nuvem.',
+          en: 'Data deliveries, data-governance documentation, D&A training, People Analytics on Fabric and the move of the data platform to the cloud.',
+        },
+      },
+      {
+        img: '/img/awards/brasal-destaque-clima-novembro',
+        title: { pt: 'Destaque do Mês em Clima (novembro)', en: 'Employee of the Month, Team Climate (November)' },
+        detail: {
+          pt: 'Reconhecido pelo espírito colaborativo, pela comunicação entre as áreas e pelo apoio ao time.',
+          en: 'Recognized for collaboration, cross-team communication and supporting the team.',
+        },
+      },
+    ],
   },
   {
     org: 'Brasal Refrigerantes',
@@ -317,9 +350,29 @@ export const LANGUAGES = [
 export const EDUCATION = {
   degree: { pt: 'Bacharelado em Engenharia da Computação', en: 'B.Sc. in Computer Engineering' },
   school: 'Instituto de Educação Superior de Brasília (IESB)',
+  logo: '/img/logos/iesb.webp',
+  url: 'https://www.iesb.br',
   period: { pt: 'Mar 2023 – Dez 2026 (em andamento)', en: 'Mar 2023 – Dec 2026 (in progress)' },
   note: { pt: 'Monitor de Algoritmos e Programação de Computadores (APC I).', en: 'Teaching assistant for Algorithms and Computer Programming (APC I).' },
 };
+
+/** Writing and third-party mentions (links only, no embeds: LinkedIn widgets are heavy). */
+export const MEDIA = [
+  {
+    kind: { pt: 'Artigo', en: 'Article' } as L,
+    title: { pt: 'Motivos para escolher o Microsoft Fabric como sua ferramenta de ETL em 2026', en: 'Why choose Microsoft Fabric as your ETL tool in 2026 (in Portuguese)' } as L,
+    source: 'LinkedIn',
+    date: { pt: 'jan 2026', en: 'Jan 2026' } as L,
+    url: 'https://www.linkedin.com/pulse/motivos-para-escolher-o-microsoft-fabric-como-sua-de-gustavo-l8ckf/',
+  },
+  {
+    kind: { pt: 'Na mídia', en: 'In the media' } as L,
+    title: { pt: 'Keyrus e Brasal iniciam projeto de dados e IA no Snowflake (SnowDay Brasília)', en: 'Keyrus and Brasal kick off a data and AI project on Snowflake (SnowDay Brasília)' } as L,
+    source: 'Keyrus Brasil · LinkedIn',
+    date: { pt: 'out 2026', en: 'Oct 2026' } as L,
+    url: 'https://www.linkedin.com/posts/keyrusbrasil-brasal-snowflake-ugcPost-7519040018246701056-Wqxd/',
+  },
+];
 
 export const CERTS = [
   { name: 'AI Skills Fest 2026', issuer: 'Microsoft', year: '2026', url: 'https://www.credly.com/badges/8001e6ec-67ca-427e-bb84-cf1097341025/linked_in_profile' },

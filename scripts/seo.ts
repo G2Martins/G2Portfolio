@@ -2,7 +2,7 @@
 // site renders (src/app/data). Run with Node >= 22.18 (native TypeScript type stripping).
 import { writeFileSync } from 'node:fs';
 import {
-  CERTS, CV_PATH, EDUCATION, EXPERIENCE, G2BOOST, GROVIC, LANGUAGES, PERSON, SEO, SITE_URL, SKILLS, UI,
+  CERTS, CV_PATH, CV_PATH_EN, MEDIA, EDUCATION, EXPERIENCE, G2BOOST, GROVIC, LANGUAGES, PERSON, SEO, SITE_URL, SKILLS, UI,
   g2boostAsset, homePath, projectPath, type Lang,
 } from '../src/app/data/content.ts';
 import { CATEGORIES, PROJECTS } from '../src/app/data/projects.ts';
@@ -40,6 +40,11 @@ ${pages.flatMap((p) => [urlEntry(p.pt, p, p.images, p.prio), urlEntry(p.en, p, p
     <lastmod>${today}</lastmod>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>${abs(CV_PATH_EN)}</loc>
+    <lastmod>${today}</lastmod>
+    <priority>0.6</priority>
+  </url>
 </urlset>
 `,
 );
@@ -64,7 +69,8 @@ Também conhecido como / also known as: ${PERSON.alternateName.join(', ')}. Cont
 
 - [Portfólio (PT-BR)](${abs(homePath('pt'))}): ${SEO.home.description.pt}
 - [Portfolio (English)](${abs(homePath('en'))}): ${SEO.home.description.en}
-- [Currículo / Résumé (PDF)](${abs(CV_PATH)}): CV completo com experiência, projetos e certificações
+- [Currículo (PDF, PT-BR)](${abs(CV_PATH)}): CV completo com experiência, projetos e certificações
+- [Résumé (PDF, English)](${abs(CV_PATH_EN)}): full résumé in English
 - [LinkedIn](${PERSON.linkedin}): perfil profissional
 - [GitHub](${PERSON.github}): código-fonte público
 
@@ -102,14 +108,18 @@ ${UI.about.body[l].join('\n\n')}
 - E-mail: ${PERSON.email}
 - LinkedIn: ${PERSON.linkedin}
 - GitHub: ${PERSON.github}
-- CV (PDF): ${abs(CV_PATH)}
+- CV (PDF): ${abs(l === 'pt' ? CV_PATH : CV_PATH_EN)}
 
 ## ${t(UI.nav.experience)}
 
 ${EXPERIENCE.map((x) => `### ${t(x.role)}, ${x.org}
 ${t(x.period)} · ${t(x.place)}
 
-${x.bullets[l].map((b) => `- ${b}`).join('\n')}${x.stack.length ? `\n\nStack: ${x.stack.join(', ')}` : ''}`).join('\n\n')}
+${x.bullets[l].map((b) => `- ${b}`).join('\n')}${x.stack.length ? `\n\nStack: ${x.stack.join(', ')}` : ''}${x.awards?.length ? `\n\n${t(UI.awards)}:\n${x.awards.map((a) => `- ${t(a.title)}: ${t(a.detail)}`).join('\n')}` : ''}`).join('\n\n')}
+
+## ${t(UI.media.title)}
+
+${MEDIA.map((m) => `- [${t(m.title)}](${m.url}) (${t(m.kind)}, ${m.source}, ${t(m.date)})`).join('\n')}
 
 ## ${l === 'pt' ? 'Projetos' : 'Projects'}
 

@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, input, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import {
-  CERTS, CV_PATH, EDUCATION, EXPERIENCE, G2BOOST, GROVIC, LANGUAGES, Lang, PERSON, PHOTO, SEO, SITE_URL, SKILLS, UI, g2boostAsset, homePath, projectPath,
+  CERTS, EDUCATION, EXPERIENCE, G2BOOST, GROVIC, LANGUAGES, Lang, MEDIA, PERSON, PHOTO, SEO, SITE_URL, SKILLS, UI, cvPath, g2boostAsset, homePath, projectPath,
 } from '../data/content';
 import { CATEGORIES, Category, PROJECTS } from '../data/projects';
 import { Cover } from '../shared/cover';
@@ -29,7 +29,8 @@ export class Home {
   protected readonly languages = LANGUAGES;
   protected readonly education = EDUCATION;
   protected readonly certs = CERTS;
-  protected readonly cv = CV_PATH;
+  protected readonly cv = computed(() => cvPath(this.lang()));
+  protected readonly media = MEDIA;
   protected readonly photo = PHOTO;
   protected readonly categories = Object.entries(CATEGORIES) as [Category, (typeof CATEGORIES)[Category]][];
   protected readonly asset = g2boostAsset;

@@ -1,0 +1,111 @@
+{
+  "lang": "en",
+  "out": "public/cv/gustavo-martins-gripaldi-cv-en.pdf",
+  "meta": {
+    "title": "Gustavo Martins Gripaldi | Resume (Data Engineering & Full Stack)",
+    "subject": "Resume of Gustavo Martins Gripaldi, Data Engineer and Full Stack Developer, Brasília, Brazil",
+    "keywords": "Gustavo Martins Gripaldi, Data Engineering, Snowflake, SQL, PySpark, Power BI, Microsoft Fabric, Python, Angular, Full Stack, Brasília"
+  },
+  "labels": {
+    "summary": "Professional Summary",
+    "skills": "Technical Skills",
+    "experience": "Professional Experience",
+    "projects": "Relevant Projects",
+    "education": "Education",
+    "certs": "Certifications",
+    "languages": "Languages",
+    "verify": "Verify credential"
+  },
+  "name": "Gustavo Martins Gripaldi",
+  "headline": ["Data Engineering & Full Stack Development", "Python", "SQL", "Power BI", "Microsoft Fabric", "ETL"],
+  "contact": ["Brasília, DF, Brazil", "+55 61 99500-8118", "gustavogripaldi@outlook.com"],
+  "links": [
+    { "label": "LinkedIn", "text": "linkedin.com/in/g2martins", "url": "https://www.linkedin.com/in/g2martins" },
+    { "label": "GitHub", "text": "github.com/G2Martins", "url": "https://github.com/G2Martins" },
+    { "label": "Portfolio", "text": "g2portfolio.grovicdata.com", "url": "https://g2portfolio.grovicdata.com/en/" }
+  ],
+  "summary": "Data professional with over 3 years of experience combining Data Engineering and Software Development. I work on modernizing data architectures with Microsoft Fabric, PySpark and Azure Data Lake, building ETL/ELT pipelines and designing dimensional models (Star Schema, Medallion architecture) for Lakehouses. Proficient in Python, SQL and Power BI (advanced DAX), with a solid Full Stack development background (Java, Spring Boot, Angular) built on a government project. Focused on process automation, data governance (LGPD) and delivering strategic business metrics.",
+  "skills": [
+    { "label": "Data Engineering & BI", "text": "Snowflake, Microsoft Fabric, PySpark, Pentaho Data Integration (PDI), Azure Data Lake, Azure Synapse, OneLake, ETL/ELT Pipelines, Dimensional Modeling, Star Schema, Medallion Architecture, Lakehouse, Data Warehouse, Data Governance, DataOps, Data Quality." },
+    { "label": "Languages & Backend", "text": "Python (Pandas, FastAPI), SQL, Java, Spring Boot, C/C++, REST APIs." },
+    { "label": "Databases", "text": "PostgreSQL, Oracle, SQL Server, MySQL, MongoDB, Apache Solr." },
+    { "label": "Visualization & Modeling", "text": "Power BI, Advanced DAX, Interactive Dashboards, Data Storytelling." },
+    { "label": "Full Stack Development", "text": "Angular, TypeScript, HTML, CSS, Tailwind CSS, API Integration." },
+    { "label": "DevOps & Tools", "text": "Git, GitLab, Docker, Linux, Power Automate, Jira, Agidesk, SAP ECC." }
+  ],
+  "experience": [
+    {
+      "role": "Data Engineering Assistant",
+      "org": "Brasal Participações",
+      "place": "Brasília, Brazil",
+      "period": "Sep 2025 – Present",
+      "bullets": [
+        "Optimized data engineering pipelines in Pentaho Data Integration and Python routines for analytical consumption of SAP ECC ERP APIs, cutting heavy-load processing time from 4 hours to 1 hour.",
+        "Architected modern Lakehouses in Microsoft Fabric and Azure Synapse following the Medallion architecture and Star Schema modeling, integrating heterogeneous sources (SQL Server, Oracle, MySQL and APIs) into OneLake to centralize fact and dimension tables.",
+        "Automated the ingestion and processing of analytical reports from the SULTS platform directly into Power BI, eliminating 100% of weekly manual export processes and increasing decision-making agility by 40%.",
+        "Built sales-performance management dashboards with advanced DAX and complex modeling in Power BI, delivering real-time visibility into future receivables, net portfolio and commission rules.",
+        "Managed technical requirements and the governance of analytics demands via Jira and Agidesk, reducing overdue tickets and the work-order reopen rate by 50%.",
+        "Established data governance guidelines aligned with LGPD, designing DataOps flows, Data Quality criteria and the formal appointment of Data Owners."
+      ]
+    },
+    {
+      "role": "Data Science Intern",
+      "org": "Brasal Refrigerantes",
+      "place": "Brasília, Brazil",
+      "period": "Apr 2025 – Sep 2025",
+      "bullets": [
+        "Developed Python scripts to automate the migration and processing of data from the legacy Rhevolution ecosystem to the LG platform (Gente 360° project), processing over 136k exam rows and 20k medical certificate records.",
+        "Implemented an automation flow between Microsoft Forms and Microsoft Lists via Power Automate for the Psychosocial Assessment (NR1 compliance), eliminating manual handling and applying business rules with score-based visual alerts.",
+        "Created the “BI Ações” analytics dashboard in Power BI to consolidate internal campaigns, cutting information-gathering time by over 70% and generating automated productivity insights.",
+        "Systematized financial monitoring of operating expenses in the “BI Custo Fixo” data model, centralizing the history in Power BI to support investment decisions and the early identification of bottlenecks."
+      ]
+    },
+    {
+      "role": "IT Intern (Full Stack Development)",
+      "org": "Procuradoria-Geral da Fazenda Nacional (PGFN)",
+      "place": "Brasília, Brazil",
+      "period": "Jan 2024 – Apr 2025",
+      "bullets": [
+        "Customized and deployed the DSpace digital repository platform from scratch in PGFN’s corporate environment, delivering the complete ecosystem in 8 months (versus 1.5 years estimated by external consultancies) and generating direct savings of R$ 1 million in public funds.",
+        "Architected backend components in Java, Spring Boot, Maven and Apache Tomcat integrated with PostgreSQL and Apache Solr indexing, enabling automated metadata extraction from PDF files.",
+        "Developed a unified web interface in Angular, TypeScript, Tailwind CSS and HTML, with advanced taxonomy search and parameterized metadata filtering.",
+        "Cut the teams’ operational time by 85% in the manual transfer of legal opinion data into spreadsheets, streamlining document management.",
+        "Containerized the application with Docker and deployed it on Linux servers; managed version control in GitLab and wrote the technical documentation of the customizations."
+      ]
+    },
+    {
+      "role": "Marketing Intern",
+      "org": "Formatech Reformas",
+      "place": "João Pessoa, Brazil",
+      "period": "Jan 2021 – Dec 2022",
+      "bullets": [
+        "Managed social media and produced graphic and audiovisual content (Canva, Photoshop, Adobe Premiere Pro); supported the CEO with issuing invoices and customer service, strengthening the brand’s reputation."
+      ]
+    }
+  ],
+  "projects": [
+    { "name": "SafeDoc-DF (Participa DF Challenge)", "text": "Full-stack platform for automatic detection of personal data (CPF, RG, e-mail) in public-information requests, with risk classification, anonymization and a REST API, supporting LAI and LGPD compliance. Evaluated with Precision, Recall and F1-Score metrics." },
+    { "name": "Calendário Web", "text": "Event management system with a Java 17 + Spring Boot backend and an Angular 14 + Tailwind CSS frontend, including authentication, multi-day events, invitations and a REST API." },
+    { "name": "Predictive Models (Python / scikit-learn)", "text": "Multiple and Multinomial Logistic Regression to predict sports results and voting intention, with preprocessing, one-hot encoding and feature visualization (Pandas, NumPy, Matplotlib, Seaborn)." }
+  ],
+  "education": {
+    "degree": "B.Sc. in Computer Engineering",
+    "detail": "Instituto de Educação Superior de Brasília (IESB), Brasília, DF | Mar 2023 – Dec 2026 (in progress). Teaching assistant for Algorithms and Computer Programming (APC I)."
+  },
+  "certs": [
+    { "name": "AI Skills Fest 2026", "issuer": "Microsoft", "year": "2026", "url": "https://www.credly.com/badges/8001e6ec-67ca-427e-bb84-cf1097341025/linked_in_profile" },
+    { "name": "SAP Analytics Cloud: Data Connections & Performance", "issuer": "SAP", "year": "2026", "url": "https://badger.learning.sap.com/verify/xytih-luvup-nipyd-negoc-fofic" },
+    { "name": "Ask Questions to Make Data-Driven Decisions", "issuer": "Google", "year": "2026", "url": "https://www.coursera.org/account/accomplishments/verify/4MUK6I6H8OF6" },
+    { "name": "Foundations: Data, Data, Everywhere", "issuer": "Google", "year": "2026", "url": "https://www.coursera.org/account/accomplishments/verify/UW3IAVYE62WR" },
+    { "name": "Formação Python Fundamentals", "issuer": "DIO", "year": "2026", "url": "https://www.dio.me/certificate/1HLDDOYX/share" },
+    { "name": "Dynamics 365 CRM & Power Platform", "issuer": "Smart Consulting", "year": "2025", "url": "https://www.linkedin.com/in/g2martins/overlay/Certifications/1901593613/treasury/?profileId=ACoAADmYn4EBKoRHNKjuMa0dX-t0XgOvs3_m_E8" },
+    { "name": "Formação Angular Developer", "issuer": "DIO", "year": "2024", "url": "https://www.dio.me/certificate/W9DVXIFM/share" },
+    { "name": "Santander Bootcamp: Fullstack Java + Angular and Backend Java", "issuer": "DIO", "year": "2024", "url": "https://www.dio.me/certificate/ZLR6VNRL/share" },
+    { "name": "PostgreSQL: Conceitos e Melhores Práticas", "issuer": "DIO", "year": "2024", "url": "https://www.dio.me/certificate/5B1FE78F/share" }
+  ],
+  "languages": [
+    { "name": "Portuguese", "level": "Native" },
+    { "name": "English", "level": "Intermediate (Professional Working)" },
+    { "name": "Spanish", "level": "Basic" }
+  ]
+}

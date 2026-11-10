@@ -1,6 +1,6 @@
 import { DOCUMENT, Injectable, inject } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
-import { CERTS, EDUCATION, GROVIC, Lang, OG_IMAGE, PERSON, PHOTO, SITE_URL, SKILLS } from '../data/content';
+import { CERTS, EDUCATION, EXPERIENCE, GROVIC, Lang, OG_IMAGE, PERSON, PHOTO, SITE_URL, SKILLS } from '../data/content';
 
 export interface PageSeo {
   lang: Lang;
@@ -49,6 +49,7 @@ export function personNode(lang: Lang) {
       recognizedBy: { '@type': 'Organization', name: c.issuer },
       url: c.url,
     })),
+    award: EXPERIENCE.flatMap((x) => (x.awards ?? []).map((a) => `${a.title[lang]}, ${x.org}`)),
     sameAs: [PERSON.linkedin, PERSON.github, GROVIC.url],
   };
 }

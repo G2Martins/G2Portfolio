@@ -19,7 +19,7 @@
       </p>
       <div class="materialize mt-8 flex flex-wrap gap-3" style="animation-delay: 480ms">
         <a class="btn btn-primary" [routerLink]="[]" fragment="projetos">{{ ui.hero.ctaProjects[l] }} <app-icon name="arrow-right" [size]="16" /></a>
-        <a class="btn btn-line" [href]="cv" download><app-icon name="file" [size]="16" />{{ ui.nav.cv[l] }} · PDF</a>
+        <a class="btn btn-line" [href]="cv()" download><app-icon name="file" [size]="16" />{{ ui.nav.cv[l] }} · PDF</a>
         <a class="btn btn-ghost" [routerLink]="[]" fragment="contato">{{ ui.hero.ctaContact[l] }}</a>
       </div>
 
@@ -283,6 +283,23 @@
                 <li class="flex gap-3"><span class="mt-[9px] size-1 shrink-0 rounded-full bg-accent"></span><span>{{ b }}</span></li>
               }
             </ul>
+            @if (x.awards?.length) {
+              <div class="mt-6">
+                <p class="eyebrow">{{ ui.awards[l] }}</p>
+                <ul class="mt-3 grid gap-4 sm:grid-cols-3">
+                  @for (a of x.awards; track a.img) {
+                    <li>
+                      <a class="group block" [href]="a.img + '.webp'" target="_blank" rel="noopener">
+                        <img [src]="a.img + '-480.webp'" [alt]="a.title[l]" width="480" height="300" loading="lazy" decoding="async"
+                             class="aspect-[16/10] w-full rounded-lg border border-line bg-paper object-cover object-top transition-[border-color] group-hover:border-accent" />
+                        <span class="mt-2.5 flex items-start gap-1.5 text-[13.5px] font-medium leading-snug"><app-icon name="award" [size]="15" class="mt-[2px] text-accent" />{{ a.title[l] }}</span>
+                        <span class="mt-1 block text-[12.5px] leading-relaxed text-ink-2">{{ a.detail[l] }}</span>
+                      </a>
+                    </li>
+                  }
+                </ul>
+              </div>
+            }
             @if (x.stack.length) {
               <div class="mt-5 flex flex-wrap gap-1.5">
                 @for (t of x.stack; track t) { <span class="tag">{{ t }}</span> }
@@ -292,6 +309,23 @@
         </li>
       }
     </ol>
+    <div reveal class="mt-4 border-t border-line pt-10 md:grid md:grid-cols-[220px_1fr] md:gap-10">
+      <h3 class="eyebrow self-start">{{ ui.media.title[l] }}</h3>
+      <ul class="mt-4 divide-y divide-line md:mt-0">
+        @for (m of media; track m.url) {
+          <li>
+            <a class="group flex items-start gap-4 py-3.5 first:pt-0" [href]="m.url" target="_blank" rel="noopener">
+              <span class="w-20 shrink-0 pt-0.5 font-mono text-[11px] uppercase tracking-[0.1em] text-ink-2">{{ m.kind[l] }}</span>
+              <span class="flex-1">
+                <span class="block text-[15px] font-medium tracking-tight group-hover:text-accent-ink">{{ m.title[l] }}</span>
+                <span class="mt-0.5 block font-mono text-[11.5px] text-ink-2">{{ m.source }} · {{ m.date[l] }}</span>
+              </span>
+              <app-icon name="arrow-up-right" [size]="15" class="mt-1 text-ink-2 group-hover:text-accent-ink" />
+            </a>
+          </li>
+        }
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -335,8 +369,13 @@
       <div reveal>
         <div class="card p-6">
           <p class="font-mono text-[11px] text-ink-2">{{ education.period[l] }}</p>
-          <h3 class="mt-2 text-[19px] font-medium tracking-tight">{{ education.degree[l] }}</h3>
-          <p class="mt-1 text-ink-2">{{ education.school }}</p>
+          <div class="mt-3 flex items-start gap-3">
+            <img [src]="education.logo" alt="IESB" width="40" height="40" loading="lazy" decoding="async" class="size-10 shrink-0 rounded-lg border border-line bg-white object-contain p-1" />
+            <div>
+              <h3 class="text-[19px] font-medium leading-snug tracking-tight">{{ education.degree[l] }}</h3>
+              <a class="mt-1 block text-ink-2 underline decoration-line underline-offset-4 hover:text-ink" [href]="education.url" target="_blank" rel="noopener">{{ education.school }}</a>
+            </div>
+          </div>
           <p class="mt-4 border-t border-line pt-4 text-[14px] text-ink-2">{{ education.note[l] }}</p>
         </div>
       </div>
@@ -379,7 +418,7 @@
       <a class="btn btn-line" [href]="person.linkedin" target="_blank" rel="noopener me"><app-icon name="linkedin" [size]="16" />LinkedIn</a>
       <a class="btn btn-line" [href]="person.github" target="_blank" rel="noopener me"><app-icon name="github" [size]="16" />GitHub</a>
       <a class="btn btn-line" [href]="wa()" target="_blank" rel="noopener"><app-icon name="whatsapp" [size]="16" />WhatsApp</a>
-      <a class="btn btn-primary" [href]="cv" download><app-icon name="download" [size]="16" />{{ ui.nav.cv[l] }}</a>
+      <a class="btn btn-primary" [href]="cv()" download><app-icon name="download" [size]="16" />{{ ui.nav.cv[l] }}</a>
     </div>
   </div>
 </section>

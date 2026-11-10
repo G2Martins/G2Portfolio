@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<title>{{ meta.title }}</title>
+<style>
+  /* Rendered HTML lands in cv/.preview/, hence ../fonts. Carlito = Calibri-metric, OFL. */
+  @font-face { font-family: "Carlito"; src: url("../fonts/Carlito-Regular.ttf"); font-weight: 400; }
+  @font-face { font-family: "Carlito"; src: url("../fonts/Carlito-Bold.ttf"); font-weight: 700; }
+
+  @page { size: A4; margin: 40.5pt 15mm 15mm; }
+
+  :root {
+    --navy: #14345c;
+    --ink: #1a1a1a;
+    --muted: #333;
+    --meta: #444;
+    --link: #0563c1;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font: 10pt/1.22 "Carlito", "Calibri", sans-serif; color: var(--ink); }
+  a { color: var(--link); }
+  b { font-weight: 700; }
+
+  h1 { font-size: 20pt; line-height: 1.22; color: var(--navy); }
+  .headline { font-weight: 700; color: var(--navy); margin-top: 1pt; }
+  .contact { font-size: 9pt; line-height: 12pt; color: var(--muted); }
+  .headline + .contact { margin-top: 1.5pt; }
+  .sep { margin: 0 2.3pt; }
+
+  h2 {
+    font-size: 11pt; line-height: 1.22; color: var(--navy); text-transform: uppercase;
+    margin: 10.1pt 0 5pt;
+    break-after: avoid;
+  }
+  /* rule as a block, not a border: Chromium snaps borders to whole px (1.25pt -> 0.75pt) */
+  h2::after { content: ""; display: block; height: 1.25pt; margin-top: 1.6pt; background: var(--navy); }
+  .just { text-align: justify; }
+  .skills p { margin-bottom: 2.5pt; }
+  .skills b { color: var(--navy); }
+  .skills b, .bul b { margin-right: .226em; } /* the original's double space after "Label:" */
+
+  .job { margin-bottom: 6.2pt; }
+  .job h3 { font-size: 10.5pt; line-height: 1.22; }
+  .job .meta { font-size: 9pt; color: var(--meta); margin-bottom: 2.2pt; }
+  .job header { break-inside: avoid; break-after: avoid; }
+
+  ul.bul { list-style: none; padding-left: 18pt; }
+  ul.bul li { position: relative; margin-bottom: 2pt; text-align: justify; break-inside: avoid; }
+  ul.bul li::before { content: "•"; position: absolute; left: -10pt; }
+
+  .rows li { list-style: none; line-height: 13.7pt; }
+  .dot { margin: 0 4pt; }
+</style>
+</head>
+<body>
+<header>
+  <h1>{{ name }}</h1>
+  <p class="headline">{{ headline | join(" | ") }}</p>
+  <p class="contact">
+    {%- for c in contact %}{% if not loop.first %} <span class="sep">|</span> {% endif %}{{ c }}{% endfor -%}
+  </p>
+  <p class="contact">
+    {%- for l in links %}{% if not loop.first %} <span class="sep">|</span> {% endif %}{{ l.label }}: <a href="{{ l.url }}">{{ l.text }}</a>{% endfor -%}
+  </p>
+</header>
+
+<section>
+  <h2>{{ labels.summary }}</h2>
+  <p class="just">{{ summary }}</p>
+</section>
+
+<section class="skills">
+  <h2>{{ labels.skills }}</h2>
+  {% for s in skills %}<p><b>{{ s.label }}:</b> {{ s.text }}</p>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>{{ labels.experience }}</h2>
+  {% for j in experience %}
+  <article class="job">
+    <header>
+      <h3>{{ j.role }} · {{ j.org }}</h3>
+      <p class="meta">{{ j.place }} | {{ j.period }}</p>
+    </header>
+    <ul class="bul">
+      {% for b in j.bullets %}<li>{{ b }}</li>
+      {% endfor %}
+    </ul>
+  </article>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>{{ labels.projects }}</h2>
+  <ul class="bul">
+    {% for p in projects %}<li><b>{{ p.name }}:</b> {{ p.text }}</li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section>
+  <h2>{{ labels.education }}</h2>
+  <p class="just"><b>{{ education.degree }}</b> · {{ education.detail }}</p>
+</section>
+
+<section>
+  <h2>{{ labels.certs }}</h2>
+  <ul class="rows">
+    {% for c in certs %}<li>{{ c.name }} ({{ c.issuer }}, {{ c.year }})<span class="dot">·</span><a href="{{ c.url }}">{{ labels.verify }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section>
+  <h2>{{ labels.languages }}</h2>
+  <ul class="rows">
+    {% for l in languages %}<li>{{ l.name }}: {{ l.level }}</li>
+    {% endfor %}
+  </ul>
+</section>
+</body>
+</html>

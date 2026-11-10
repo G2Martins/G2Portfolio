@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, DOCUMENT, computed, inject, signal 
 import { toSignal } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router, RouterLink, RouterOutlet } from '@angular/router';
 import { filter, map } from 'rxjs';
-import { CV_PATH, GROVIC, Lang, PERSON, UI } from './data/content';
+import { GROVIC, Lang, PERSON, UI, cvPath } from './data/content';
 import { Icon } from './shared/icon';
 
 const langOf = (url: string): Lang => (url === '/en' || url.startsWith('/en/') || url.startsWith('/en#') ? 'en' : 'pt');
@@ -43,7 +43,7 @@ export class App {
   protected readonly ui = UI;
   protected readonly person = PERSON;
   protected readonly grovic = GROVIC;
-  protected readonly cv = CV_PATH;
+  protected readonly cv = computed(() => cvPath(this.lang()));
   protected readonly year = new Date().getFullYear();
   protected readonly sections = [
     { id: 'g2-boost', label: UI.nav.release },

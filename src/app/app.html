@@ -22,7 +22,7 @@
         <app-icon name="moon" class="dark:hidden" />
         <app-icon name="sun" class="hidden dark:inline-flex" />
       </button>
-      <a class="btn btn-primary ml-2 hidden !min-h-9 !px-3.5 !py-2 sm:inline-flex" [href]="cv" download>
+      <a class="btn btn-primary ml-2 hidden !min-h-9 !px-3.5 !py-2 sm:inline-flex" [href]="cv()" download>
         <app-icon name="download" [size]="16" />{{ ui.nav.cv[lang()] }}
       </a>
       <button type="button" class="icon-btn lg:hidden" (click)="menuOpen.set(!menuOpen())"
@@ -44,7 +44,7 @@
           </li>
         }
         <li class="pt-4">
-          <a class="btn btn-primary w-full" [href]="cv" download (click)="menuOpen.set(false)">
+          <a class="btn btn-primary w-full" [href]="cv()" download (click)="menuOpen.set(false)">
             <app-icon name="download" [size]="16" />{{ ui.nav.cv[lang()] }}
           </a>
         </li>
@@ -82,7 +82,7 @@
         <li><a class="navlink" [href]="person.linkedin" target="_blank" rel="noopener me">LinkedIn</a></li>
         <li><a class="navlink" [href]="person.github" target="_blank" rel="noopener me">GitHub</a></li>
         <li><a class="navlink" [href]="'mailto:' + person.email">E-mail</a></li>
-        <li><a class="navlink" [href]="cv" download>{{ ui.nav.cv[lang()] }} (PDF)</a></li>
+        <li><a class="navlink" [href]="cv()" download>{{ ui.nav.cv[lang()] }} (PDF)</a></li>
         <li><a class="navlink" href="/llms.txt">llms.txt</a></li>
       </ul>
     </div>
