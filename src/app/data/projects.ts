@@ -101,7 +101,7 @@ export const PROJECTS: Project[] = [
     stack: ['Next.js', 'TypeScript', 'Hono', 'tRPC', 'Drizzle', 'Supabase', 'Trigger.dev', 'Turborepo'],
     role: { pt: 'Cofundador (engenharia full stack)', en: 'Co-founder (full stack engineering)' },
     links: { site: 'https://valerium.grovicdata.com', more: [{ label: 'grovicdata.com/valerium', url: 'https://grovicdata.com/valerium.html' }] },
-    images: ['valerium'],
+    images: ['valerium', 'valerium-2', 'valerium-3', 'valerium-4'],
   },
   {
     slug: 'prontusmart',
@@ -159,7 +159,7 @@ export const PROJECTS: Project[] = [
     stack: ['HTML', 'CSS', 'JavaScript', 'Hostinger'],
     role: { pt: 'Cofundador (design e desenvolvimento)', en: 'Co-founder (design and development)' },
     links: { site: 'https://grovicdata.com' },
-    images: ['grovic-data'],
+    images: ['grovic-data', 'grovic-data-2', 'grovic-data-3', 'grovic-data-4'],
   },
   {
     slug: 'routify',
@@ -188,7 +188,7 @@ export const PROJECTS: Project[] = [
     stack: ['Python', 'FastAPI', 'XGBoost', 'React Native', 'Expo', 'Supabase', 'TomTom API'],
     role: team,
     links: { site: 'https://routify.grovicdata.com', repo: 'https://github.com/G2Martins/Routify' },
-    images: ['routify'],
+    images: ['routify', 'routify-2'],
   },
   {
     slug: 'safedoc-df',
