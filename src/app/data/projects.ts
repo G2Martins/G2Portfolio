@@ -498,6 +498,35 @@ export const PROJECTS: Project[] = [
     images: ['projeto-integrador', 'projeto-integrador-2', 'projeto-integrador-3', 'projeto-integrador-4'],
   },
   {
+    slug: 'faculdade',
+    title: 'Faculdade: Árvore de Derivação',
+    year: '2023–2026',
+    category: 'web',
+    group: 'main',
+    summary: {
+      pt: 'Os 8 semestres de Engenharia da Computação mapeados como uma árvore de derivação: cada disciplina é um mini-site com o conteúdo real do repositório.',
+      en: 'Eight semesters of Computer Engineering mapped as a derivation tree: every course is a mini-site with the real content of the repository.',
+    },
+    description: {
+      pt: [
+        'Repositório com todo o percurso da graduação no IESB: aulas, exercícios, códigos e materiais de cada disciplina, de C e estruturas de dados a grafos, programação dinâmica, processamento de sinais e compiladores, incluindo um transpilador MineonScript para Python construído fase por fase.',
+        'Em 2026 transformei o repositório num site navegável com a estética de uma árvore de derivação, o tema de Compiladores: cada semestre é uma regra, cada disciplina um mini-site e cada arquivo uma folha. O site renderiza os arquivos de verdade no navegador (markdown sanitizado, fórmulas em KaTeX, diagramas Mermaid, código com destaque de sintaxe e PDFs), tem busca global e um script em Python que mantém o mapa sincronizado com o repositório.',
+      ],
+      en: [
+        'A repository with the whole degree path at IESB: lectures, exercises, code and materials from every course, from C and data structures to graphs, dynamic programming, signal processing and compilers, including a MineonScript to Python transpiler built phase by phase.',
+        'In 2026 I turned the repository into a browsable site styled as a derivation tree, the theme of the Compilers course: each semester is a rule, each course a mini-site and each file a leaf. The site renders the real files in the browser (sanitized markdown, KaTeX formulas, Mermaid diagrams, syntax-highlighted code and PDFs), has global search and a Python script that keeps the map in sync with the repository.',
+      ],
+    },
+    highlights: {
+      pt: ['Mais de 500 arquivos navegáveis por semestre, disciplina e tópico', 'Transpilador MineonScript → Python: lexer, parser, AST e CST', 'Markdown, código, PDF, KaTeX e Mermaid renderizados no navegador', 'Busca global e mapa sincronizado com o repositório por script'],
+      en: ['500+ files browsable by semester, course and topic', 'MineonScript → Python transpiler: lexer, parser, AST and CST', 'Markdown, code, PDF, KaTeX and Mermaid rendered in the browser', 'Global search and a map kept in sync with the repository by a script'],
+    },
+    stack: ['HTML/CSS/JS', 'Python', 'C', 'Java', 'MATLAB', 'GitHub Pages'],
+    role: study,
+    links: { site: 'https://g2martins.github.io/Faculdade/', repo: 'https://github.com/G2Martins/Faculdade' },
+    images: ['faculdade', 'faculdade-2', 'faculdade-3', 'faculdade-4'],
+  },
+  {
     slug: 'g2store',
     title: 'G2Store',
     year: '2026',

@@ -13,7 +13,7 @@ Portfólio pessoal de **Gustavo Martins Gripaldi** (engenheiro de dados e dev fu
 
 ## 2. Stack + Comandos
 
-Angular 21 standalone + zoneless + signals, SSG (`outputMode: "static"`, 44 rotas), Tailwind CSS v4, Geist/Geist Mono. Node 22.18+ (scripts `.ts` com type stripping nativo).
+Angular 21 standalone + zoneless + signals, SSG (`outputMode: "static"`, 46 rotas), Tailwind CSS v4, Geist/Geist Mono. Node 22.18+ (scripts `.ts` com type stripping nativo).
 
 ```bash
 npm start            # seo + ng serve (dev)

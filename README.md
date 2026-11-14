@@ -10,7 +10,7 @@ Angular 21 (standalone, zoneless) pré-renderizado em HTML estático e servido p
 ```bash
 npm install
 npm start            # gera SEO + dev server em http://localhost:4200
-npm run build        # gera SEO + build estático em dist/g2-portfolio/browser (44 rotas)
+npm run build        # gera SEO + build estático em dist/g2-portfolio/browser (46 rotas)
 npm run check        # smoke test do build: h1, canonical, hreflang, JSON-LD, imagens, sitemap
 npm run build:pages  # build + copia para /docs (pasta publicada pelo GitHub Pages)
 ```
